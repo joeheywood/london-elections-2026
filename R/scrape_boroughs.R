@@ -4,6 +4,8 @@ library(dplyr)
 library(stringr)
 library(purrr)
 library(tibble)
+library(glue)
+library(openxlsx)
 
 url <- "https://en.wikipedia.org/wiki/List_of_electoral_wards_in_Greater_London"
 
@@ -90,12 +92,10 @@ latest_wards <- wards_df %>%
   filter(year == max(year, na.rm = TRUE)) %>%
   ungroup()
 
-latest_wards %>% 
+latest_wards <- latest_wards %>% 
   filter(!borough %in% c("City of London", "Greater London Council", "London Assembly"))
          
          
-library(glue)
-library(openxlsx)
 
 for(br in unique(latest_wards$borough)) {
   print(glue("Doing {br}"))
@@ -115,7 +115,7 @@ for(br in unique(latest_wards$borough)) {
     writeData(wb, sheetnm, br, startCol = 1, startRow = 3)
     writeData(wb, sheetnm, br, startCol = 1, startRow = 3)
     writeData(wb, sheetnm, c("7 May 2026", bdat$ward[i], bdat$councillors[i]), 
-              startCol = 8, startRow = 4)
+              startCol = 7, startRow = 4)
     setColWidths(wb, sheetnm, 8, "auto")
     showGridLines(wb, sheetnm, FALSE)
   }

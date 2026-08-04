@@ -69,7 +69,7 @@ get_data_for_borough("data/Completed Forms/Westminster local results form (1).xl
   count(party)
   
 # ERRORS 
-# - CAMDEN. Number of councillors is incorrect.
+# - CAMDEN. Number of Councillors is incorrect.
 # - HACKNEY. x is marked on the wrong candidate
 # - HILLINGDON. x is marked on the wrong candidate
 # - LAMBETH. Missing an x in Knight's Hill

@@ -38,7 +38,8 @@ match_geo <- function(fl, boro) {
   filt_df <- x |> filter(LAD22NM == boro) 
   
   if(all(coll_df$ward %in% filt_df$WD22NM) == TRUE) {
-    dfx <- left_join(coll_df, filt_df, by = c(ward = "WD22NM"))
+    dfx <- left_join(coll_df, filt_df, by = c(ward = "WD22NM")) |> 
+      mutate(file = fl)
   } else {
     print(glue("Not working for {fl}"))
     save(fl, boro, coll_df ,filt_df, file = glue("debug_{boro}.RDA"))

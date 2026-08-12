@@ -46,7 +46,7 @@ get_data_from_excel <- function(sheet, fl) {
     NULL
   } else {
     geo <- geo_lkp[i,]
-    print(glue("numc: {num_c} num_elected: {length(which(df$el %in% xs))} T2: {t2} WARD: {geo$LAD22NM[1]}-{geo$ward[1]}"))
+    print(glue("{t1} numc: {num_c} num_elected: {length(which(df$el %in% xs))} T2: {t2} WARD: {geo$LAD22NM[1]}-{geo$ward[1]}"))
     df$elected <- df$el %in% xs
     df$party <- party_lkp[df$Party]
     df$borough <- geo$LAD22NM[1]
@@ -64,7 +64,7 @@ get_data_for_borough <- function(fl) {
   
 }
 
-get_data_for_borough("data/Completed Forms/Westminster local results form (1).xlsx") |> 
+get_data_for_borough("data/Completed Forms/Newham local results form.xlsx") |> 
   filter(elected == TRUE)  |> 
   count(party)
   
@@ -73,7 +73,7 @@ get_data_for_borough("data/Completed Forms/Westminster local results form (1).xl
 # - HACKNEY. x is marked on the wrong candidate
 # - HILLINGDON. x is marked on the wrong candidate
 # - LAMBETH. Missing an x in Knight's Hill
-#
+# - Lewisham
 
-nwm <- get_data_for_borough("data/Completed Forms/Newham local results form.xlsx") |> 
+nwm <- get_data_for_borough("data/Completed Forms/Lambeth local results form for GLA.xlsx") |> 
   filter(elected == TRUE)  

@@ -1,0 +1,825 @@
+wd22cd,official_party_name,party_code,ward,LAD22NM,n
+E05013628,Labour Party,LAB,Barnet Vale,Barnet,2
+E05013628,Conservative Party,CON,Barnet Vale,Barnet,1
+E05013629,Conservative Party,CON,Brunswick Park,Barnet,3
+E05013630,Labour Party,LAB,Burnt Oak,Barnet,3
+E05013631,Conservative Party,CON,Childs Hill,Barnet,3
+E05013632,Labour Party,LAB,Colindale North,Barnet,2
+E05013633,Labour Party,LAB,Colindale South,Barnet,3
+E05013634,Labour Party,LAB,Cricklewood,Barnet,2
+E05013635,Labour Party,LAB,East Barnet,Barnet,2
+E05013635,Conservative Party,CON,East Barnet,Barnet,1
+E05013636,Labour Party,LAB,East Finchley,Barnet,3
+E05013637,Conservative Party,CON,Edgware,Barnet,3
+E05013638,Conservative Party,CON,Edgwarebury,Barnet,2
+E05013639,Conservative Party,CON,Finchley Church End,Barnet,3
+E05013640,Labour Party,LAB,Friern Barnet,Barnet,3
+E05013641,Conservative Party,CON,Garden Suburb,Barnet,2
+E05013642,Conservative Party,CON,Golders Green,Barnet,2
+E05013643,Conservative Party,CON,Hendon,Barnet,3
+E05013644,Conservative Party,CON,High Barnet,Barnet,1
+E05013644,Labour Party,LAB,High Barnet,Barnet,1
+E05013645,Conservative Party,CON,Mill Hill,Barnet,3
+E05013646,Conservative Party,CON,Totteridge and Woodside,Barnet,3
+E05013647,Labour Party,LAB,Underhill,Barnet,2
+E05013648,Labour Party,LAB,West Finchley,Barnet,3
+E05013649,Labour Party,LAB,West Hendon,Barnet,3
+E05013650,Labour Party,LAB,Whetstone,Barnet,1
+E05013650,Conservative Party,CON,Whetstone,Barnet,1
+E05013651,Green Party,GRE,Woodhouse,Barnet,1
+E05013651,Labour Party,LAB,Woodhouse,Barnet,1
+E05011217,Conservative Party,CON,Barnehurst,Bexley,2
+E05011218,Labour Party,LAB,Belvedere,Bexley,2
+E05011218,Reform UK,RUK,Belvedere,Bexley,1
+E05011219,Conservative Party,CON,Bexleyheath,Bexley,3
+E05011220,Conservative Party,CON,Blackfen and Lamorbey,Bexley,3
+E05011221,Conservative Party,CON,Blendon and Penhill,Bexley,3
+E05011222,Reform UK,RUK,Crayford,Bexley,3
+E05011223,Conservative Party,CON,Crook Log,Bexley,3
+E05011224,Conservative Party,CON,East Wickham,Bexley,3
+E05011225,Labour Party,LAB,Erith,Bexley,2
+E05011226,Conservative Party,CON,Falconwood and Welling,Bexley,3
+E05011227,Conservative Party,CON,Longlands,Bexley,2
+E05011228,Reform UK,RUK,Northumberland Heath,Bexley,2
+E05011230,Conservative Party,CON,Sidcup,Bexley,3
+E05011231,Labour Party,LAB,Slade Green and Northend,Bexley,2
+E05011229,Conservative Party,CON,St Mary's and St James,Bexley,2
+E05011232,Labour Party,LAB,Thamesmead East,Bexley,3
+E05011233,Conservative Party,CON,West Heath,Bexley,2
+E05011233,Reform UK,RUK,West Heath,Bexley,1
+E05013496,Liberal Democrats,LD,Alperton,Brent,3
+E05013497,Labour Party,LAB,Barnhill,Brent,2
+E05013498,Labour Party,LAB,Brondesbury Park,Brent,2
+E05013499,Labour Party,LAB,Cricklewood and Mapesbury,Brent,2
+E05013500,Labour Party,LAB,Dollis Hill,Brent,3
+E05013501,Labour Party,LAB,Harlesden and Kensal Green,Brent,2
+E05013501,Green Party,GRE,Harlesden and Kensal Green,Brent,1
+E05013502,Conservative Party,CON,Kenton,Brent,3
+E05013503,Green Party,GRE,Kilburn,Brent,3
+E05013504,Labour Party,LAB,Kingsbury,Brent,2
+E05013505,Green Party,GRE,Northwick Park,Brent,2
+E05013506,Conservative Party,CON,Preston,Brent,2
+E05013507,Liberal Democrats,LD,Queens Park,Brent,3
+E05013508,Conservative Party,CON,Queensbury,Brent,3
+E05013509,Labour Party,LAB,Roundwood,Brent,3
+E05013510,Labour Party,LAB,Stonebridge,Brent,3
+E05013511,Liberal Democrats,LD,Sudbury,Brent,2
+E05013512,Labour Party,LAB,Tokyngton,Brent,1
+E05013512,Conservative Party,CON,Tokyngton,Brent,1
+E05013513,Labour Party,LAB,Welsh Harp,Brent,2
+E05013513,Conservative Party,CON,Welsh Harp,Brent,1
+E05013514,Liberal Democrats,LD,Wembley Central,Brent,3
+E05013515,Labour Party,LAB,Wembley Hill,Brent,2
+E05013515,Conservative Party,CON,Wembley Hill,Brent,1
+E05013516,Green Party,GRE,Wembley Park,Brent,2
+E05013517,Labour Party,LAB,Willesden Green,Brent,2
+E05013517,Green Party,GRE,Willesden Green,Brent,1
+E05013987,Liberal Democrats,LD,Beckenham Town and Copers Cope,Bromley,3
+E05013988,Conservative Party,CON,Bickley and Sundridge,Bromley,3
+E05013989,Reform UK,RUK,Biggin Hill,Bromley,2
+E05013990,Conservative Party,CON,Bromley Common and Holwood,Bromley,3
+E05013991,Liberal Democrats,LD,Bromley Town,Bromley,3
+E05013992,Conservative Party,CON,Chelsfield,Bromley,2
+E05013993,Chislehurst Matters,CM,Chislehurst,Bromley,3
+E05013994,Labour Party,LAB,Clock House,Bromley,3
+E05013995,Labour Party,LAB,Crystal Palace and Anerley,Bromley,2
+E05013996,Conservative Party,CON,Darwin,Bromley,1
+E05013997,Conservative Party,CON,Farnborough and Crofton,Bromley,3
+E05013998,Conservative Party,CON,Hayes and Coney Hall,Bromley,3
+E05013999,Conservative Party,CON,Kelsey and Eden Park,Bromley,3
+E05014000,Conservative Party,CON,Mottingham,Bromley,1
+E05014000,Reform UK,RUK,Mottingham,Bromley,1
+E05014001,Conservative Party,CON,Orpington,Bromley,2
+E05014002,Labour Party,LAB,Penge and Cator,Bromley,3
+E05014003,Conservative Party,CON,Petts Wood and Knoll,Bromley,3
+E05014004,Conservative Party,CON,Plaistow,Bromley,2
+E05014005,Conservative Party,CON,Shortlands and Park Langley,Bromley,3
+E05014006,Conservative Party,CON,St Mary Cray,Bromley,3
+E05014007,Reform UK,RUK,St Paul's Cray,Bromley,3
+E05014008,Conservative Party,CON,West Wickham,Bromley,3
+E05011462,Conservative Party,CON,Addiscombe East,Croydon,1
+E05011462,Labour Party,LAB,Addiscombe East,Croydon,1
+E05011463,Labour Party,LAB,Addiscombe West,Croydon,3
+E05011464,Labour Party,LAB,Bensham Manor,Croydon,3
+E05011465,Labour Party,LAB,Broad Green,Croydon,3
+E05011466,Conservative Party,CON,Coulsdon Town,Croydon,3
+E05011467,Liberal Democrats,LD,Crystal Palace and Upper Norwood,Croydon,1
+E05011467,Green Party,GRE,Crystal Palace and Upper Norwood,Croydon,2
+E05011468,Green Party,GRE,Fairfield,Croydon,3
+E05011469,Conservative Party,CON,Kenley,Croydon,2
+E05011470,Labour Party,LAB,New Addington North,Croydon,2
+E05011471,Reform UK,RUK,New Addington South,Croydon,2
+E05011472,Labour Party,LAB,Norbury and Pollards Hill,Croydon,2
+E05011473,Labour Party,LAB,Norbury Park,Croydon,2
+E05011474,Conservative Party,CON,Old Coulsdon,Croydon,1
+E05011474,Liberal Democrats,LD,Old Coulsdon,Croydon,1
+E05011475,Conservative Party,CON,Park Hill and Whitgift,Croydon,1
+E05011476,Conservative Party,CON,Purley and Woodcote,Croydon,3
+E05011477,Conservative Party,CON,Purley Oaks and Riddlesdown,Croydon,2
+E05011478,Conservative Party,CON,Sanderstead,Croydon,3
+E05011479,Labour Party,LAB,Selhurst,Croydon,2
+E05011480,Conservative Party,CON,Selsdon and Addington Village,Croydon,2
+E05011481,Conservative Party,CON,Selsdon Vale and Forestdale,Croydon,2
+E05011482,Conservative Party,CON,Shirley North,Croydon,3
+E05011483,Conservative Party,CON,Shirley South,Croydon,2
+E05011484,Conservative Party,CON,South Croydon,Croydon,3
+E05011485,Green Party,GRE,South Norwood,Croydon,2
+E05011485,Labour Party,LAB,South Norwood,Croydon,1
+E05011486,Labour Party,LAB,Thornton Heath,Croydon,3
+E05011487,Labour Party,LAB,Waddon,Croydon,3
+E05011488,Labour Party,LAB,West Thornton,Croydon,3
+E05011489,Labour Party,LAB,Woodside,Croydon,2
+E05011489,Green Party,GRE,Woodside,Croydon,1
+E05013518,Labour Party,LAB,Central Greenford,Ealing,3
+E05013519,Labour Party,LAB,Dormers Wells,Ealing,3
+E05013520,Conservative Party,CON,Ealing Broadway,Ealing,2
+E05013520,Liberal Democrats,LD,Ealing Broadway,Ealing,1
+E05013521,Liberal Democrats,LD,Ealing Common,Ealing,3
+E05013522,Labour Party,LAB,East Acton,Ealing,3
+E05013523,Labour Party,LAB,Greenford Broadway,Ealing,3
+E05013524,Liberal Democrats,LD,Hanger Hill,Ealing,3
+E05013525,Green Party,GRE,Hanwell Broadway,Ealing,3
+E05013526,Labour Party,LAB,Lady Margaret,Ealing,3
+E05013527,Labour Party,LAB,North Acton,Ealing,2
+E05013527,Green Party,GRE,North Acton,Ealing,1
+E05013528,Conservative Party,CON,North Greenford,Ealing,3
+E05013529,Labour Party,LAB,North Hanwell,Ealing,3
+E05013530,Labour Party,LAB,Northfield,Ealing,3
+E05013531,Labour Party,LAB,Northolt Mandeville,Ealing,3
+E05013532,Labour Party,LAB,Northolt West End,Ealing,3
+E05013533,Independent,IND,Norwood Green,Ealing,1
+E05013533,Labour Party,LAB,Norwood Green,Ealing,2
+E05013534,Labour Party,LAB,Perivale,Ealing,3
+E05013535,Labour Party,LAB,Pitshanger,Ealing,3
+E05013536,Labour Party,LAB,South Acton,Ealing,2
+E05013536,Green Party,GRE,South Acton,Ealing,1
+E05013537,Labour Party,LAB,Southall Broadway,Ealing,2
+E05013538,Labour Party,LAB,Southall Green,Ealing,3
+E05013539,Labour Party,LAB,Southall West,Ealing,2
+E05013540,Liberal Democrats,LD,Southfield,Ealing,3
+E05013541,Liberal Democrats,LD,Walpole,Ealing,3
+E05013672,Conservative Party,CON,Arnos Grove,Enfield,2
+E05013673,Labour Party,LAB,Bowes,Enfield,1
+E05013673,Conservative Party,CON,Bowes,Enfield,1
+E05013674,Labour Party,LAB,Brimsdown,Enfield,3
+E05013675,Labour Party,LAB,Bullsmoor,Enfield,2
+E05013676,Conservative Party,CON,Bush Hill Park,Enfield,3
+E05013677,Labour Party,LAB,Carterhatch,Enfield,2
+E05013678,Conservative Party,CON,Cockfosters,Enfield,2
+E05013679,Labour Party,LAB,Edmonton Green,Enfield,3
+E05013680,Green Party,GRE,Enfield Lock,Enfield,2
+E05013680,Labour Party,LAB,Enfield Lock,Enfield,1
+E05013681,Conservative Party,CON,Grange Park,Enfield,2
+E05013682,Labour Party,LAB,Haselbury,Enfield,3
+E05013683,Conservative Party,CON,Highfield,Enfield,2
+E05013684,Labour Party,LAB,Jubilee,Enfield,3
+E05013685,Labour Party,LAB,Lower Edmonton,Enfield,3
+E05013686,Green Party,GRE,New Southgate,Enfield,2
+E05013687,Conservative Party,CON,Oakwood,Enfield,2
+E05013688,Labour Party,LAB,Palmers Green,Enfield,2
+E05013689,Green Party,GRE,Ponders End,Enfield,1
+E05013689,Labour Party,LAB,Ponders End,Enfield,1
+E05013690,Conservative Party,CON,Ridgeway,Enfield,3
+E05013691,Conservative Party,CON,Southbury,Enfield,3
+E05013692,Conservative Party,CON,Southgate,Enfield,3
+E05013693,Conservative Party,CON,Town,Enfield,3
+E05013694,Labour Party,LAB,Upper Edmonton,Enfield,3
+E05013695,Conservative Party,CON,Whitewebbs,Enfield,3
+E05013696,Conservative Party,CON,Winchmore Hill,Enfield,2
+E05013733,Labour Party,LAB,Addison,Hammersmith and Fulham,2
+E05013734,Labour Party,LAB,Avonmore,Hammersmith and Fulham,2
+E05013735,Labour Party,LAB,Brook Green,Hammersmith and Fulham,2
+E05013736,Labour Party,LAB,College Park and Old Oak,Hammersmith and Fulham,3
+E05013737,Labour Party,LAB,Coningham,Hammersmith and Fulham,3
+E05013738,Labour Party,LAB,Fulham Reach,Hammersmith and Fulham,3
+E05013739,Conservative Party,CON,Fulham Town,Hammersmith and Fulham,2
+E05013740,Labour Party,LAB,Grove,Hammersmith and Fulham,2
+E05013741,Labour Party,LAB,Hammersmith Broadway,Hammersmith and Fulham,2
+E05013742,Labour Party,LAB,Lillie,Hammersmith and Fulham,2
+E05013743,Conservative Party,CON,Munster,Hammersmith and Fulham,3
+E05013744,Conservative Party,CON,Palace and Hurlingham,Hammersmith and Fulham,3
+E05013745,Conservative Party,CON,Parsons Green and Sandford,Hammersmith and Fulham,2
+E05013746,Labour Party,LAB,Ravenscourt,Hammersmith and Fulham,2
+E05013747,Conservative Party,CON,Sands End,Hammersmith and Fulham,2
+E05013747,Labour Party,LAB,Sands End,Hammersmith and Fulham,1
+E05013748,Labour Party,LAB,Shepherd's Bush Green,Hammersmith and Fulham,2
+E05013749,Labour Party,LAB,Walham Green,Hammersmith and Fulham,2
+E05013750,Labour Party,LAB,Wendell Park,Hammersmith and Fulham,2
+E05013751,Labour Party,LAB,West Kensington,Hammersmith and Fulham,3
+E05013752,Labour Party,LAB,White City,Hammersmith and Fulham,3
+E05013753,Labour Party,LAB,Wormholt,Hammersmith and Fulham,2
+E05013652,Liberal Democrats,LD,Belsize,Camden,3
+E05013653,Labour Party,LAB,Bloomsbury,Camden,2
+E05013653,Green Party,GRE,Bloomsbury,Camden,1
+E05013654,Labour Party,LAB,Camden Square,Camden,2
+E05013655,Labour Party,LAB,Camden Town,Camden,2
+E05013656,Liberal Democrats,LD,Fortune Green,Camden,3
+E05013657,Conservative Party,CON,Frognal,Camden,2
+E05013658,Green Party,GRE,Gospel Oak,Camden,1
+E05013658,Labour Party,LAB,Gospel Oak,Camden,2
+E05013659,Liberal Democrats,LD,Hampstead Town,Camden,1
+E05013659,Conservative Party,CON,Hampstead Town,Camden,1
+E05013660,Labour Party,LAB,Haverstock,Camden,3
+E05013661,Green Party,GRE,Highgate,Camden,1
+E05013661,Labour Party,LAB,Highgate,Camden,2
+E05013662,Green Party,GRE,Holborn and Covent Garden,Camden,3
+E05013663,Labour Party,LAB,Kentish Town North,Camden,2
+E05013664,Labour Party,LAB,Kentish Town South,Camden,3
+E05013665,Labour Party,LAB,Kilburn,Camden,1
+E05013665,Green Party,GRE,Kilburn,Camden,2
+E05013666,Labour Party,LAB,King's Cross,Camden,3
+E05013667,Labour Party,LAB,Primrose Hill,Camden,3
+E05013668,Green Party,GRE,Regent's Park,Camden,3
+E05013670,Labour Party,LAB,South Hampstead,Camden,3
+E05013669,Labour Party,LAB,St Pancras and Somers Town,Camden,2
+E05013669,Camden People's Alliance,CPA,St Pancras and Somers Town,Camden,1
+E05013671,Liberal Democrats,LD,West Hampstead,Camden,3
+E05014072,Labour Party,LAB,Abbey Wood,Greenwich,3
+E05014073,Labour Party,LAB,Blackheath Westcombe,Greenwich,3
+E05014074,Green Party,GRE,Charlton Hornfair,Greenwich,1
+E05014074,Labour Party,LAB,Charlton Hornfair,Greenwich,1
+E05014075,Labour Party,LAB,Charlton Village and Riverside,Greenwich,2
+E05014076,Green Party,GRE,East Greenwich,Greenwich,3
+E05014077,Reform UK,RUK,Eltham Page,Greenwich,1
+E05014077,Labour Party,LAB,Eltham Page,Greenwich,1
+E05014078,Labour Party,LAB,Eltham Park and Progress,Greenwich,2
+E05014079,Conservative Party,CON,Eltham Town and Avery Hill,Greenwich,3
+E05014080,Labour Party,LAB,Greenwich Creekside,Greenwich,2
+E05014081,Green Party,GRE,Greenwich Park,Greenwich,2
+E05014082,Green Party,GRE,Greenwich Peninsula,Greenwich,2
+E05014082,Labour Party,LAB,Greenwich Peninsula,Greenwich,1
+E05014083,Labour Party,LAB,Kidbrooke Park,Greenwich,2
+E05014084,Labour Party,LAB,Kidbrooke Village and Sutcliffe,Greenwich,2
+E05014085,Labour Party,LAB,Middle Park and Horn Park,Greenwich,2
+E05014086,Conservative Party,CON,"Mottingham, Coldharbour and New Eltham",Greenwich,3
+E05014087,Labour Party,LAB,Plumstead and Glyndon,Greenwich,3
+E05014088,Green Party,GRE,Plumstead Common,Greenwich,3
+E05014089,Green Party,GRE,Shooters Hill,Greenwich,2
+E05014090,Labour Party,LAB,Thamesmead Moorings,Greenwich,2
+E05014091,Labour Party,LAB,West Thamesmead,Greenwich,2
+E05014092,Labour Party,LAB,Woolwich Arsenal,Greenwich,3
+E05014093,Labour Party,LAB,Woolwich Common,Greenwich,2
+E05014094,Labour Party,LAB,Woolwich Dockyard,Greenwich,2
+E05009367,Green Party,GRE,Brownswood,Hackney,2
+E05009368,Green Party,GRE,Cazenove,Hackney,2
+E05009368,Conservative Party,CON,Cazenove,Hackney,1
+E05009369,Green Party,GRE,Clissold,Hackney,2
+E05009369,Labour Party,LAB,Clissold,Hackney,1
+E05009370,Green Party,GRE,Dalston,Hackney,2
+E05009371,Green Party,GRE,De Beauvoir,Hackney,2
+E05009372,Green Party,GRE,Hackney Central,Hackney,3
+E05009373,Green Party,GRE,Hackney Downs,Hackney,3
+E05009374,Green Party,GRE,Hackney Wick,Hackney,3
+E05009375,Green Party,GRE,Haggerston,Hackney,3
+E05009376,Green Party,GRE,Homerton,Hackney,1
+E05009376,Labour Party,LAB,Homerton,Hackney,2
+E05009377,Labour Party,LAB,Hoxton East and Shoreditch,Hackney,1
+E05009377,Green Party,GRE,Hoxton East and Shoreditch,Hackney,2
+E05009378,Green Party,GRE,Hoxton West,Hackney,2
+E05009378,Labour Party,LAB,Hoxton West,Hackney,1
+E05009379,Green Party,GRE,King's Park,Hackney,3
+E05009380,Green Party,GRE,Lea Bridge,Hackney,3
+E05009381,Green Party,GRE,London Fields,Hackney,2
+E05009381,Labour Party,LAB,London Fields,Hackney,1
+E05009382,Green Party,GRE,Shacklewell,Hackney,2
+E05009383,Conservative Party,CON,Springfield,Hackney,3
+E05009384,Conservative Party,CON,Stamford Hill West,Hackney,2
+E05009385,Green Party,GRE,Stoke Newington,Hackney,3
+E05009386,Green Party,GRE,Victoria,Hackney,1
+E05009386,Labour Party,LAB,Victoria,Hackney,2
+E05009387,Labour Party,LAB,Woodberry Down,Hackney,1
+E05009387,Green Party,GRE,Woodberry Down,Hackney,1
+E05013605,Labour Party,LAB,Woodside,Haringey,2
+E05013605,Green Party,GRE,Woodside,Haringey,1
+E05013604,Green Party,GRE,White Hart Lane,Haringey,2
+E05013604,Labour Party,LAB,White Hart Lane,Haringey,1
+E05013603,Green Party,GRE,West Green,Haringey,1
+E05013603,Labour Party,LAB,West Green,Haringey,2
+E05013602,Green Party,GRE,Tottenham Hale,Haringey,3
+E05013601,Green Party,GRE,Tottenham Central,Haringey,3
+E05013600,Green Party,GRE,Stroud Green,Haringey,3
+E05013597,Green Party,GRE,St Ann's,Haringey,2
+E05013599,Labour Party,LAB,South Tottenham,Haringey,3
+E05013598,Green Party,GRE,Seven Sisters,Haringey,2
+E05013596,Labour Party,LAB,Northumberland Park,Haringey,2
+E05013596,Green Party,GRE,Northumberland Park,Haringey,1
+E05013595,Green Party,GRE,Noel Park,Haringey,3
+E05013594,Liberal Democrats,LD,Muswell Hill,Haringey,2
+E05013593,Labour Party,LAB,Hornsey,Haringey,3
+E05013592,Liberal Democrats,LD,Highgate,Haringey,2
+E05013592,Green Party,GRE,Highgate,Haringey,1
+E05013591,Green Party,GRE,Hermitage and Gardens,Haringey,2
+E05013590,Green Party,GRE,Harringay,Haringey,3
+E05013589,Liberal Democrats,LD,Fortis Green,Haringey,1
+E05013589,Labour Party,LAB,Fortis Green,Haringey,2
+E05013588,Liberal Democrats,LD,Crouch End,Haringey,3
+E05013587,Labour Party,LAB,Bruce Castle,Haringey,2
+E05013587,Green Party,GRE,Bruce Castle,Haringey,1
+E05013586,Labour Party,LAB,Bounds Green,Haringey,2
+E05013585,Labour Party,LAB,Alexandra Park,Haringey,2
+E05013542,Conservative Party,CON,Belmont,Harrow,2
+E05013543,Conservative Party,CON,Canons,Harrow,2
+E05013544,Conservative Party,CON,Centenary,Harrow,3
+E05013545,Conservative Party,CON,Edgware,Harrow,3
+E05013546,Conservative Party,CON,Greenhill,Harrow,3
+E05013547,Conservative Party,CON,Harrow on the Hill,Harrow,2
+E05013548,Conservative Party,CON,Harrow Weald,Harrow,3
+E05013549,Conservative Party,CON,Hatch End,Harrow,2
+E05013550,Conservative Party,CON,Headstone,Harrow,3
+E05013551,Conservative Party,CON,Kenton East,Harrow,3
+E05013552,Conservative Party,CON,Kenton West,Harrow,2
+E05013553,Labour Party,LAB,Marlborough,Harrow,2
+E05013553,Arise,ARS,Marlborough,Harrow,1
+E05013554,Conservative Party,CON,North Harrow,Harrow,2
+E05013555,Conservative Party,CON,Pinner,Harrow,3
+E05013556,Conservative Party,CON,Pinner South,Harrow,3
+E05013557,Conservative Party,CON,Rayners Lane,Harrow,1
+E05013557,Labour Party,LAB,Rayners Lane,Harrow,1
+E05013558,Labour Party,LAB,Roxbourne,Harrow,2
+E05013559,Labour Party,LAB,Roxeth,Harrow,2
+E05013559,Conservative Party,CON,Roxeth,Harrow,1
+E05013560,Conservative Party,CON,Stanmore,Harrow,3
+E05013561,Labour Party,LAB,Wealdstone North,Harrow,1
+E05013561,Conservative Party,CON,Wealdstone North,Harrow,1
+E05013562,Labour Party,LAB,Wealdstone South,Harrow,2
+E05013563,Labour Party,LAB,West Harrow,Harrow,2
+E05013967,Labour Party,LAB,Beam Park,Havering,2
+E05013968,Residents' Association,REA,Cranham,Havering,3
+E05013969,Residents' Association,REA,Elm Park,Havering,3
+E05013970,Reform UK,RUK,Emerson Park,Havering,2
+E05013971,Reform UK,RUK,Gooshays,Havering,3
+E05013972,Residents' Association,REA,Hacton,Havering,1
+E05013972,Reform UK,RUK,Hacton,Havering,1
+E05013973,Residents' Association,REA,Harold Wood,Havering,3
+E05013974,Reform UK,RUK,Havering-atte-Bower,Havering,3
+E05013975,Reform UK,RUK,Heaton,Havering,3
+E05013976,Reform UK,RUK,Hylands and Harrow Lodge,Havering,3
+E05013977,Reform UK,RUK,Marshalls and Rise Park,Havering,3
+E05013978,Reform UK,RUK,Mawneys,Havering,3
+E05013979,Residents' Association,REA,Rainham and Wennington,Havering,1
+E05013979,Reform UK,RUK,Rainham and Wennington,Havering,2
+E05013980,Reform UK,RUK,Rush Green and Crowlands,Havering,3
+E05013984,Reform UK,RUK,South Hornchurch,Havering,2
+E05013985,Reform UK,RUK,Squirrels Heath,Havering,3
+E05013981,Reform UK,RUK,St Alban's,Havering,2
+E05013982,Reform UK,RUK,St Andrew's,Havering,3
+E05013983,Reform UK,RUK,St Edward's,Havering,3
+E05013986,Residents' Association,REA,Upminster,Havering,3
+E05013564,Labour Party,LAB,Belmore,Hillingdon,3
+E05013565,Conservative Party,CON,Charville,Hillingdon,2
+E05013566,Conservative Party,CON,Colham and Cowley,Hillingdon,3
+E05013567,Conservative Party,CON,Eastcote,Hillingdon,3
+E05013568,Conservative Party,CON,Harefield Village,Hillingdon,1
+E05013569,Labour Party,LAB,Hayes Town,Hillingdon,3
+E05013570,Labour Party,LAB,Heathrow Villages,Hillingdon,1
+E05013570,Reform UK,RUK,Heathrow Villages,Hillingdon,1
+E05013571,Conservative Party,CON,Hillingdon East,Hillingdon,3
+E05013572,Conservative Party,CON,Hillingdon West,Hillingdon,2
+E05013573,Conservative Party,CON,Ickenham and South Harefield,Hillingdon,3
+E05013574,Conservative Party,CON,Northwood,Hillingdon,2
+E05013575,Conservative Party,CON,Northwood Hills,Hillingdon,2
+E05013576,Labour Party,LAB,Pinkwell,Hillingdon,3
+E05013577,Conservative Party,CON,Ruislip,Hillingdon,3
+E05013578,Conservative Party,CON,Ruislip Manor,Hillingdon,2
+E05013579,Conservative Party,CON,South Ruislip,Hillingdon,3
+E05013580,Conservative Party,CON,Uxbridge,Hillingdon,3
+E05013581,Reform UK,RUK,West Drayton,Hillingdon,1
+E05013581,Green Party,GRE,West Drayton,Hillingdon,1
+E05013581,Labour Party,LAB,West Drayton,Hillingdon,1
+E05013582,Labour Party,LAB,Wood End,Hillingdon,3
+E05013583,Labour Party,LAB,Yeading,Hillingdon,2
+E05013584,Reform UK,RUK,Yiewsley,Hillingdon,2
+E05013606,Reform UK,RUK,Bedfont,Hounslow,2
+E05013606,Labour Party,LAB,Bedfont,Hounslow,1
+E05013607,Labour Party,LAB,Brentford East,Hounslow,2
+E05013608,Green Party,GRE,Brentford West,Hounslow,1
+E05013608,Labour Party,LAB,Brentford West,Hounslow,1
+E05013609,Conservative Party,CON,Chiswick Gunnersbury,Hounslow,3
+E05013610,Conservative Party,CON,Chiswick Homefields,Hounslow,3
+E05013611,Labour Party,LAB,Chiswick Riverside,Hounslow,1
+E05013611,Conservative Party,CON,Chiswick Riverside,Hounslow,1
+E05013611,Green Party,GRE,Chiswick Riverside,Hounslow,1
+E05013612,Conservative Party,CON,Cranford,Hounslow,2
+E05013612,Labour Party,LAB,Cranford,Hounslow,1
+E05013613,Labour Party,LAB,Feltham North,Hounslow,1
+E05013613,Reform UK,RUK,Feltham North,Hounslow,2
+E05013614,Labour Party,LAB,Feltham West,Hounslow,2
+E05013614,Reform UK,RUK,Feltham West,Hounslow,1
+E05013615,Reform UK,RUK,Hanworth Park,Hounslow,2
+E05013616,Reform UK,RUK,Hanworth Village,Hounslow,1
+E05013616,Labour Party,LAB,Hanworth Village,Hounslow,2
+E05013617,Conservative Party,CON,Heston Central,Hounslow,3
+E05013618,Green Party,GRE,Heston East,Hounslow,1
+E05013618,Labour Party,LAB,Heston East,Hounslow,2
+E05013619,Labour Party,LAB,Heston West,Hounslow,2
+E05013619,Conservative Party,CON,Heston West,Hounslow,1
+E05013620,Labour Party,LAB,Hounslow Central,Hounslow,3
+E05013621,Labour Party,LAB,Hounslow East,Hounslow,2
+E05013622,Labour Party,LAB,Hounslow Heath,Hounslow,2
+E05013622,Conservative Party,CON,Hounslow Heath,Hounslow,1
+E05013623,Labour Party,LAB,Hounslow South,Hounslow,3
+E05013624,Conservative Party,CON,Hounslow West,Hounslow,3
+E05013625,Labour Party,LAB,Isleworth,Hounslow,2
+E05013625,Liberal Democrats,LD,Isleworth,Hounslow,1
+E05013626,Labour Party,LAB,Osterley and Spring Grove,Hounslow,3
+E05013627,Labour Party,LAB,Syon and Brentford Lock,Hounslow,2
+E05013627,Brentford & Isleworth Independent,BII,Syon and Brentford Lock,Hounslow,1
+E05013697,Labour Party,LAB,Arsenal,Islington,1
+E05013697,Green Party,GRE,Arsenal,Islington,2
+E05013698,Labour Party,LAB,Barnsbury,Islington,3
+E05013699,Labour Party,LAB,Bunhill,Islington,3
+E05013700,Labour Party,LAB,Caledonian,Islington,3
+E05013701,Labour Party,LAB,Canonbury,Islington,2
+E05013701,Green Party,GRE,Canonbury,Islington,1
+E05013702,Green Party,GRE,Clerkenwell,Islington,2
+E05013702,Labour Party,LAB,Clerkenwell,Islington,1
+E05013703,Green Party,GRE,Finsbury Park,Islington,2
+E05013703,Labour Party,LAB,Finsbury Park,Islington,1
+E05013704,Green Party,GRE,Highbury,Islington,3
+E05013705,Labour Party,LAB,Hillrise,Islington,3
+E05013706,Labour Party,LAB,Holloway,Islington,3
+E05013707,Labour Party,LAB,Junction,Islington,3
+E05013708,Labour Party,LAB,Laycock,Islington,3
+E05013709,Green Party,GRE,Mildmay,Islington,3
+E05013710,Labour Party,LAB,St Mary's and St James',Islington,3
+E05013711,Labour Party,LAB,St Peter's and Canalside,Islington,3
+E05013712,Green Party,GRE,Tollington,Islington,3
+E05013713,Green Party,GRE,Tufnell Park,Islington,3
+E05009388,Conservative Party,CON,Abingdon,Kensington and Chelsea,3
+E05009389,Conservative Party,CON,Brompton and Hans Town,Kensington and Chelsea,3
+E05009390,Conservative Party,CON,Campden,Kensington and Chelsea,3
+E05009391,Conservative Party,CON,Chelsea Riverside,Kensington and Chelsea,3
+E05009392,Labour Party,LAB,Colville,Kensington and Chelsea,3
+E05009393,Conservative Party,CON,Courtfield,Kensington and Chelsea,3
+E05009394,Labour Party,LAB,Dalgarno,Kensington and Chelsea,2
+E05009395,Liberal Democrats,LD,Earl's Court,Kensington and Chelsea,3
+E05009396,Labour Party,LAB,Golborne,Kensington and Chelsea,3
+E05009397,Conservative Party,CON,Holland,Kensington and Chelsea,3
+E05009398,Conservative Party,CON,Norland,Kensington and Chelsea,2
+E05009399,Labour Party,LAB,Notting Dale,Kensington and Chelsea,3
+E05009400,Conservative Party,CON,Pembridge,Kensington and Chelsea,2
+E05009401,Conservative Party,CON,Queen's Gate,Kensington and Chelsea,3
+E05009402,Conservative Party,CON,Redcliffe,Kensington and Chelsea,3
+E05009403,Conservative Party,CON,Royal Hospital,Kensington and Chelsea,3
+E05009404,Labour Party,LAB,St Helen's,Kensington and Chelsea,2
+E05009405,Conservative Party,CON,Stanley,Kensington and Chelsea,3
+E05013928,Liberal Democrats,LD,Alexandra,Kingston upon Thames,2
+E05013929,Liberal Democrats,LD,Berrylands,Kingston upon Thames,2
+E05013930,Liberal Democrats,LD,Canbury Gardens,Kingston upon Thames,2
+E05013931,Liberal Democrats,LD,Chessington South and Malden Rushett,Kingston upon Thames,3
+E05013932,Conservative Party,CON,Coombe Hill,Kingston upon Thames,2
+E05013933,Liberal Democrats,LD,Coombe Vale,Kingston upon Thames,3
+E05013934,Residents' Association,REA,Green Lane and St James,Kingston upon Thames,2
+E05013935,Liberal Democrats,LD,Hook and Chessington North,Kingston upon Thames,3
+E05013936,Liberal Democrats,LD,King George's and Sunray,Kingston upon Thames,2
+E05013937,Liberal Democrats,LD,Kingston Gate,Kingston upon Thames,3
+E05013938,Liberal Democrats,LD,Kingston Town,Kingston upon Thames,3
+E05013939,Liberal Democrats,LD,Motspur Park and Old Malden East,Kingston upon Thames,2
+E05013940,Liberal Democrats,LD,New Malden Village,Kingston upon Thames,3
+E05013941,Liberal Democrats,LD,Norbiton,Kingston upon Thames,3
+E05013942,Liberal Democrats,LD,Old Malden,Kingston upon Thames,2
+E05013943,Liberal Democrats,LD,St Mark's and Seething Wells,Kingston upon Thames,3
+E05013944,Liberal Democrats,LD,Surbiton Hill,Kingston upon Thames,3
+E05013945,Liberal Democrats,LD,Tolworth,Kingston upon Thames,3
+E05013946,Liberal Democrats,LD,Tudor,Kingston upon Thames,2
+E05014095,Green Party,GRE,Brixton Acre Lane,Lambeth,2
+E05014095,Labour Party,LAB,Brixton Acre Lane,Lambeth,1
+E05014096,Labour Party,LAB,Brixton North,Lambeth,2
+E05014096,Green Party,GRE,Brixton North,Lambeth,1
+E05014097,Green Party,GRE,Brixton Rush Common,Lambeth,3
+E05014098,Green Party,GRE,Brixton Windrush,Lambeth,2
+E05014099,Liberal Democrats,LD,Clapham Common and Abbeville,Lambeth,2
+E05014100,Labour Party,LAB,Clapham East,Lambeth,1
+E05014100,Green Party,GRE,Clapham East,Lambeth,1
+E05014101,Labour Party,LAB,Clapham Park,Lambeth,2
+E05014101,Green Party,GRE,Clapham Park,Lambeth,1
+E05014102,Labour Party,LAB,Clapham Town,Lambeth,2
+E05014102,Green Party,GRE,Clapham Town,Lambeth,1
+E05014103,Green Party,GRE,Gipsy Hill,Lambeth,2
+E05014104,Green Party,GRE,Herne Hill and Loughborough Junction,Lambeth,3
+E05014105,Labour Party,LAB,Kennington,Lambeth,3
+E05014106,Green Party,GRE,Knight's Hill,Lambeth,3
+E05014107,Green Party,GRE,Myatt's Fields,Lambeth,1
+E05014107,Labour Party,LAB,Myatt's Fields,Lambeth,1
+E05014108,Labour Party,LAB,Oval,Lambeth,3
+E05014109,Green Party,GRE,St Martin's,Lambeth,1
+E05014109,Labour Party,LAB,St Martin's,Lambeth,1
+E05014110,Green Party,GRE,Stockwell East,Lambeth,1
+E05014110,Liberal Democrats,LD,Stockwell East,Lambeth,1
+E05014111,Labour Party,LAB,Stockwell West and Larkhall,Lambeth,3
+E05014112,Labour Party,LAB,Streatham Common and Vale,Lambeth,3
+E05014113,Green Party,GRE,Streatham Hill East,Lambeth,2
+E05014114,Liberal Democrats,LD,Streatham Hill West and Thornton,Lambeth,2
+E05014115,Green Party,GRE,Streatham St Leonard's,Lambeth,3
+E05014116,Liberal Democrats,LD,Streatham Wells,Lambeth,2
+E05014117,Green Party,GRE,Vauxhall,Lambeth,1
+E05014117,Labour Party,LAB,Vauxhall,Lambeth,2
+E05014118,Labour Party,LAB,Waterloo and South Bank,Lambeth,1
+E05014118,Liberal Democrats,LD,Waterloo and South Bank,Lambeth,1
+E05014119,Green Party,GRE,West Dulwich,Lambeth,1
+E05014119,Labour Party,LAB,West Dulwich,Lambeth,1
+E05014053,Labour Party,LAB,Abbey,Barking and Dagenham,2
+E05014054,Labour Party,LAB,Alibon,Barking and Dagenham,2
+E05014055,Labour Party,LAB,Barking Riverside,Barking and Dagenham,3
+E05014056,Labour Party,LAB,Beam,Barking and Dagenham,3
+E05014057,Labour Party,LAB,Becontree,Barking and Dagenham,2
+E05014058,Labour Party,LAB,Chadwell Heath,Barking and Dagenham,3
+E05014059,Reform UK,RUK,Eastbrook and Rush Green,Barking and Dagenham,2
+E05014060,Labour Party,LAB,Eastbury,Barking and Dagenham,3
+E05014061,Green Party,GRE,Gascoigne,Barking and Dagenham,2
+E05014061,Labour Party,LAB,Gascoigne,Barking and Dagenham,1
+E05014062,Reform UK,RUK,Goresbrook,Barking and Dagenham,3
+E05014063,Labour Party,LAB,Heath,Barking and Dagenham,2
+E05014064,Green Party,GRE,Longbridge,Barking and Dagenham,2
+E05014064,Labour Party,LAB,Longbridge,Barking and Dagenham,1
+E05014065,Labour Party,LAB,Mayesbrook,Barking and Dagenham,3
+E05014066,Labour Party,LAB,Northbury,Barking and Dagenham,3
+E05014067,Reform UK,RUK,Parsloes,Barking and Dagenham,3
+E05014068,Labour Party,LAB,Thames View,Barking and Dagenham,2
+E05014069,Labour Party,LAB,Valence,Barking and Dagenham,2
+E05014069,Reform UK,RUK,Valence,Barking and Dagenham,1
+E05014070,Labour Party,LAB,Village,Barking and Dagenham,3
+E05014071,Labour Party,LAB,Whalebone,Barking and Dagenham,3
+E05013714,Labour Party,LAB,Bellingham,Lewisham,1
+E05013714,Green Party,GRE,Bellingham,Lewisham,1
+E05013715,Green Party,GRE,Blackheath,Lewisham,2
+E05013715,Labour Party,LAB,Blackheath,Lewisham,1
+E05013716,Green Party,GRE,Brockley,Lewisham,3
+E05013717,Green Party,GRE,Catford South,Lewisham,1
+E05013717,Labour Party,LAB,Catford South,Lewisham,2
+E05013718,Green Party,GRE,Crofton Park,Lewisham,3
+E05013719,Green Party,GRE,Deptford,Lewisham,3
+E05013720,Labour Party,LAB,Downham,Lewisham,3
+E05013721,Green Party,GRE,Evelyn,Lewisham,3
+E05013722,Green Party,GRE,Forest Hill,Lewisham,2
+E05013722,Labour Party,LAB,Forest Hill,Lewisham,1
+E05013723,Labour Party,LAB,Grove Park,Lewisham,2
+E05013723,Green Party,GRE,Grove Park,Lewisham,1
+E05013724,Labour Party,LAB,Hither Green,Lewisham,2
+E05013724,Green Party,GRE,Hither Green,Lewisham,1
+E05013725,Green Party,GRE,Ladywell,Lewisham,3
+E05013726,Labour Party,LAB,Lee Green,Lewisham,2
+E05013726,Green Party,GRE,Lee Green,Lewisham,1
+E05013727,Green Party,GRE,Lewisham Central,Lewisham,2
+E05013728,Green Party,GRE,New Cross Gate,Lewisham,2
+E05013729,Green Party,GRE,Perry Vale,Lewisham,3
+E05013730,Green Party,GRE,Rushey Green,Lewisham,3
+E05013731,Green Party,GRE,Sydenham,Lewisham,3
+E05013732,Green Party,GRE,Telegraph Hill,Lewisham,3
+E05013810,Liberal Democrats,LD,Abbey,Merton,3
+E05013811,Liberal Democrats,LD,Cannon Hill,Merton,3
+E05013812,Labour Party,LAB,Colliers Wood,Merton,3
+E05013813,Labour Party,LAB,Cricket Green,Merton,3
+E05013814,Labour Party,LAB,Figge's Marsh,Merton,3
+E05013815,Labour Party,LAB,Graveney,Merton,3
+E05013816,Liberal Democrats,LD,Hillside,Merton,1
+E05013816,Conservative Party,CON,Hillside,Merton,1
+E05013817,Labour Party,LAB,Lavender Fields,Merton,3
+E05013818,Labour Party,LAB,Longthornton,Merton,3
+E05013819,Labour Party,LAB,Lower Morden,Merton,3
+E05013820,Residents' Association,REA,Merton Park,Merton,2
+E05013821,Labour Party,LAB,Pollards Hill,Merton,3
+E05013822,Labour Party,LAB,Ravensbury,Merton,3
+E05013823,Liberal Democrats,LD,Raynes Park,Merton,3
+E05013824,Labour Party,LAB,St Helier,Merton,3
+E05013825,Conservative Party,CON,Village,Merton,3
+E05013826,Labour Party,LAB,Wandle,Merton,2
+E05013827,Liberal Democrats,LD,West Barnes,Merton,3
+E05013828,Liberal Democrats,LD,Wimbledon Park,Merton,3
+E05013829,Liberal Democrats,LD,Wimbledon Town and Dundonald,Merton,3
+E05013904,Labour Party,LAB,Beckton,Newham,3
+E05013905,Newham Independents Party,NIP,Boleyn,Newham,3
+E05013906,Labour Party,LAB,Canning Town North,Newham,2
+E05013906,Green Party,GRE,Canning Town North,Newham,1
+E05013907,Labour Party,LAB,Canning Town South,Newham,3
+E05013908,Labour Party,LAB,Custom House,Newham,3
+E05013909,Newham Independents Party,NIP,East Ham,Newham,3
+E05013910,Labour Party,LAB,East Ham South,Newham,3
+E05013911,Green Party,GRE,Forest Gate North,Newham,1
+E05013911,Labour Party,LAB,Forest Gate North,Newham,1
+E05013912,Green Party,GRE,Forest Gate South,Newham,3
+E05013913,Newham Independents Party,NIP,Green Street East,Newham,2
+E05013913,Labour Party,LAB,Green Street East,Newham,1
+E05013914,Newham Independents Party,NIP,Green Street West,Newham,3
+E05013915,Newham Independents Party,NIP,Little Ilford,Newham,3
+E05013916,Labour Party,LAB,Manor Park,Newham,3
+E05013917,Green Party,GRE,Maryland,Newham,2
+E05013918,Newham Independents Party,NIP,Plaistow North,Newham,2
+E05013918,Labour Party,LAB,Plaistow North,Newham,1
+E05013919,Newham Independents Party,NIP,Plaistow South,Newham,3
+E05013920,Labour Party,LAB,Plaistow West and Canning Town East,Newham,3
+E05013921,Newham Independents Party,NIP,Plashet,Newham,2
+E05013922,Labour Party,LAB,Royal Albert,Newham,1
+E05013922,Green Party,GRE,Royal Albert,Newham,1
+E05013923,Green Party,GRE,Royal Victoria,Newham,2
+E05013924,Green Party,GRE,Stratford,Newham,3
+E05013925,Green Party,GRE,Stratford Olympic Park,Newham,2
+E05013926,Newham Independents Party,NIP,Wall End,Newham,3
+E05013927,Labour Party,LAB,West Ham,Newham,2
+E05013927,Green Party,GRE,West Ham,Newham,1
+E05011234,Labour Party,LAB,Aldborough,Redbridge,3
+E05011235,Labour Party,LAB,Barkingside,Redbridge,3
+E05011236,Conservative Party,CON,Bridge,Redbridge,3
+E05011237,Labour Party,LAB,Chadwell,Redbridge,1
+E05011237,Redbridge Independents,RIN,Chadwell,Redbridge,1
+E05011237,Green Party,GRE,Chadwell,Redbridge,1
+E05011238,Labour Party,LAB,Churchfields,Redbridge,3
+E05011239,Labour Party,LAB,Clayhall,Redbridge,3
+E05011240,Labour Party,LAB,Clementswood,Redbridge,2
+E05011240,Redbridge Independents,RIN,Clementswood,Redbridge,1
+E05011241,Redbridge Independents,RIN,Cranbrook,Redbridge,2
+E05011241,Labour Party,LAB,Cranbrook,Redbridge,1
+E05011242,Labour Party,LAB,Fairlop,Redbridge,3
+E05011243,Labour Party,LAB,Fullwell,Redbridge,3
+E05011244,Labour Party,LAB,Goodmayes,Redbridge,3
+E05011245,Labour Party,LAB,Hainault,Redbridge,2
+E05011245,Reform UK,RUK,Hainault,Redbridge,1
+E05011246,Labour Party,LAB,Ilford Town,Redbridge,1
+E05011246,Redbridge Independents,RIN,Ilford Town,Redbridge,1
+E05011247,Labour Party,LAB,Loxford,Redbridge,3
+E05011248,Labour Party,LAB,Mayfield,Redbridge,2
+E05011248,Redbridge Independents,RIN,Mayfield,Redbridge,1
+E05011249,Conservative Party,CON,Monkhams,Redbridge,2
+E05011250,Labour Party,LAB,Newbury,Redbridge,3
+E05011251,Redbridge Independents,RIN,Seven Kings,Redbridge,1
+E05011251,Labour Party,LAB,Seven Kings,Redbridge,2
+E05011252,Labour Party,LAB,South Woodford,Redbridge,1
+E05011252,Green Party,GRE,South Woodford,Redbridge,2
+E05011253,Redbridge Independents,RIN,Valentines,Redbridge,2
+E05011253,Labour Party,LAB,Valentines,Redbridge,1
+E05011254,Labour Party,LAB,Wanstead Park,Redbridge,1
+E05011254,Green Party,GRE,Wanstead Park,Redbridge,1
+E05011255,Labour Party,LAB,Wanstead Village,Redbridge,2
+E05011255,Green Party,GRE,Wanstead Village,Redbridge,1
+E05013774,Liberal Democrats,LD,Barnes,Richmond upon Thames,3
+E05013775,Liberal Democrats,LD,East Sheen,Richmond upon Thames,3
+E05013776,Liberal Democrats,LD,Fulwell and Hampton Hill,Richmond upon Thames,3
+E05013777,Liberal Democrats,LD,"Ham, Petersham and Richmond Riverside",Richmond upon Thames,3
+E05013778,Liberal Democrats,LD,Hampton,Richmond upon Thames,3
+E05013779,Liberal Democrats,LD,Hampton North,Richmond upon Thames,3
+E05013780,Liberal Democrats,LD,Hampton Wick and South Teddington,Richmond upon Thames,3
+E05013781,Liberal Democrats,LD,Heathfield,Richmond upon Thames,3
+E05013782,Liberal Democrats,LD,Kew,Richmond upon Thames,3
+E05013783,Liberal Democrats,LD,Mortlake and Barnes Common,Richmond upon Thames,3
+E05013784,Liberal Democrats,LD,North Richmond,Richmond upon Thames,3
+E05013786,Liberal Democrats,LD,South Richmond,Richmond upon Thames,3
+E05013787,Liberal Democrats,LD,South Twickenham,Richmond upon Thames,3
+E05013785,Liberal Democrats,LD,St Margarets and North Twickenham,Richmond upon Thames,3
+E05013788,Liberal Democrats,LD,Teddington,Richmond upon Thames,3
+E05013789,Liberal Democrats,LD,Twickenham Riverside,Richmond upon Thames,3
+E05013790,Liberal Democrats,LD,West Twickenham,Richmond upon Thames,3
+E05013791,Liberal Democrats,LD,Whitton,Richmond upon Thames,3
+E05011095,Liberal Democrats,LD,Borough and Bankside,Southwark,3
+E05011096,Labour Party,LAB,Camberwell Green,Southwark,3
+E05011097,Labour Party,LAB,Champion Hill,Southwark,2
+E05011098,Green Party,GRE,Chaucer,Southwark,3
+E05011099,Labour Party,LAB,Dulwich Hill,Southwark,1
+E05011099,Green Party,GRE,Dulwich Hill,Southwark,1
+E05011100,Labour Party,LAB,Dulwich Village,Southwark,2
+E05011101,Labour Party,LAB,Dulwich Wood,Southwark,2
+E05011102,Labour Party,LAB,Faraday,Southwark,3
+E05011103,Green Party,GRE,Goose Green,Southwark,3
+E05011104,Labour Party,LAB,London Bridge and West Bermondsey,Southwark,2
+E05011104,Liberal Democrats,LD,London Bridge and West Bermondsey,Southwark,1
+E05011105,Labour Party,LAB,Newington,Southwark,3
+E05011106,Liberal Democrats,LD,North Bermondsey,Southwark,3
+E05011107,Green Party,GRE,North Walworth,Southwark,3
+E05011108,Green Party,GRE,Nunhead and Queen's Road,Southwark,3
+E05011109,Labour Party,LAB,Old Kent Road,Southwark,2
+E05011109,Green Party,GRE,Old Kent Road,Southwark,1
+E05011110,Green Party,GRE,Peckham,Southwark,2
+E05011110,Labour Party,LAB,Peckham,Southwark,1
+E05011111,Labour Party,LAB,Peckham Rye,Southwark,2
+E05011112,Green Party,GRE,Rotherhithe,Southwark,2
+E05011112,Labour Party,LAB,Rotherhithe,Southwark,1
+E05011113,Labour Party,LAB,Rye Lane,Southwark,2
+E05011113,Green Party,GRE,Rye Lane,Southwark,1
+E05011116,Labour Party,LAB,South Bermondsey,Southwark,3
+E05011114,Liberal Democrats,LD,St George's,Southwark,2
+E05011115,Green Party,GRE,St Giles,Southwark,3
+E05011117,Liberal Democrats,LD,Surrey Docks,Southwark,3
+E05013754,Independent,IND,Beddington,Sutton,1
+E05013754,Liberal Democrats,LD,Beddington,Sutton,2
+E05013755,Liberal Democrats,LD,Belmont,Sutton,3
+E05013756,Liberal Democrats,LD,Carshalton Central,Sutton,3
+E05013757,Liberal Democrats,LD,Carshalton South and Clockhouse,Sutton,3
+E05013758,Liberal Democrats,LD,Cheam,Sutton,3
+E05013759,Liberal Democrats,LD,Hackbridge,Sutton,1
+E05013759,Labour Party,LAB,Hackbridge,Sutton,1
+E05013760,Liberal Democrats,LD,North Cheam,Sutton,3
+E05013763,Liberal Democrats,LD,South Beddington and Roundshaw,Sutton,3
+E05013761,Liberal Democrats,LD,St Helier East,Sutton,2
+E05013762,Liberal Democrats,LD,St Helier West,Sutton,1
+E05013762,Reform UK,RUK,St Helier West,Sutton,2
+E05013764,Liberal Democrats,LD,Stonecot,Sutton,2
+E05013765,Liberal Democrats,LD,Sutton Central,Sutton,3
+E05013766,Liberal Democrats,LD,Sutton North,Sutton,3
+E05013767,Liberal Democrats,LD,Sutton South,Sutton,3
+E05013768,Liberal Democrats,LD,Sutton West and East Cheam,Sutton,3
+E05013769,Liberal Democrats,LD,The Wrythe,Sutton,3
+E05013770,Liberal Democrats,LD,Wallington North,Sutton,3
+E05013771,Liberal Democrats,LD,Wallington South,Sutton,3
+E05013772,Liberal Democrats,LD,Worcester Park North,Sutton,2
+E05013773,Liberal Democrats,LD,Worcester Park South,Sutton,2
+E05009317,Aspire,ASP,Bethnal Green East,Tower Hamlets,3
+E05009331,Aspire,ASP,Bethnal Green West,Tower Hamlets,3
+E05009318,Aspire,ASP,Blackwall and Cubitt Town,Tower Hamlets,3
+E05009319,Green Party,GRE,Bow East,Tower Hamlets,3
+E05009320,Green Party,GRE,Bow West,Tower Hamlets,2
+E05009321,Aspire,ASP,Bromley North,Tower Hamlets,2
+E05009322,Labour Party,LAB,Bromley South,Tower Hamlets,1
+E05009322,Aspire,ASP,Bromley South,Tower Hamlets,1
+E05009323,Aspire,ASP,Canary Wharf,Tower Hamlets,2
+E05009324,Conservative Party,CON,Island Gardens,Tower Hamlets,1
+E05009324,Aspire,ASP,Island Gardens,Tower Hamlets,1
+E05009325,Aspire,ASP,Lansbury,Tower Hamlets,3
+E05009326,Labour Party,LAB,Limehouse,Tower Hamlets,1
+E05009327,Aspire,ASP,Mile End,Tower Hamlets,3
+E05009328,Aspire,ASP,Poplar,Tower Hamlets,1
+E05009329,Aspire,ASP,St Dunstan's,Tower Hamlets,2
+E05009330,Labour Party,LAB,St Katharine's and Wapping,Tower Hamlets,2
+E05009332,Aspire,ASP,Shadwell,Tower Hamlets,1
+E05009332,Liberal Democrats,LD,Shadwell,Tower Hamlets,1
+E05009333,Aspire,ASP,Spitalfields and Banglatown,Tower Hamlets,2
+E05009334,Aspire,ASP,Stepney Green,Tower Hamlets,2
+E05009335,Aspire,ASP,Weavers,Tower Hamlets,1
+E05009335,Labour Party,LAB,Weavers,Tower Hamlets,1
+E05009336,Aspire,ASP,Whitechapel,Tower Hamlets,3
+E05013882,Green Party,GRE,Cann Hall,Waltham Forest,3
+E05013883,Green Party,GRE,Cathall,Waltham Forest,1
+E05013883,Labour Party,LAB,Cathall,Waltham Forest,1
+E05013884,Green Party,GRE,Chapel End,Waltham Forest,3
+E05013885,Conservative Party,CON,Chingford Green,Waltham Forest,3
+E05013886,Conservative Party,CON,Endlebury,Waltham Forest,2
+E05013887,Green Party,GRE,Forest,Waltham Forest,3
+E05013888,Green Party,GRE,Grove Green,Waltham Forest,3
+E05013889,Labour Party,LAB,Hale End and Highams Park South,Waltham Forest,2
+E05013890,Conservative Party,CON,Hatch Lane and Highams Park North,Waltham Forest,3
+E05013891,Green Party,GRE,High Street,Waltham Forest,3
+E05013892,Green Party,GRE,Higham Hill,Waltham Forest,2
+E05013892,Labour Party,LAB,Higham Hill,Waltham Forest,1
+E05013893,Labour Party,LAB,Hoe Street,Waltham Forest,3
+E05013894,Conservative Party,CON,Larkswood,Waltham Forest,3
+E05013895,Green Party,GRE,Lea Bridge,Waltham Forest,3
+E05013896,Green Party,GRE,Leyton,Waltham Forest,3
+E05013897,Labour Party,LAB,Leytonstone,Waltham Forest,1
+E05013897,Green Party,GRE,Leytonstone,Waltham Forest,2
+E05013898,Labour Party,LAB,Markhouse,Waltham Forest,1
+E05013898,Green Party,GRE,Markhouse,Waltham Forest,1
+E05013899,Green Party,GRE,St James,Waltham Forest,3
+E05013900,Labour Party,LAB,Upper Walthamstow,Waltham Forest,2
+E05013901,Conservative Party,CON,Valley,Waltham Forest,3
+E05013902,Labour Party,LAB,William Morris,Waltham Forest,2
+E05013902,Green Party,GRE,William Morris,Waltham Forest,1
+E05013903,Labour Party,LAB,Wood Street,Waltham Forest,2
+E05014009,Conservative Party,CON,Balham,Wandsworth,2
+E05014009,Labour Party,LAB,Balham,Wandsworth,1
+E05014010,Labour Party,LAB,Battersea Park,Wandsworth,2
+E05014010,Conservative Party,CON,Battersea Park,Wandsworth,1
+E05014011,Labour Party,LAB,East Putney,Wandsworth,1
+E05014011,Conservative Party,CON,East Putney,Wandsworth,2
+E05014012,Labour Party,LAB,Falconbrook,Wandsworth,2
+E05014013,Labour Party,LAB,Furzedown,Wandsworth,3
+E05014014,Conservative Party,CON,Lavender,Wandsworth,2
+E05014015,Conservative Party,CON,Nine Elms,Wandsworth,2
+E05014016,Conservative Party,CON,Northcote,Wandsworth,2
+E05014017,Labour Party,LAB,Roehampton,Wandsworth,3
+E05014019,Labour Party,LAB,Shaftesbury and Queenstown,Wandsworth,3
+E05014020,Labour Party,LAB,South Balham,Wandsworth,2
+E05014021,Conservative Party,CON,Southfields,Wandsworth,2
+E05014018,Conservative Party,CON,St Mary's,Wandsworth,3
+E05014022,Conservative Party,CON,Thamesfield,Wandsworth,3
+E05014023,Labour Party,LAB,Tooting Bec,Wandsworth,3
+E05014024,Labour Party,LAB,Tooting Broadway,Wandsworth,3
+E05014025,Labour Party,LAB,Trinity,Wandsworth,1
+E05014025,Conservative Party,CON,Trinity,Wandsworth,1
+E05014026,Labour Party,LAB,Wandle,Wandsworth,1
+E05014026,Conservative Party,CON,Wandle,Wandsworth,1
+E05014027,Conservative Party,CON,Wandsworth Common,Wandsworth,3
+E05014028,Labour Party,LAB,Wandsworth Town,Wandsworth,2
+E05014028,Conservative Party,CON,Wandsworth Town,Wandsworth,1
+E05014029,Independent,IND,West Hill,Wandsworth,1
+E05014029,Labour Party,LAB,West Hill,Wandsworth,1
+E05014029,Conservative Party,CON,West Hill,Wandsworth,1
+E05014030,Conservative Party,CON,West Putney,Wandsworth,3
+E05013792,Conservative Party,CON,Abbey Road,Westminster,3
+E05013793,Conservative Party,CON,Bayswater,Westminster,2
+E05013793,Labour Party,LAB,Bayswater,Westminster,1
+E05013794,Labour Party,LAB,Church Street,Westminster,3
+E05013795,Labour Party,LAB,Harrow Road,Westminster,3
+E05013796,Conservative Party,CON,Hyde Park,Westminster,2
+E05013796,Labour Party,LAB,Hyde Park,Westminster,1
+E05013797,Conservative Party,CON,Knightsbridge and Belgravia,Westminster,3
+E05013798,Labour Party,LAB,Lancaster Gate,Westminster,2
+E05013798,Conservative Party,CON,Lancaster Gate,Westminster,1
+E05013799,Conservative Party,CON,Little Venice,Westminster,3
+E05013800,Labour Party,LAB,Maida Vale,Westminster,3
+E05013801,Conservative Party,CON,Marylebone,Westminster,3
+E05013802,Conservative Party,CON,Pimlico North,Westminster,3
+E05013803,Labour Party,LAB,Pimlico South,Westminster,3
+E05013804,Labour Party,LAB,Queen's Park,Westminster,3
+E05013805,Conservative Party,CON,Regent's Park,Westminster,3
+E05013806,Conservative Party,CON,St James's,Westminster,3
+E05013807,Conservative Party,CON,Vincent Square,Westminster,3
+E05013808,Conservative Party,CON,West End,Westminster,3
+E05013809,Labour Party,LAB,Westbourne,Westminster,3

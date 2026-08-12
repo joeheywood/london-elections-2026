@@ -97,30 +97,30 @@ latest_wards <- latest_wards %>%
          
          
 
-# for(br in unique(latest_wards$borough)) {
-#   print(glue("Doing {br}"))
-#   wb <- loadWorkbook("borough_template.xlsx")
-#   bdat <- latest_wards %>% filter(borough == br)
-#   sheets <- c()
-#   
-#   for(i in 1:nrow(bdat)) {
-#     sheetnm <- str_trunc(bdat$ward[i], 14, side = "right")
-#     
-#     if(sheetnm %in% sheets) {
-#       sheetnm <- str_trunc(bdat$ward[i], 19, side = "right")
-#     } 
-#     sheets <- c(sheets, sheetnm)
-#     
-#     cloneWorksheet(wb, sheetnm, "1")
-#     writeData(wb, sheetnm, br, startCol = 1, startRow = 3)
-#     writeData(wb, sheetnm, br, startCol = 1, startRow = 3)
-#     writeData(wb, sheetnm, c("7 May 2026", bdat$ward[i], bdat$councillors[i]), 
-#               startCol = 7, startRow = 4)
-#     setColWidths(wb, sheetnm, 8, "auto")
-#     showGridLines(wb, sheetnm, FALSE)
-#   }
-#   
-#   removeWorksheet(wb, 1)
-#   activeSheet(wb) <- 1
-#   saveWorkbook(wb, glue("Ward Forms/{br} local results form.xlsx"), overwrite = TRUE)
-# }
+for(br in unique(latest_wards$borough)) {
+  print(glue("Doing {br}"))
+  wb <- loadWorkbook("borough_template.xlsx")
+  bdat <- latest_wards %>% filter(borough == br)
+  sheets <- c()
+  
+  for(i in 1:nrow(bdat)) {
+    sheetnm <- str_trunc(bdat$ward[i], 14, side = "right")
+    
+    if(sheetnm %in% sheets) {
+      sheetnm <- str_trunc(bdat$ward[i], 19, side = "right")
+    } 
+    sheets <- c(sheets, sheetnm)
+    
+    cloneWorksheet(wb, sheetnm, "1")
+    writeData(wb, sheetnm, br, startCol = 1, startRow = 3)
+    writeData(wb, sheetnm, br, startCol = 1, startRow = 3)
+    writeData(wb, sheetnm, c("7 May 2026", bdat$ward[i], bdat$councillors[i]), 
+              startCol = 7, startRow = 4)
+    setColWidths(wb, sheetnm, 8, "auto")
+    showGridLines(wb, sheetnm, FALSE)
+  }
+  
+  removeWorksheet(wb, 1)
+  activeSheet(wb) <- 1
+  saveWorkbook(wb, glue("Ward Forms/{br} local results form.xlsx"), overwrite = TRUE)
+}

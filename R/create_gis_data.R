@@ -149,12 +149,6 @@ create_borough_political_control <- function() {
   )
   
   # Run the borough-control calculation once for each unique borough.
-  #
-  # `map_df()`:
-  #   - takes each borough name as `.x`;
-  #   - passes that borough to `calculate_borough_control()`;
-  #   - combines the resulting data frames into one data frame.
-  #
   # The result should therefore contain one row per borough.
   b_cntrl <- map_df(
     unique(candidates_all$LAD22NM),
@@ -262,9 +256,9 @@ create_turnout_map <- function() {
   # `wd22cd` is the key that allows this data to be joined to the ward
   # geometry, while `adj_turnout` is the value used to colour the map.
   write_csv(
-    election_stats |>
+    df |>
       select(wd22cd, ward, LAD22NM, turnout_26 = adj_turnout, turnout_22),
-    file = "data/gis/turnout.csv"
+    file = "output/3_turnout_2026_data.csv"
   )
 }
 
@@ -296,10 +290,7 @@ create_turnout_map <- function() {
 # `.x` from map_df() is passed in as `borough`.
 # -----------------------------------------------------------------------------
 
-calculate_borough_control <- function(
-    borough,
-    candidates_all
-) {
+calculate_borough_control <- function( borough, candidates_all) {
   
   # Find the local authority code associated with this borough.
   #
@@ -510,6 +501,13 @@ calculate_to_ward <- function() {
   
   # ydat is returned implicitly.
   ydat
+}
+
+
+calculate_to_ward_2022 <- function() {
+  cnd22 <- read_csv("data/candidate_level_cleaned_2022.csv")
+  prty22 <- read_csv("data/party_lookup.csv")
+  cnd22$party %in% prty22$ward_party_name %>% table()
 }
 
 

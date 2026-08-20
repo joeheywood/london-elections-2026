@@ -58,7 +58,7 @@ ingest_geo <- function() {
 ingest_party_lkp <- function() {
   prty <- read_csv("data/party_lookup.csv")
   cn <- RSQLite::dbConnect(SQLite(), "data/elections_2026.sqlite")
-  dbWriteTable(cn, "party_lookup", prty)
+  dbWriteTable(cn, "party_lookup", prty, overwrite = TRUE)
   dbDisconnect(cn)
 }
 

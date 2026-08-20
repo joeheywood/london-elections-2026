@@ -7,13 +7,13 @@ library(purrr)
 library(readr)
 
 create_lookup_from_db <- function(fl) {
-  dbfl <- "~/Downloads/elections.sqlite"
+  dbfl <- "elections_2022.sqlite"
   
   cn <- RSQLite::dbConnect(SQLite(),dbfl)
   # dbListTables(cn)
   
   # dbGetQuery(cn, "select * from election_candidates limit 10")
-  # dbGetQuery(cn, "select * from election_stats limit 10")
+  dbGetQuery(cn, "select * from election_stats limit 10")
   
   lkp <- dbGetQuery(cn, "select * from party_lookup")
   # write_csv(lkp, "lookup.csv")

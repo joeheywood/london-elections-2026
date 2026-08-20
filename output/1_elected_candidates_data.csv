@@ -1,0 +1,680 @@
+wd22cd,ward,LAD22NM,LAB,CON,GRE,RUK,LD,REA,IND,ASP
+E05013628,Barnet Vale,Barnet,2,1,NA,NA,NA,NA,NA,NA
+E05013629,Brunswick Park,Barnet,NA,3,NA,NA,NA,NA,NA,NA
+E05013630,Burnt Oak,Barnet,3,NA,NA,NA,NA,NA,NA,NA
+E05013631,Childs Hill,Barnet,NA,3,NA,NA,NA,NA,NA,NA
+E05013632,Colindale North,Barnet,2,NA,NA,NA,NA,NA,NA,NA
+E05013633,Colindale South,Barnet,3,NA,NA,NA,NA,NA,NA,NA
+E05013634,Cricklewood,Barnet,2,NA,NA,NA,NA,NA,NA,NA
+E05013635,East Barnet,Barnet,2,1,NA,NA,NA,NA,NA,NA
+E05013636,East Finchley,Barnet,3,NA,NA,NA,NA,NA,NA,NA
+E05013637,Edgware,Barnet,NA,3,NA,NA,NA,NA,NA,NA
+E05013638,Edgwarebury,Barnet,NA,2,NA,NA,NA,NA,NA,NA
+E05013639,Finchley Church End,Barnet,NA,3,NA,NA,NA,NA,NA,NA
+E05013640,Friern Barnet,Barnet,3,NA,NA,NA,NA,NA,NA,NA
+E05013641,Garden Suburb,Barnet,NA,2,NA,NA,NA,NA,NA,NA
+E05013642,Golders Green,Barnet,NA,2,NA,NA,NA,NA,NA,NA
+E05013643,Hendon,Barnet,NA,3,NA,NA,NA,NA,NA,NA
+E05013644,High Barnet,Barnet,1,1,NA,NA,NA,NA,NA,NA
+E05013645,Mill Hill,Barnet,NA,3,NA,NA,NA,NA,NA,NA
+E05013646,Totteridge and Woodside,Barnet,NA,3,NA,NA,NA,NA,NA,NA
+E05013647,Underhill,Barnet,2,NA,NA,NA,NA,NA,NA,NA
+E05013648,West Finchley,Barnet,3,NA,NA,NA,NA,NA,NA,NA
+E05013649,West Hendon,Barnet,3,NA,NA,NA,NA,NA,NA,NA
+E05013650,Whetstone,Barnet,1,1,NA,NA,NA,NA,NA,NA
+E05013651,Woodhouse,Barnet,1,NA,1,NA,NA,NA,NA,NA
+E05011217,Barnehurst,Bexley,NA,2,NA,NA,NA,NA,NA,NA
+E05011218,Belvedere,Bexley,2,NA,NA,1,NA,NA,NA,NA
+E05011219,Bexleyheath,Bexley,NA,3,NA,NA,NA,NA,NA,NA
+E05011220,Blackfen and Lamorbey,Bexley,NA,3,NA,NA,NA,NA,NA,NA
+E05011221,Blendon and Penhill,Bexley,NA,3,NA,NA,NA,NA,NA,NA
+E05011222,Crayford,Bexley,NA,NA,NA,3,NA,NA,NA,NA
+E05011223,Crook Log,Bexley,NA,3,NA,NA,NA,NA,NA,NA
+E05011224,East Wickham,Bexley,NA,3,NA,NA,NA,NA,NA,NA
+E05011225,Erith,Bexley,2,NA,NA,NA,NA,NA,NA,NA
+E05011226,Falconwood and Welling,Bexley,NA,3,NA,NA,NA,NA,NA,NA
+E05011227,Longlands,Bexley,NA,2,NA,NA,NA,NA,NA,NA
+E05011228,Northumberland Heath,Bexley,NA,NA,NA,2,NA,NA,NA,NA
+E05011230,Sidcup,Bexley,NA,3,NA,NA,NA,NA,NA,NA
+E05011231,Slade Green and Northend,Bexley,2,NA,NA,NA,NA,NA,NA,NA
+E05011229,St Mary's and St James,Bexley,NA,2,NA,NA,NA,NA,NA,NA
+E05011232,Thamesmead East,Bexley,3,NA,NA,NA,NA,NA,NA,NA
+E05011233,West Heath,Bexley,NA,2,NA,1,NA,NA,NA,NA
+E05013496,Alperton,Brent,NA,NA,NA,NA,3,NA,NA,NA
+E05013497,Barnhill,Brent,2,NA,NA,NA,NA,NA,NA,NA
+E05013498,Brondesbury Park,Brent,2,NA,NA,NA,NA,NA,NA,NA
+E05013499,Cricklewood and Mapesbury,Brent,2,NA,NA,NA,NA,NA,NA,NA
+E05013500,Dollis Hill,Brent,3,NA,NA,NA,NA,NA,NA,NA
+E05013501,Harlesden and Kensal Green,Brent,2,NA,1,NA,NA,NA,NA,NA
+E05013502,Kenton,Brent,NA,3,NA,NA,NA,NA,NA,NA
+E05013503,Kilburn,Brent,NA,NA,3,NA,NA,NA,NA,NA
+E05013504,Kingsbury,Brent,2,NA,NA,NA,NA,NA,NA,NA
+E05013505,Northwick Park,Brent,NA,NA,2,NA,NA,NA,NA,NA
+E05013506,Preston,Brent,NA,2,NA,NA,NA,NA,NA,NA
+E05013507,Queens Park,Brent,NA,NA,NA,NA,3,NA,NA,NA
+E05013508,Queensbury,Brent,NA,3,NA,NA,NA,NA,NA,NA
+E05013509,Roundwood,Brent,3,NA,NA,NA,NA,NA,NA,NA
+E05013510,Stonebridge,Brent,3,NA,NA,NA,NA,NA,NA,NA
+E05013511,Sudbury,Brent,NA,NA,NA,NA,2,NA,NA,NA
+E05013512,Tokyngton,Brent,1,1,NA,NA,NA,NA,NA,NA
+E05013513,Welsh Harp,Brent,2,1,NA,NA,NA,NA,NA,NA
+E05013514,Wembley Central,Brent,NA,NA,NA,NA,3,NA,NA,NA
+E05013515,Wembley Hill,Brent,2,1,NA,NA,NA,NA,NA,NA
+E05013516,Wembley Park,Brent,NA,NA,2,NA,NA,NA,NA,NA
+E05013517,Willesden Green,Brent,2,NA,1,NA,NA,NA,NA,NA
+E05013987,Beckenham Town and Copers Cope,Bromley,NA,NA,NA,NA,3,NA,NA,NA
+E05013988,Bickley and Sundridge,Bromley,NA,3,NA,NA,NA,NA,NA,NA
+E05013989,Biggin Hill,Bromley,NA,NA,NA,2,NA,NA,NA,NA
+E05013990,Bromley Common and Holwood,Bromley,NA,3,NA,NA,NA,NA,NA,NA
+E05013991,Bromley Town,Bromley,NA,NA,NA,NA,3,NA,NA,NA
+E05013992,Chelsfield,Bromley,NA,2,NA,NA,NA,NA,NA,NA
+E05013993,Chislehurst,Bromley,NA,NA,NA,NA,NA,3,NA,NA
+E05013994,Clock House,Bromley,3,NA,NA,NA,NA,NA,NA,NA
+E05013995,Crystal Palace and Anerley,Bromley,2,NA,NA,NA,NA,NA,NA,NA
+E05013996,Darwin,Bromley,NA,1,NA,NA,NA,NA,NA,NA
+E05013997,Farnborough and Crofton,Bromley,NA,3,NA,NA,NA,NA,NA,NA
+E05013998,Hayes and Coney Hall,Bromley,NA,3,NA,NA,NA,NA,NA,NA
+E05013999,Kelsey and Eden Park,Bromley,NA,3,NA,NA,NA,NA,NA,NA
+E05014000,Mottingham,Bromley,NA,1,NA,1,NA,NA,NA,NA
+E05014001,Orpington,Bromley,NA,2,NA,NA,NA,NA,NA,NA
+E05014002,Penge and Cator,Bromley,3,NA,NA,NA,NA,NA,NA,NA
+E05014003,Petts Wood and Knoll,Bromley,NA,3,NA,NA,NA,NA,NA,NA
+E05014004,Plaistow,Bromley,NA,2,NA,NA,NA,NA,NA,NA
+E05014005,Shortlands and Park Langley,Bromley,NA,3,NA,NA,NA,NA,NA,NA
+E05014006,St Mary Cray,Bromley,NA,3,NA,NA,NA,NA,NA,NA
+E05014007,St Paul's Cray,Bromley,NA,NA,NA,3,NA,NA,NA,NA
+E05014008,West Wickham,Bromley,NA,3,NA,NA,NA,NA,NA,NA
+E05011462,Addiscombe East,Croydon,1,1,NA,NA,NA,NA,NA,NA
+E05011463,Addiscombe West,Croydon,3,NA,NA,NA,NA,NA,NA,NA
+E05011464,Bensham Manor,Croydon,3,NA,NA,NA,NA,NA,NA,NA
+E05011465,Broad Green,Croydon,3,NA,NA,NA,NA,NA,NA,NA
+E05011466,Coulsdon Town,Croydon,NA,3,NA,NA,NA,NA,NA,NA
+E05011467,Crystal Palace and Upper Norwood,Croydon,NA,NA,2,NA,1,NA,NA,NA
+E05011468,Fairfield,Croydon,NA,NA,3,NA,NA,NA,NA,NA
+E05011469,Kenley,Croydon,NA,2,NA,NA,NA,NA,NA,NA
+E05011470,New Addington North,Croydon,2,NA,NA,NA,NA,NA,NA,NA
+E05011471,New Addington South,Croydon,NA,NA,NA,2,NA,NA,NA,NA
+E05011472,Norbury and Pollards Hill,Croydon,2,NA,NA,NA,NA,NA,NA,NA
+E05011473,Norbury Park,Croydon,2,NA,NA,NA,NA,NA,NA,NA
+E05011474,Old Coulsdon,Croydon,NA,1,NA,NA,1,NA,NA,NA
+E05011475,Park Hill and Whitgift,Croydon,NA,1,NA,NA,NA,NA,NA,NA
+E05011476,Purley and Woodcote,Croydon,NA,3,NA,NA,NA,NA,NA,NA
+E05011477,Purley Oaks and Riddlesdown,Croydon,NA,2,NA,NA,NA,NA,NA,NA
+E05011478,Sanderstead,Croydon,NA,3,NA,NA,NA,NA,NA,NA
+E05011479,Selhurst,Croydon,2,NA,NA,NA,NA,NA,NA,NA
+E05011480,Selsdon and Addington Village,Croydon,NA,2,NA,NA,NA,NA,NA,NA
+E05011481,Selsdon Vale and Forestdale,Croydon,NA,2,NA,NA,NA,NA,NA,NA
+E05011482,Shirley North,Croydon,NA,3,NA,NA,NA,NA,NA,NA
+E05011483,Shirley South,Croydon,NA,2,NA,NA,NA,NA,NA,NA
+E05011484,South Croydon,Croydon,NA,3,NA,NA,NA,NA,NA,NA
+E05011485,South Norwood,Croydon,1,NA,2,NA,NA,NA,NA,NA
+E05011486,Thornton Heath,Croydon,3,NA,NA,NA,NA,NA,NA,NA
+E05011487,Waddon,Croydon,3,NA,NA,NA,NA,NA,NA,NA
+E05011488,West Thornton,Croydon,3,NA,NA,NA,NA,NA,NA,NA
+E05011489,Woodside,Croydon,2,NA,1,NA,NA,NA,NA,NA
+E05013518,Central Greenford,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013519,Dormers Wells,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013520,Ealing Broadway,Ealing,NA,2,NA,NA,1,NA,NA,NA
+E05013521,Ealing Common,Ealing,NA,NA,NA,NA,3,NA,NA,NA
+E05013522,East Acton,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013523,Greenford Broadway,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013524,Hanger Hill,Ealing,NA,NA,NA,NA,3,NA,NA,NA
+E05013525,Hanwell Broadway,Ealing,NA,NA,3,NA,NA,NA,NA,NA
+E05013526,Lady Margaret,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013527,North Acton,Ealing,2,NA,1,NA,NA,NA,NA,NA
+E05013528,North Greenford,Ealing,NA,3,NA,NA,NA,NA,NA,NA
+E05013529,North Hanwell,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013530,Northfield,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013531,Northolt Mandeville,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013532,Northolt West End,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013533,Norwood Green,Ealing,2,NA,NA,NA,NA,NA,1,NA
+E05013534,Perivale,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013535,Pitshanger,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013536,South Acton,Ealing,2,NA,1,NA,NA,NA,NA,NA
+E05013537,Southall Broadway,Ealing,2,NA,NA,NA,NA,NA,NA,NA
+E05013538,Southall Green,Ealing,3,NA,NA,NA,NA,NA,NA,NA
+E05013539,Southall West,Ealing,2,NA,NA,NA,NA,NA,NA,NA
+E05013540,Southfield,Ealing,NA,NA,NA,NA,3,NA,NA,NA
+E05013541,Walpole,Ealing,NA,NA,NA,NA,3,NA,NA,NA
+E05013672,Arnos Grove,Enfield,NA,2,NA,NA,NA,NA,NA,NA
+E05013673,Bowes,Enfield,1,1,NA,NA,NA,NA,NA,NA
+E05013674,Brimsdown,Enfield,3,NA,NA,NA,NA,NA,NA,NA
+E05013675,Bullsmoor,Enfield,2,NA,NA,NA,NA,NA,NA,NA
+E05013676,Bush Hill Park,Enfield,NA,3,NA,NA,NA,NA,NA,NA
+E05013677,Carterhatch,Enfield,2,NA,NA,NA,NA,NA,NA,NA
+E05013678,Cockfosters,Enfield,NA,2,NA,NA,NA,NA,NA,NA
+E05013679,Edmonton Green,Enfield,3,NA,NA,NA,NA,NA,NA,NA
+E05013680,Enfield Lock,Enfield,1,NA,2,NA,NA,NA,NA,NA
+E05013681,Grange Park,Enfield,NA,2,NA,NA,NA,NA,NA,NA
+E05013682,Haselbury,Enfield,3,NA,NA,NA,NA,NA,NA,NA
+E05013683,Highfield,Enfield,NA,2,NA,NA,NA,NA,NA,NA
+E05013684,Jubilee,Enfield,3,NA,NA,NA,NA,NA,NA,NA
+E05013685,Lower Edmonton,Enfield,3,NA,NA,NA,NA,NA,NA,NA
+E05013686,New Southgate,Enfield,NA,NA,2,NA,NA,NA,NA,NA
+E05013687,Oakwood,Enfield,NA,2,NA,NA,NA,NA,NA,NA
+E05013688,Palmers Green,Enfield,2,NA,NA,NA,NA,NA,NA,NA
+E05013689,Ponders End,Enfield,1,NA,1,NA,NA,NA,NA,NA
+E05013690,Ridgeway,Enfield,NA,3,NA,NA,NA,NA,NA,NA
+E05013691,Southbury,Enfield,NA,3,NA,NA,NA,NA,NA,NA
+E05013692,Southgate,Enfield,NA,3,NA,NA,NA,NA,NA,NA
+E05013693,Town,Enfield,NA,3,NA,NA,NA,NA,NA,NA
+E05013694,Upper Edmonton,Enfield,3,NA,NA,NA,NA,NA,NA,NA
+E05013695,Whitewebbs,Enfield,NA,3,NA,NA,NA,NA,NA,NA
+E05013696,Winchmore Hill,Enfield,NA,2,NA,NA,NA,NA,NA,NA
+E05013733,Addison,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013734,Avonmore,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013735,Brook Green,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013736,College Park and Old Oak,Hammersmith and Fulham,3,NA,NA,NA,NA,NA,NA,NA
+E05013737,Coningham,Hammersmith and Fulham,3,NA,NA,NA,NA,NA,NA,NA
+E05013738,Fulham Reach,Hammersmith and Fulham,3,NA,NA,NA,NA,NA,NA,NA
+E05013739,Fulham Town,Hammersmith and Fulham,NA,2,NA,NA,NA,NA,NA,NA
+E05013740,Grove,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013741,Hammersmith Broadway,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013742,Lillie,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013743,Munster,Hammersmith and Fulham,NA,3,NA,NA,NA,NA,NA,NA
+E05013744,Palace and Hurlingham,Hammersmith and Fulham,NA,3,NA,NA,NA,NA,NA,NA
+E05013745,Parsons Green and Sandford,Hammersmith and Fulham,NA,2,NA,NA,NA,NA,NA,NA
+E05013746,Ravenscourt,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013747,Sands End,Hammersmith and Fulham,1,2,NA,NA,NA,NA,NA,NA
+E05013748,Shepherd's Bush Green,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013749,Walham Green,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013750,Wendell Park,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013751,West Kensington,Hammersmith and Fulham,3,NA,NA,NA,NA,NA,NA,NA
+E05013752,White City,Hammersmith and Fulham,3,NA,NA,NA,NA,NA,NA,NA
+E05013753,Wormholt,Hammersmith and Fulham,2,NA,NA,NA,NA,NA,NA,NA
+E05013652,Belsize,Camden,NA,NA,NA,NA,3,NA,NA,NA
+E05013653,Bloomsbury,Camden,2,NA,1,NA,NA,NA,NA,NA
+E05013654,Camden Square,Camden,2,NA,NA,NA,NA,NA,NA,NA
+E05013655,Camden Town,Camden,2,NA,NA,NA,NA,NA,NA,NA
+E05013656,Fortune Green,Camden,NA,NA,NA,NA,3,NA,NA,NA
+E05013657,Frognal,Camden,NA,2,NA,NA,NA,NA,NA,NA
+E05013658,Gospel Oak,Camden,2,NA,1,NA,NA,NA,NA,NA
+E05013659,Hampstead Town,Camden,NA,1,NA,NA,1,NA,NA,NA
+E05013660,Haverstock,Camden,3,NA,NA,NA,NA,NA,NA,NA
+E05013661,Highgate,Camden,2,NA,1,NA,NA,NA,NA,NA
+E05013662,Holborn and Covent Garden,Camden,NA,NA,3,NA,NA,NA,NA,NA
+E05013663,Kentish Town North,Camden,2,NA,NA,NA,NA,NA,NA,NA
+E05013664,Kentish Town South,Camden,3,NA,NA,NA,NA,NA,NA,NA
+E05013665,Kilburn,Camden,1,NA,2,NA,NA,NA,NA,NA
+E05013666,King's Cross,Camden,3,NA,NA,NA,NA,NA,NA,NA
+E05013667,Primrose Hill,Camden,3,NA,NA,NA,NA,NA,NA,NA
+E05013668,Regent's Park,Camden,NA,NA,3,NA,NA,NA,NA,NA
+E05013670,South Hampstead,Camden,3,NA,NA,NA,NA,NA,NA,NA
+E05013669,St Pancras and Somers Town,Camden,2,NA,NA,NA,NA,NA,1,NA
+E05013671,West Hampstead,Camden,NA,NA,NA,NA,3,NA,NA,NA
+E05014072,Abbey Wood,Greenwich,3,NA,NA,NA,NA,NA,NA,NA
+E05014073,Blackheath Westcombe,Greenwich,3,NA,NA,NA,NA,NA,NA,NA
+E05014074,Charlton Hornfair,Greenwich,1,NA,1,NA,NA,NA,NA,NA
+E05014075,Charlton Village and Riverside,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05014076,East Greenwich,Greenwich,NA,NA,3,NA,NA,NA,NA,NA
+E05014077,Eltham Page,Greenwich,1,NA,NA,1,NA,NA,NA,NA
+E05014078,Eltham Park and Progress,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05014079,Eltham Town and Avery Hill,Greenwich,NA,3,NA,NA,NA,NA,NA,NA
+E05014080,Greenwich Creekside,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05014081,Greenwich Park,Greenwich,NA,NA,2,NA,NA,NA,NA,NA
+E05014082,Greenwich Peninsula,Greenwich,1,NA,2,NA,NA,NA,NA,NA
+E05014083,Kidbrooke Park,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05014084,Kidbrooke Village and Sutcliffe,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05014085,Middle Park and Horn Park,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05014086,"Mottingham, Coldharbour and New Eltham",Greenwich,NA,3,NA,NA,NA,NA,NA,NA
+E05014087,Plumstead and Glyndon,Greenwich,3,NA,NA,NA,NA,NA,NA,NA
+E05014088,Plumstead Common,Greenwich,NA,NA,3,NA,NA,NA,NA,NA
+E05014089,Shooters Hill,Greenwich,NA,NA,2,NA,NA,NA,NA,NA
+E05014090,Thamesmead Moorings,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05014091,West Thamesmead,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05014092,Woolwich Arsenal,Greenwich,3,NA,NA,NA,NA,NA,NA,NA
+E05014093,Woolwich Common,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05014094,Woolwich Dockyard,Greenwich,2,NA,NA,NA,NA,NA,NA,NA
+E05009367,Brownswood,Hackney,NA,NA,2,NA,NA,NA,NA,NA
+E05009368,Cazenove,Hackney,NA,1,2,NA,NA,NA,NA,NA
+E05009369,Clissold,Hackney,1,NA,2,NA,NA,NA,NA,NA
+E05009370,Dalston,Hackney,NA,NA,2,NA,NA,NA,NA,NA
+E05009371,De Beauvoir,Hackney,NA,NA,2,NA,NA,NA,NA,NA
+E05009372,Hackney Central,Hackney,NA,NA,3,NA,NA,NA,NA,NA
+E05009373,Hackney Downs,Hackney,NA,NA,3,NA,NA,NA,NA,NA
+E05009374,Hackney Wick,Hackney,NA,NA,3,NA,NA,NA,NA,NA
+E05009375,Haggerston,Hackney,NA,NA,3,NA,NA,NA,NA,NA
+E05009376,Homerton,Hackney,2,NA,1,NA,NA,NA,NA,NA
+E05009377,Hoxton East and Shoreditch,Hackney,1,NA,2,NA,NA,NA,NA,NA
+E05009378,Hoxton West,Hackney,1,NA,2,NA,NA,NA,NA,NA
+E05009379,King's Park,Hackney,NA,NA,3,NA,NA,NA,NA,NA
+E05009380,Lea Bridge,Hackney,NA,NA,3,NA,NA,NA,NA,NA
+E05009381,London Fields,Hackney,1,NA,2,NA,NA,NA,NA,NA
+E05009382,Shacklewell,Hackney,NA,NA,2,NA,NA,NA,NA,NA
+E05009383,Springfield,Hackney,NA,3,NA,NA,NA,NA,NA,NA
+E05009384,Stamford Hill West,Hackney,NA,2,NA,NA,NA,NA,NA,NA
+E05009385,Stoke Newington,Hackney,NA,NA,3,NA,NA,NA,NA,NA
+E05009386,Victoria,Hackney,2,NA,1,NA,NA,NA,NA,NA
+E05009387,Woodberry Down,Hackney,1,NA,1,NA,NA,NA,NA,NA
+E05013605,Woodside,Haringey,2,NA,1,NA,NA,NA,NA,NA
+E05013604,White Hart Lane,Haringey,1,NA,2,NA,NA,NA,NA,NA
+E05013603,West Green,Haringey,2,NA,1,NA,NA,NA,NA,NA
+E05013602,Tottenham Hale,Haringey,NA,NA,3,NA,NA,NA,NA,NA
+E05013601,Tottenham Central,Haringey,NA,NA,3,NA,NA,NA,NA,NA
+E05013600,Stroud Green,Haringey,NA,NA,3,NA,NA,NA,NA,NA
+E05013597,St Ann's,Haringey,NA,NA,2,NA,NA,NA,NA,NA
+E05013599,South Tottenham,Haringey,3,NA,NA,NA,NA,NA,NA,NA
+E05013598,Seven Sisters,Haringey,NA,NA,2,NA,NA,NA,NA,NA
+E05013596,Northumberland Park,Haringey,2,NA,1,NA,NA,NA,NA,NA
+E05013595,Noel Park,Haringey,NA,NA,3,NA,NA,NA,NA,NA
+E05013594,Muswell Hill,Haringey,NA,NA,NA,NA,2,NA,NA,NA
+E05013593,Hornsey,Haringey,3,NA,NA,NA,NA,NA,NA,NA
+E05013592,Highgate,Haringey,NA,NA,1,NA,2,NA,NA,NA
+E05013591,Hermitage and Gardens,Haringey,NA,NA,2,NA,NA,NA,NA,NA
+E05013590,Harringay,Haringey,NA,NA,3,NA,NA,NA,NA,NA
+E05013589,Fortis Green,Haringey,2,NA,NA,NA,1,NA,NA,NA
+E05013588,Crouch End,Haringey,NA,NA,NA,NA,3,NA,NA,NA
+E05013587,Bruce Castle,Haringey,2,NA,1,NA,NA,NA,NA,NA
+E05013586,Bounds Green,Haringey,2,NA,NA,NA,NA,NA,NA,NA
+E05013585,Alexandra Park,Haringey,2,NA,NA,NA,NA,NA,NA,NA
+E05013542,Belmont,Harrow,NA,2,NA,NA,NA,NA,NA,NA
+E05013543,Canons,Harrow,NA,2,NA,NA,NA,NA,NA,NA
+E05013544,Centenary,Harrow,NA,3,NA,NA,NA,NA,NA,NA
+E05013545,Edgware,Harrow,NA,3,NA,NA,NA,NA,NA,NA
+E05013546,Greenhill,Harrow,NA,3,NA,NA,NA,NA,NA,NA
+E05013547,Harrow on the Hill,Harrow,NA,2,NA,NA,NA,NA,NA,NA
+E05013548,Harrow Weald,Harrow,NA,3,NA,NA,NA,NA,NA,NA
+E05013549,Hatch End,Harrow,NA,2,NA,NA,NA,NA,NA,NA
+E05013550,Headstone,Harrow,NA,3,NA,NA,NA,NA,NA,NA
+E05013551,Kenton East,Harrow,NA,3,NA,NA,NA,NA,NA,NA
+E05013552,Kenton West,Harrow,NA,2,NA,NA,NA,NA,NA,NA
+E05013553,Marlborough,Harrow,2,NA,NA,NA,NA,NA,1,NA
+E05013554,North Harrow,Harrow,NA,2,NA,NA,NA,NA,NA,NA
+E05013555,Pinner,Harrow,NA,3,NA,NA,NA,NA,NA,NA
+E05013556,Pinner South,Harrow,NA,3,NA,NA,NA,NA,NA,NA
+E05013557,Rayners Lane,Harrow,1,1,NA,NA,NA,NA,NA,NA
+E05013558,Roxbourne,Harrow,2,NA,NA,NA,NA,NA,NA,NA
+E05013559,Roxeth,Harrow,2,1,NA,NA,NA,NA,NA,NA
+E05013560,Stanmore,Harrow,NA,3,NA,NA,NA,NA,NA,NA
+E05013561,Wealdstone North,Harrow,1,1,NA,NA,NA,NA,NA,NA
+E05013562,Wealdstone South,Harrow,2,NA,NA,NA,NA,NA,NA,NA
+E05013563,West Harrow,Harrow,2,NA,NA,NA,NA,NA,NA,NA
+E05013967,Beam Park,Havering,2,NA,NA,NA,NA,NA,NA,NA
+E05013968,Cranham,Havering,NA,NA,NA,NA,NA,3,NA,NA
+E05013969,Elm Park,Havering,NA,NA,NA,NA,NA,3,NA,NA
+E05013970,Emerson Park,Havering,NA,NA,NA,2,NA,NA,NA,NA
+E05013971,Gooshays,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013972,Hacton,Havering,NA,NA,NA,1,NA,1,NA,NA
+E05013973,Harold Wood,Havering,NA,NA,NA,NA,NA,3,NA,NA
+E05013974,Havering-atte-Bower,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013975,Heaton,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013976,Hylands and Harrow Lodge,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013977,Marshalls and Rise Park,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013978,Mawneys,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013979,Rainham and Wennington,Havering,NA,NA,NA,2,NA,1,NA,NA
+E05013980,Rush Green and Crowlands,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013984,South Hornchurch,Havering,NA,NA,NA,2,NA,NA,NA,NA
+E05013985,Squirrels Heath,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013981,St Alban's,Havering,NA,NA,NA,2,NA,NA,NA,NA
+E05013982,St Andrew's,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013983,St Edward's,Havering,NA,NA,NA,3,NA,NA,NA,NA
+E05013986,Upminster,Havering,NA,NA,NA,NA,NA,3,NA,NA
+E05013564,Belmore,Hillingdon,3,NA,NA,NA,NA,NA,NA,NA
+E05013565,Charville,Hillingdon,NA,2,NA,NA,NA,NA,NA,NA
+E05013566,Colham and Cowley,Hillingdon,NA,3,NA,NA,NA,NA,NA,NA
+E05013567,Eastcote,Hillingdon,NA,3,NA,NA,NA,NA,NA,NA
+E05013568,Harefield Village,Hillingdon,NA,1,NA,NA,NA,NA,NA,NA
+E05013569,Hayes Town,Hillingdon,3,NA,NA,NA,NA,NA,NA,NA
+E05013570,Heathrow Villages,Hillingdon,1,NA,NA,1,NA,NA,NA,NA
+E05013571,Hillingdon East,Hillingdon,NA,3,NA,NA,NA,NA,NA,NA
+E05013572,Hillingdon West,Hillingdon,NA,2,NA,NA,NA,NA,NA,NA
+E05013573,Ickenham and South Harefield,Hillingdon,NA,3,NA,NA,NA,NA,NA,NA
+E05013574,Northwood,Hillingdon,NA,2,NA,NA,NA,NA,NA,NA
+E05013575,Northwood Hills,Hillingdon,NA,2,NA,NA,NA,NA,NA,NA
+E05013576,Pinkwell,Hillingdon,3,NA,NA,NA,NA,NA,NA,NA
+E05013577,Ruislip,Hillingdon,NA,3,NA,NA,NA,NA,NA,NA
+E05013578,Ruislip Manor,Hillingdon,NA,2,NA,NA,NA,NA,NA,NA
+E05013579,South Ruislip,Hillingdon,NA,3,NA,NA,NA,NA,NA,NA
+E05013580,Uxbridge,Hillingdon,NA,3,NA,NA,NA,NA,NA,NA
+E05013581,West Drayton,Hillingdon,1,NA,1,1,NA,NA,NA,NA
+E05013582,Wood End,Hillingdon,3,NA,NA,NA,NA,NA,NA,NA
+E05013583,Yeading,Hillingdon,2,NA,NA,NA,NA,NA,NA,NA
+E05013584,Yiewsley,Hillingdon,NA,NA,NA,2,NA,NA,NA,NA
+E05013606,Bedfont,Hounslow,1,NA,NA,2,NA,NA,NA,NA
+E05013607,Brentford East,Hounslow,2,NA,NA,NA,NA,NA,NA,NA
+E05013608,Brentford West,Hounslow,1,NA,1,NA,NA,NA,NA,NA
+E05013609,Chiswick Gunnersbury,Hounslow,NA,3,NA,NA,NA,NA,NA,NA
+E05013610,Chiswick Homefields,Hounslow,NA,3,NA,NA,NA,NA,NA,NA
+E05013611,Chiswick Riverside,Hounslow,1,1,1,NA,NA,NA,NA,NA
+E05013612,Cranford,Hounslow,1,2,NA,NA,NA,NA,NA,NA
+E05013613,Feltham North,Hounslow,1,NA,NA,2,NA,NA,NA,NA
+E05013614,Feltham West,Hounslow,2,NA,NA,1,NA,NA,NA,NA
+E05013615,Hanworth Park,Hounslow,NA,NA,NA,2,NA,NA,NA,NA
+E05013616,Hanworth Village,Hounslow,2,NA,NA,1,NA,NA,NA,NA
+E05013617,Heston Central,Hounslow,NA,3,NA,NA,NA,NA,NA,NA
+E05013618,Heston East,Hounslow,2,NA,1,NA,NA,NA,NA,NA
+E05013619,Heston West,Hounslow,2,1,NA,NA,NA,NA,NA,NA
+E05013620,Hounslow Central,Hounslow,3,NA,NA,NA,NA,NA,NA,NA
+E05013621,Hounslow East,Hounslow,2,NA,NA,NA,NA,NA,NA,NA
+E05013622,Hounslow Heath,Hounslow,2,1,NA,NA,NA,NA,NA,NA
+E05013623,Hounslow South,Hounslow,3,NA,NA,NA,NA,NA,NA,NA
+E05013624,Hounslow West,Hounslow,NA,3,NA,NA,NA,NA,NA,NA
+E05013625,Isleworth,Hounslow,2,NA,NA,NA,1,NA,NA,NA
+E05013626,Osterley and Spring Grove,Hounslow,3,NA,NA,NA,NA,NA,NA,NA
+E05013627,Syon and Brentford Lock,Hounslow,2,NA,NA,NA,NA,NA,1,NA
+E05013697,Arsenal,Islington,1,NA,2,NA,NA,NA,NA,NA
+E05013698,Barnsbury,Islington,3,NA,NA,NA,NA,NA,NA,NA
+E05013699,Bunhill,Islington,3,NA,NA,NA,NA,NA,NA,NA
+E05013700,Caledonian,Islington,3,NA,NA,NA,NA,NA,NA,NA
+E05013701,Canonbury,Islington,2,NA,1,NA,NA,NA,NA,NA
+E05013702,Clerkenwell,Islington,1,NA,2,NA,NA,NA,NA,NA
+E05013703,Finsbury Park,Islington,1,NA,2,NA,NA,NA,NA,NA
+E05013704,Highbury,Islington,NA,NA,3,NA,NA,NA,NA,NA
+E05013705,Hillrise,Islington,3,NA,NA,NA,NA,NA,NA,NA
+E05013706,Holloway,Islington,3,NA,NA,NA,NA,NA,NA,NA
+E05013707,Junction,Islington,3,NA,NA,NA,NA,NA,NA,NA
+E05013708,Laycock,Islington,3,NA,NA,NA,NA,NA,NA,NA
+E05013709,Mildmay,Islington,NA,NA,3,NA,NA,NA,NA,NA
+E05013710,St Mary's and St James',Islington,3,NA,NA,NA,NA,NA,NA,NA
+E05013711,St Peter's and Canalside,Islington,3,NA,NA,NA,NA,NA,NA,NA
+E05013712,Tollington,Islington,NA,NA,3,NA,NA,NA,NA,NA
+E05013713,Tufnell Park,Islington,NA,NA,3,NA,NA,NA,NA,NA
+E05009388,Abingdon,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05009389,Brompton and Hans Town,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05009390,Campden,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05009391,Chelsea Riverside,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05009392,Colville,Kensington and Chelsea,3,NA,NA,NA,NA,NA,NA,NA
+E05009393,Courtfield,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05009394,Dalgarno,Kensington and Chelsea,2,NA,NA,NA,NA,NA,NA,NA
+E05009395,Earl's Court,Kensington and Chelsea,NA,NA,NA,NA,3,NA,NA,NA
+E05009396,Golborne,Kensington and Chelsea,3,NA,NA,NA,NA,NA,NA,NA
+E05009397,Holland,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05009398,Norland,Kensington and Chelsea,NA,2,NA,NA,NA,NA,NA,NA
+E05009399,Notting Dale,Kensington and Chelsea,3,NA,NA,NA,NA,NA,NA,NA
+E05009400,Pembridge,Kensington and Chelsea,NA,2,NA,NA,NA,NA,NA,NA
+E05009401,Queen's Gate,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05009402,Redcliffe,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05009403,Royal Hospital,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05009404,St Helen's,Kensington and Chelsea,2,NA,NA,NA,NA,NA,NA,NA
+E05009405,Stanley,Kensington and Chelsea,NA,3,NA,NA,NA,NA,NA,NA
+E05013928,Alexandra,Kingston upon Thames,NA,NA,NA,NA,2,NA,NA,NA
+E05013929,Berrylands,Kingston upon Thames,NA,NA,NA,NA,2,NA,NA,NA
+E05013930,Canbury Gardens,Kingston upon Thames,NA,NA,NA,NA,2,NA,NA,NA
+E05013931,Chessington South and Malden Rushett,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013932,Coombe Hill,Kingston upon Thames,NA,2,NA,NA,NA,NA,NA,NA
+E05013933,Coombe Vale,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013934,Green Lane and St James,Kingston upon Thames,NA,NA,NA,NA,NA,2,NA,NA
+E05013935,Hook and Chessington North,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013936,King George's and Sunray,Kingston upon Thames,NA,NA,NA,NA,2,NA,NA,NA
+E05013937,Kingston Gate,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013938,Kingston Town,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013939,Motspur Park and Old Malden East,Kingston upon Thames,NA,NA,NA,NA,2,NA,NA,NA
+E05013940,New Malden Village,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013941,Norbiton,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013942,Old Malden,Kingston upon Thames,NA,NA,NA,NA,2,NA,NA,NA
+E05013943,St Mark's and Seething Wells,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013944,Surbiton Hill,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013945,Tolworth,Kingston upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013946,Tudor,Kingston upon Thames,NA,NA,NA,NA,2,NA,NA,NA
+E05014095,Brixton Acre Lane,Lambeth,1,NA,2,NA,NA,NA,NA,NA
+E05014096,Brixton North,Lambeth,2,NA,1,NA,NA,NA,NA,NA
+E05014097,Brixton Rush Common,Lambeth,NA,NA,3,NA,NA,NA,NA,NA
+E05014098,Brixton Windrush,Lambeth,NA,NA,2,NA,NA,NA,NA,NA
+E05014099,Clapham Common and Abbeville,Lambeth,NA,NA,NA,NA,2,NA,NA,NA
+E05014100,Clapham East,Lambeth,1,NA,1,NA,NA,NA,NA,NA
+E05014101,Clapham Park,Lambeth,2,NA,1,NA,NA,NA,NA,NA
+E05014102,Clapham Town,Lambeth,2,NA,1,NA,NA,NA,NA,NA
+E05014103,Gipsy Hill,Lambeth,NA,NA,2,NA,NA,NA,NA,NA
+E05014104,Herne Hill and Loughborough Junction,Lambeth,NA,NA,3,NA,NA,NA,NA,NA
+E05014105,Kennington,Lambeth,3,NA,NA,NA,NA,NA,NA,NA
+E05014106,Knight's Hill,Lambeth,NA,NA,3,NA,NA,NA,NA,NA
+E05014107,Myatt's Fields,Lambeth,1,NA,1,NA,NA,NA,NA,NA
+E05014108,Oval,Lambeth,3,NA,NA,NA,NA,NA,NA,NA
+E05014109,St Martin's,Lambeth,1,NA,1,NA,NA,NA,NA,NA
+E05014110,Stockwell East,Lambeth,NA,NA,1,NA,1,NA,NA,NA
+E05014111,Stockwell West and Larkhall,Lambeth,3,NA,NA,NA,NA,NA,NA,NA
+E05014112,Streatham Common and Vale,Lambeth,3,NA,NA,NA,NA,NA,NA,NA
+E05014113,Streatham Hill East,Lambeth,NA,NA,2,NA,NA,NA,NA,NA
+E05014114,Streatham Hill West and Thornton,Lambeth,NA,NA,NA,NA,2,NA,NA,NA
+E05014115,Streatham St Leonard's,Lambeth,NA,NA,3,NA,NA,NA,NA,NA
+E05014116,Streatham Wells,Lambeth,NA,NA,NA,NA,2,NA,NA,NA
+E05014117,Vauxhall,Lambeth,2,NA,1,NA,NA,NA,NA,NA
+E05014118,Waterloo and South Bank,Lambeth,1,NA,NA,NA,1,NA,NA,NA
+E05014119,West Dulwich,Lambeth,1,NA,1,NA,NA,NA,NA,NA
+E05014053,Abbey,Barking and Dagenham,2,NA,NA,NA,NA,NA,NA,NA
+E05014054,Alibon,Barking and Dagenham,2,NA,NA,NA,NA,NA,NA,NA
+E05014055,Barking Riverside,Barking and Dagenham,3,NA,NA,NA,NA,NA,NA,NA
+E05014056,Beam,Barking and Dagenham,3,NA,NA,NA,NA,NA,NA,NA
+E05014057,Becontree,Barking and Dagenham,2,NA,NA,NA,NA,NA,NA,NA
+E05014058,Chadwell Heath,Barking and Dagenham,3,NA,NA,NA,NA,NA,NA,NA
+E05014059,Eastbrook and Rush Green,Barking and Dagenham,NA,NA,NA,2,NA,NA,NA,NA
+E05014060,Eastbury,Barking and Dagenham,3,NA,NA,NA,NA,NA,NA,NA
+E05014061,Gascoigne,Barking and Dagenham,1,NA,2,NA,NA,NA,NA,NA
+E05014062,Goresbrook,Barking and Dagenham,NA,NA,NA,3,NA,NA,NA,NA
+E05014063,Heath,Barking and Dagenham,2,NA,NA,NA,NA,NA,NA,NA
+E05014064,Longbridge,Barking and Dagenham,1,NA,2,NA,NA,NA,NA,NA
+E05014065,Mayesbrook,Barking and Dagenham,3,NA,NA,NA,NA,NA,NA,NA
+E05014066,Northbury,Barking and Dagenham,3,NA,NA,NA,NA,NA,NA,NA
+E05014067,Parsloes,Barking and Dagenham,NA,NA,NA,3,NA,NA,NA,NA
+E05014068,Thames View,Barking and Dagenham,2,NA,NA,NA,NA,NA,NA,NA
+E05014069,Valence,Barking and Dagenham,2,NA,NA,1,NA,NA,NA,NA
+E05014070,Village,Barking and Dagenham,3,NA,NA,NA,NA,NA,NA,NA
+E05014071,Whalebone,Barking and Dagenham,3,NA,NA,NA,NA,NA,NA,NA
+E05013714,Bellingham,Lewisham,1,NA,1,NA,NA,NA,NA,NA
+E05013715,Blackheath,Lewisham,1,NA,2,NA,NA,NA,NA,NA
+E05013716,Brockley,Lewisham,NA,NA,3,NA,NA,NA,NA,NA
+E05013717,Catford South,Lewisham,2,NA,1,NA,NA,NA,NA,NA
+E05013718,Crofton Park,Lewisham,NA,NA,3,NA,NA,NA,NA,NA
+E05013719,Deptford,Lewisham,NA,NA,3,NA,NA,NA,NA,NA
+E05013720,Downham,Lewisham,3,NA,NA,NA,NA,NA,NA,NA
+E05013721,Evelyn,Lewisham,NA,NA,3,NA,NA,NA,NA,NA
+E05013722,Forest Hill,Lewisham,1,NA,2,NA,NA,NA,NA,NA
+E05013723,Grove Park,Lewisham,2,NA,1,NA,NA,NA,NA,NA
+E05013724,Hither Green,Lewisham,2,NA,1,NA,NA,NA,NA,NA
+E05013725,Ladywell,Lewisham,NA,NA,3,NA,NA,NA,NA,NA
+E05013726,Lee Green,Lewisham,2,NA,1,NA,NA,NA,NA,NA
+E05013727,Lewisham Central,Lewisham,NA,NA,2,NA,NA,NA,NA,NA
+E05013728,New Cross Gate,Lewisham,NA,NA,2,NA,NA,NA,NA,NA
+E05013729,Perry Vale,Lewisham,NA,NA,3,NA,NA,NA,NA,NA
+E05013730,Rushey Green,Lewisham,NA,NA,3,NA,NA,NA,NA,NA
+E05013731,Sydenham,Lewisham,NA,NA,3,NA,NA,NA,NA,NA
+E05013732,Telegraph Hill,Lewisham,NA,NA,3,NA,NA,NA,NA,NA
+E05013810,Abbey,Merton,NA,NA,NA,NA,3,NA,NA,NA
+E05013811,Cannon Hill,Merton,NA,NA,NA,NA,3,NA,NA,NA
+E05013812,Colliers Wood,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013813,Cricket Green,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013814,Figge's Marsh,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013815,Graveney,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013816,Hillside,Merton,NA,1,NA,NA,1,NA,NA,NA
+E05013817,Lavender Fields,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013818,Longthornton,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013819,Lower Morden,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013820,Merton Park,Merton,NA,NA,NA,NA,NA,2,NA,NA
+E05013821,Pollards Hill,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013822,Ravensbury,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013823,Raynes Park,Merton,NA,NA,NA,NA,3,NA,NA,NA
+E05013824,St Helier,Merton,3,NA,NA,NA,NA,NA,NA,NA
+E05013825,Village,Merton,NA,3,NA,NA,NA,NA,NA,NA
+E05013826,Wandle,Merton,2,NA,NA,NA,NA,NA,NA,NA
+E05013827,West Barnes,Merton,NA,NA,NA,NA,3,NA,NA,NA
+E05013828,Wimbledon Park,Merton,NA,NA,NA,NA,3,NA,NA,NA
+E05013829,Wimbledon Town and Dundonald,Merton,NA,NA,NA,NA,3,NA,NA,NA
+E05013904,Beckton,Newham,3,NA,NA,NA,NA,NA,NA,NA
+E05013905,Boleyn,Newham,NA,NA,NA,NA,NA,NA,3,NA
+E05013906,Canning Town North,Newham,2,NA,1,NA,NA,NA,NA,NA
+E05013907,Canning Town South,Newham,3,NA,NA,NA,NA,NA,NA,NA
+E05013908,Custom House,Newham,3,NA,NA,NA,NA,NA,NA,NA
+E05013909,East Ham,Newham,NA,NA,NA,NA,NA,NA,3,NA
+E05013910,East Ham South,Newham,3,NA,NA,NA,NA,NA,NA,NA
+E05013911,Forest Gate North,Newham,1,NA,1,NA,NA,NA,NA,NA
+E05013912,Forest Gate South,Newham,NA,NA,3,NA,NA,NA,NA,NA
+E05013913,Green Street East,Newham,1,NA,NA,NA,NA,NA,2,NA
+E05013914,Green Street West,Newham,NA,NA,NA,NA,NA,NA,3,NA
+E05013915,Little Ilford,Newham,NA,NA,NA,NA,NA,NA,3,NA
+E05013916,Manor Park,Newham,3,NA,NA,NA,NA,NA,NA,NA
+E05013917,Maryland,Newham,NA,NA,2,NA,NA,NA,NA,NA
+E05013918,Plaistow North,Newham,1,NA,NA,NA,NA,NA,2,NA
+E05013919,Plaistow South,Newham,NA,NA,NA,NA,NA,NA,3,NA
+E05013920,Plaistow West and Canning Town East,Newham,3,NA,NA,NA,NA,NA,NA,NA
+E05013921,Plashet,Newham,NA,NA,NA,NA,NA,NA,2,NA
+E05013922,Royal Albert,Newham,1,NA,1,NA,NA,NA,NA,NA
+E05013923,Royal Victoria,Newham,NA,NA,2,NA,NA,NA,NA,NA
+E05013924,Stratford,Newham,NA,NA,3,NA,NA,NA,NA,NA
+E05013925,Stratford Olympic Park,Newham,NA,NA,2,NA,NA,NA,NA,NA
+E05013926,Wall End,Newham,NA,NA,NA,NA,NA,NA,3,NA
+E05013927,West Ham,Newham,2,NA,1,NA,NA,NA,NA,NA
+E05011234,Aldborough,Redbridge,3,NA,NA,NA,NA,NA,NA,NA
+E05011235,Barkingside,Redbridge,3,NA,NA,NA,NA,NA,NA,NA
+E05011236,Bridge,Redbridge,NA,3,NA,NA,NA,NA,NA,NA
+E05011237,Chadwell,Redbridge,1,NA,1,NA,NA,NA,1,NA
+E05011238,Churchfields,Redbridge,3,NA,NA,NA,NA,NA,NA,NA
+E05011239,Clayhall,Redbridge,3,NA,NA,NA,NA,NA,NA,NA
+E05011240,Clementswood,Redbridge,2,NA,NA,NA,NA,NA,1,NA
+E05011241,Cranbrook,Redbridge,1,NA,NA,NA,NA,NA,2,NA
+E05011242,Fairlop,Redbridge,3,NA,NA,NA,NA,NA,NA,NA
+E05011243,Fullwell,Redbridge,3,NA,NA,NA,NA,NA,NA,NA
+E05011244,Goodmayes,Redbridge,3,NA,NA,NA,NA,NA,NA,NA
+E05011245,Hainault,Redbridge,2,NA,NA,1,NA,NA,NA,NA
+E05011246,Ilford Town,Redbridge,1,NA,NA,NA,NA,NA,1,NA
+E05011247,Loxford,Redbridge,3,NA,NA,NA,NA,NA,NA,NA
+E05011248,Mayfield,Redbridge,2,NA,NA,NA,NA,NA,1,NA
+E05011249,Monkhams,Redbridge,NA,2,NA,NA,NA,NA,NA,NA
+E05011250,Newbury,Redbridge,3,NA,NA,NA,NA,NA,NA,NA
+E05011251,Seven Kings,Redbridge,2,NA,NA,NA,NA,NA,1,NA
+E05011252,South Woodford,Redbridge,1,NA,2,NA,NA,NA,NA,NA
+E05011253,Valentines,Redbridge,1,NA,NA,NA,NA,NA,2,NA
+E05011254,Wanstead Park,Redbridge,1,NA,1,NA,NA,NA,NA,NA
+E05011255,Wanstead Village,Redbridge,2,NA,1,NA,NA,NA,NA,NA
+E05013774,Barnes,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013775,East Sheen,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013776,Fulwell and Hampton Hill,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013777,"Ham, Petersham and Richmond Riverside",Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013778,Hampton,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013779,Hampton North,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013780,Hampton Wick and South Teddington,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013781,Heathfield,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013782,Kew,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013783,Mortlake and Barnes Common,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013784,North Richmond,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013786,South Richmond,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013787,South Twickenham,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013785,St Margarets and North Twickenham,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013788,Teddington,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013789,Twickenham Riverside,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013790,West Twickenham,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05013791,Whitton,Richmond upon Thames,NA,NA,NA,NA,3,NA,NA,NA
+E05011095,Borough and Bankside,Southwark,NA,NA,NA,NA,3,NA,NA,NA
+E05011096,Camberwell Green,Southwark,3,NA,NA,NA,NA,NA,NA,NA
+E05011097,Champion Hill,Southwark,2,NA,NA,NA,NA,NA,NA,NA
+E05011098,Chaucer,Southwark,NA,NA,3,NA,NA,NA,NA,NA
+E05011099,Dulwich Hill,Southwark,1,NA,1,NA,NA,NA,NA,NA
+E05011100,Dulwich Village,Southwark,2,NA,NA,NA,NA,NA,NA,NA
+E05011101,Dulwich Wood,Southwark,2,NA,NA,NA,NA,NA,NA,NA
+E05011102,Faraday,Southwark,3,NA,NA,NA,NA,NA,NA,NA
+E05011103,Goose Green,Southwark,NA,NA,3,NA,NA,NA,NA,NA
+E05011104,London Bridge and West Bermondsey,Southwark,2,NA,NA,NA,1,NA,NA,NA
+E05011105,Newington,Southwark,3,NA,NA,NA,NA,NA,NA,NA
+E05011106,North Bermondsey,Southwark,NA,NA,NA,NA,3,NA,NA,NA
+E05011107,North Walworth,Southwark,NA,NA,3,NA,NA,NA,NA,NA
+E05011108,Nunhead and Queen's Road,Southwark,NA,NA,3,NA,NA,NA,NA,NA
+E05011109,Old Kent Road,Southwark,2,NA,1,NA,NA,NA,NA,NA
+E05011110,Peckham,Southwark,1,NA,2,NA,NA,NA,NA,NA
+E05011111,Peckham Rye,Southwark,2,NA,NA,NA,NA,NA,NA,NA
+E05011112,Rotherhithe,Southwark,1,NA,2,NA,NA,NA,NA,NA
+E05011113,Rye Lane,Southwark,2,NA,1,NA,NA,NA,NA,NA
+E05011116,South Bermondsey,Southwark,3,NA,NA,NA,NA,NA,NA,NA
+E05011114,St George's,Southwark,NA,NA,NA,NA,2,NA,NA,NA
+E05011115,St Giles,Southwark,NA,NA,3,NA,NA,NA,NA,NA
+E05011117,Surrey Docks,Southwark,NA,NA,NA,NA,3,NA,NA,NA
+E05013754,Beddington,Sutton,NA,NA,NA,NA,2,NA,1,NA
+E05013755,Belmont,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013756,Carshalton Central,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013757,Carshalton South and Clockhouse,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013758,Cheam,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013759,Hackbridge,Sutton,1,NA,NA,NA,1,NA,NA,NA
+E05013760,North Cheam,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013763,South Beddington and Roundshaw,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013761,St Helier East,Sutton,NA,NA,NA,NA,2,NA,NA,NA
+E05013762,St Helier West,Sutton,NA,NA,NA,2,1,NA,NA,NA
+E05013764,Stonecot,Sutton,NA,NA,NA,NA,2,NA,NA,NA
+E05013765,Sutton Central,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013766,Sutton North,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013767,Sutton South,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013768,Sutton West and East Cheam,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013769,The Wrythe,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013770,Wallington North,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013771,Wallington South,Sutton,NA,NA,NA,NA,3,NA,NA,NA
+E05013772,Worcester Park North,Sutton,NA,NA,NA,NA,2,NA,NA,NA
+E05013773,Worcester Park South,Sutton,NA,NA,NA,NA,2,NA,NA,NA
+E05009317,Bethnal Green East,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,3
+E05009331,Bethnal Green West,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,3
+E05009318,Blackwall and Cubitt Town,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,3
+E05009319,Bow East,Tower Hamlets,NA,NA,3,NA,NA,NA,NA,NA
+E05009320,Bow West,Tower Hamlets,NA,NA,2,NA,NA,NA,NA,NA
+E05009321,Bromley North,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,2
+E05009322,Bromley South,Tower Hamlets,1,NA,NA,NA,NA,NA,NA,1
+E05009323,Canary Wharf,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,2
+E05009324,Island Gardens,Tower Hamlets,NA,1,NA,NA,NA,NA,NA,1
+E05009325,Lansbury,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,3
+E05009326,Limehouse,Tower Hamlets,1,NA,NA,NA,NA,NA,NA,NA
+E05009327,Mile End,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,3
+E05009328,Poplar,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,1
+E05009329,St Dunstan's,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,2
+E05009330,St Katharine's and Wapping,Tower Hamlets,2,NA,NA,NA,NA,NA,NA,NA
+E05009332,Shadwell,Tower Hamlets,NA,NA,NA,NA,1,NA,NA,1
+E05009333,Spitalfields and Banglatown,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,2
+E05009334,Stepney Green,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,2
+E05009335,Weavers,Tower Hamlets,1,NA,NA,NA,NA,NA,NA,1
+E05009336,Whitechapel,Tower Hamlets,NA,NA,NA,NA,NA,NA,NA,3
+E05013882,Cann Hall,Waltham Forest,NA,NA,3,NA,NA,NA,NA,NA
+E05013883,Cathall,Waltham Forest,1,NA,1,NA,NA,NA,NA,NA
+E05013884,Chapel End,Waltham Forest,NA,NA,3,NA,NA,NA,NA,NA
+E05013885,Chingford Green,Waltham Forest,NA,3,NA,NA,NA,NA,NA,NA
+E05013886,Endlebury,Waltham Forest,NA,2,NA,NA,NA,NA,NA,NA
+E05013887,Forest,Waltham Forest,NA,NA,3,NA,NA,NA,NA,NA
+E05013888,Grove Green,Waltham Forest,NA,NA,3,NA,NA,NA,NA,NA
+E05013889,Hale End and Highams Park South,Waltham Forest,2,NA,NA,NA,NA,NA,NA,NA
+E05013890,Hatch Lane and Highams Park North,Waltham Forest,NA,3,NA,NA,NA,NA,NA,NA
+E05013891,High Street,Waltham Forest,NA,NA,3,NA,NA,NA,NA,NA
+E05013892,Higham Hill,Waltham Forest,1,NA,2,NA,NA,NA,NA,NA
+E05013893,Hoe Street,Waltham Forest,3,NA,NA,NA,NA,NA,NA,NA
+E05013894,Larkswood,Waltham Forest,NA,3,NA,NA,NA,NA,NA,NA
+E05013895,Lea Bridge,Waltham Forest,NA,NA,3,NA,NA,NA,NA,NA
+E05013896,Leyton,Waltham Forest,NA,NA,3,NA,NA,NA,NA,NA
+E05013897,Leytonstone,Waltham Forest,1,NA,2,NA,NA,NA,NA,NA
+E05013898,Markhouse,Waltham Forest,1,NA,1,NA,NA,NA,NA,NA
+E05013899,St James,Waltham Forest,NA,NA,3,NA,NA,NA,NA,NA
+E05013900,Upper Walthamstow,Waltham Forest,2,NA,NA,NA,NA,NA,NA,NA
+E05013901,Valley,Waltham Forest,NA,3,NA,NA,NA,NA,NA,NA
+E05013902,William Morris,Waltham Forest,2,NA,1,NA,NA,NA,NA,NA
+E05013903,Wood Street,Waltham Forest,2,NA,NA,NA,NA,NA,NA,NA
+E05014009,Balham,Wandsworth,1,2,NA,NA,NA,NA,NA,NA
+E05014010,Battersea Park,Wandsworth,2,1,NA,NA,NA,NA,NA,NA
+E05014011,East Putney,Wandsworth,1,2,NA,NA,NA,NA,NA,NA
+E05014012,Falconbrook,Wandsworth,2,NA,NA,NA,NA,NA,NA,NA
+E05014013,Furzedown,Wandsworth,3,NA,NA,NA,NA,NA,NA,NA
+E05014014,Lavender,Wandsworth,NA,2,NA,NA,NA,NA,NA,NA
+E05014015,Nine Elms,Wandsworth,NA,2,NA,NA,NA,NA,NA,NA
+E05014016,Northcote,Wandsworth,NA,2,NA,NA,NA,NA,NA,NA
+E05014017,Roehampton,Wandsworth,3,NA,NA,NA,NA,NA,NA,NA
+E05014019,Shaftesbury and Queenstown,Wandsworth,3,NA,NA,NA,NA,NA,NA,NA
+E05014020,South Balham,Wandsworth,2,NA,NA,NA,NA,NA,NA,NA
+E05014021,Southfields,Wandsworth,NA,2,NA,NA,NA,NA,NA,NA
+E05014018,St Mary's,Wandsworth,NA,3,NA,NA,NA,NA,NA,NA
+E05014022,Thamesfield,Wandsworth,NA,3,NA,NA,NA,NA,NA,NA
+E05014023,Tooting Bec,Wandsworth,3,NA,NA,NA,NA,NA,NA,NA
+E05014024,Tooting Broadway,Wandsworth,3,NA,NA,NA,NA,NA,NA,NA
+E05014025,Trinity,Wandsworth,1,1,NA,NA,NA,NA,NA,NA
+E05014026,Wandle,Wandsworth,1,1,NA,NA,NA,NA,NA,NA
+E05014027,Wandsworth Common,Wandsworth,NA,3,NA,NA,NA,NA,NA,NA
+E05014028,Wandsworth Town,Wandsworth,2,1,NA,NA,NA,NA,NA,NA
+E05014029,West Hill,Wandsworth,1,1,NA,NA,NA,NA,1,NA
+E05014030,West Putney,Wandsworth,NA,3,NA,NA,NA,NA,NA,NA
+E05013792,Abbey Road,Westminster,NA,3,NA,NA,NA,NA,NA,NA
+E05013793,Bayswater,Westminster,1,2,NA,NA,NA,NA,NA,NA
+E05013794,Church Street,Westminster,3,NA,NA,NA,NA,NA,NA,NA
+E05013795,Harrow Road,Westminster,3,NA,NA,NA,NA,NA,NA,NA
+E05013796,Hyde Park,Westminster,1,2,NA,NA,NA,NA,NA,NA
+E05013797,Knightsbridge and Belgravia,Westminster,NA,3,NA,NA,NA,NA,NA,NA
+E05013798,Lancaster Gate,Westminster,2,1,NA,NA,NA,NA,NA,NA
+E05013799,Little Venice,Westminster,NA,3,NA,NA,NA,NA,NA,NA
+E05013800,Maida Vale,Westminster,3,NA,NA,NA,NA,NA,NA,NA
+E05013801,Marylebone,Westminster,NA,3,NA,NA,NA,NA,NA,NA
+E05013802,Pimlico North,Westminster,NA,3,NA,NA,NA,NA,NA,NA
+E05013803,Pimlico South,Westminster,3,NA,NA,NA,NA,NA,NA,NA
+E05013804,Queen's Park,Westminster,3,NA,NA,NA,NA,NA,NA,NA
+E05013805,Regent's Park,Westminster,NA,3,NA,NA,NA,NA,NA,NA
+E05013806,St James's,Westminster,NA,3,NA,NA,NA,NA,NA,NA
+E05013807,Vincent Square,Westminster,NA,3,NA,NA,NA,NA,NA,NA
+E05013808,West End,Westminster,NA,3,NA,NA,NA,NA,NA,NA
+E05013809,Westbourne,Westminster,3,NA,NA,NA,NA,NA,NA,NA

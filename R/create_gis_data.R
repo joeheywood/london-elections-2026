@@ -78,9 +78,7 @@ library(ggplot2)
 # winning candidate rather than every candidate who stood.
 # -----------------------------------------------------------------------------
 
-create_elected_candidates_by_ward <- function(
-    outfl = "data/gis/ward_results_2026.csv"
-) {
+create_elected_candidates_by_ward <- function() {
   
   # Open the election database.
   #
@@ -90,38 +88,10 @@ create_elected_candidates_by_ward <- function(
   on.exit(dbDisconnect(con), add = TRUE)
   
   # Only retrieve elected candidates.
-  #
-  # `elected == 1` is important here because the map is about seats won,
-  # rather than votes/candidates who stood.
-  candidates_all <- dbGetQuery(
-    con,
-    "SELECT * FROM candidates_all WHERE elected == 1"
-  )
+  candidates_all <- dbGetQuery( con, "SELECT * FROM candidates_all WHERE elected == 1" )
   
  
-  # ---------------------------------------------------------------------------
   # Convert from "long" party data to "wide" party data.
-  # ---------------------------------------------------------------------------
-  #
-  # At this point we still have one row per ward/party combination.
-  #
-  # `pivot_wider()` turns the party codes into columns, which makes the output
-  # much easier to use in a map.
-  #
-  # For example:
-  #
-  #   wd22cd   ward        party_code   n
-  #   E01001   Example     LAB          2
-  #   E01001   Example     CON          1
-  #
-  # becomes something like:
-  #
-  #   wd22cd   ward        LAB   CON
-  #   E01001   Example      2     1
-  #
-  # Missing party/ward combinations become NA rather than zero.
-  # ---------------------------------------------------------------------------
-  
   out <- candidates_all |>
     summarise(
       .by = c(
@@ -134,11 +104,12 @@ create_elected_candidates_by_ward <- function(
     ) |>
     pivot_wider(
       names_from = "party_code",
-      values_from = n
+      values_from = n, 
+      values_fill = 0
     )
   
   # Write the map-ready dataset to CSV.
-  write_csv(out, file = outfl)
+  write_csv(out, file = "output/1_elected_candidates_data.csv")
 }
 
 
@@ -162,13 +133,11 @@ create_elected_candidates_by_ward <- function(
 #   4. combining the results.
 # -----------------------------------------------------------------------------
 
-create_borough_political_control <- function(
-    database_path = "data/elections_2026.sqlite"
-) {
+create_borough_political_control <- function() {
   
   # Connect to the election database and make sure the connection is closed
   # when the function exits.
-  con <- dbConnect(SQLite(), database_path)
+  con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
   on.exit(dbDisconnect(con), add = TRUE)
   
   # Unlike the elected-candidate map, we need all candidates here because
@@ -193,6 +162,9 @@ create_borough_political_control <- function(
     candidates_all = candidates_all
   ) |>
     arrange(LAD22NM)
+  
+  
+  write_csv(b_cntrl, file = "output/2_borough_control_data.csv")
   
   # The object is currently returned implicitly by the function.
   b_cntrl
@@ -224,18 +196,17 @@ create_borough_political_control <- function(
 # The resulting value is called `adj_turnout`.
 # -----------------------------------------------------------------------------
 
-create_turnout_map <- function(
-    database_path = "data/elections_2026.sqlite"
-) {
+create_turnout_map <- function() {
   
   # Connect to the database.
-  con <- dbConnect(SQLite(), database_path)
+  con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
   on.exit(dbDisconnect(con), add = TRUE)
   
   # Retrieve the ward-level election statistics.
   election_stats <- dbGetQuery(
     con,
-    "SELECT * FROM election_stats"
+    "SELECT e.wd22cd, ward, LAD22NM, turnout, entitled_electors, valid_ballots 
+    FROM election_stats e LEFT JOIN geo_lkp g ON e.WD22CD = g.WD22CD"
   )
   
   # Keep the original turnout value temporarily for debugging/reference.
@@ -279,13 +250,20 @@ create_turnout_map <- function(
     as.numeric(election_stats$valid_ballots[mss]) /
     as.numeric(election_stats$entitled_electors[mss])
   
+  prev <- read_csv("data/ward_level_cleaned_2022.csv") |>
+    select(wd22cd = WD22CD, percentage_pol, electorate_22 = entitled_electors, 
+           vb_22 = valid_ballots) %>% 
+    mutate(turnout_22 = vb_22 / electorate_22)
+  
+  
+  df <- left_join(election_stats, prev, by = "wd22cd")
   # Write only the fields required by the GIS layer.
   #
   # `wd22cd` is the key that allows this data to be joined to the ward
   # geometry, while `adj_turnout` is the value used to colour the map.
   write_csv(
     election_stats |>
-      select(wd22cd, adj_turnout),
+      select(wd22cd, ward, LAD22NM, turnout_26 = adj_turnout, turnout_22),
     file = "data/gis/turnout.csv"
   )
 }

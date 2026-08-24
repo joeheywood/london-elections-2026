@@ -507,8 +507,81 @@ calculate_to_ward <- function() {
 calculate_to_ward_2022 <- function() {
   cnd22 <- read_csv("data/candidate_level_cleaned_2022.csv")
   prty22 <- read_csv("data/party_lookup.csv")
-  cnd22$party %in% prty22$ward_party_name %>% table()
+  prty26 <- read_csv("data/party_codes.csv")
+  cnd22 <- cnd22 |> left_join(prty26, by = c(party = "ward_party_name"))
+  cnd22$party %in% prty26$ward_party_name %>% table()
+  
+  dat22 <- cnd22 |>
+    summarise(
+      .by = c(
+        WD22CD,
+        ward,
+        borough,
+        official_party_name,
+        party_code
+      ),
+      n = n(),
+      val = mean(votes, na.rm = TRUE)
+    ) |>
+    ungroup()
+  
+  
+  # Calculate the total of the party-level values for each ward.
+  #
+  # This gives us the denominator used to calculate each party's share.
+  xdat22 <- dat22 |>
+    summarise(
+      .by = c(WD22CD),
+      tots = sum(val)
+    )
+  
+  # Join the ward totals back onto the party-level data and calculate the
+  # party's proportion of the ward total.
+  ydat22 <- left_join(dat22, xdat22) |>
+    mutate(
+      perc = val / tots
+    )
+  
+  # ydat is returned implicitly.
+  ydat22
+  
 }
+
+
+create_party_file <- function(code, flnm, ydat, ydat22) {
+  vt26 <- ydat |> filter(party_code == code)
+  vt22 <- ydat22 |> filter(party_code == code)
+  prc26 <- sum(vt26$val) / sum(ydat$val)
+  prc22 <- sum(vt22$val) / sum(ydat22$val)
+  print(glue("Party: {vt26$official_party_name[1]} Vote % in 2026: {round(prc26, 4)*100}% Vote % in 2022: {round(prc22, 4)*100}%")) 
+  print("Top 5 in 2026:")
+  print(vt26 |> arrange(desc(perc)) |> select(LAD22NM, ward, perc) |> head())
+  print("Top 5 in 2022:")
+  print(vt22 |> arrange(desc(perc)) |> select(borough, ward, perc) |> head())
+  print("------------")
+  print("Bottom 5 in 2026:")
+  print(vt26 |> arrange(desc(perc)) |> select(LAD22NM, ward, perc) |> tail())
+  print("Bottom 5 in 2022:")
+  print(vt22 |> arrange(desc(perc)) |> select(borough, ward, perc) |> tail())
+  
+  all <- full_join(
+    vt26 |> 
+      select(wd22cd, borough = LAD22NM, party_code, num_candidates = n, perc_26 = perc), 
+    vt22 |> 
+      select(wd22cd, perc_22 = perc)
+    )
+  write_csv(all, file = glue("output/{flnm}.csv"))
+}
+
+run_party_files <- function() {
+  ydat <- calculate_to_ward()
+  ydat22 <- calculate_to_ward_2022() |> rename(wd22cd = WD22CD)
+  create_party_file("CON", "4_conservative", ydat, ydat22)
+  create_party_file("LAB", "5_labour", ydat, ydat22)
+  create_party_file("LD", "6_libdem", ydat, ydat22)
+  create_party_file("GRE", "7_green", ydat, ydat22)
+}
+
 
 
 # =============================================================================
@@ -533,7 +606,7 @@ calculate_to_ward_2022 <- function() {
 # useful for quickly checking the output visually.
 # -----------------------------------------------------------------------------
 
-test_map <- function() {
+test_map <- function(pc) {
   
   # Load the borough geometry.
   x <- readRDS("data/gis/boroughs.rds")
@@ -541,52 +614,37 @@ test_map <- function() {
   # Load the ward geometry.
   wards <- readRDS("data/gis/wards.rds")
   
-  # ---------------------------------------------------------------------------
-  # Turnout map
-  # ---------------------------------------------------------------------------
-  #
-  # Assumes `wards` has already been joined to the turnout data and therefore
-  # contains `adj_turnout`.
-  #
-  # NOTE: As currently written, the turnout data is not actually joined here,
-  #       so this will only work if `adj_turnout` is already present in
-  #       `wards`.
-  # ---------------------------------------------------------------------------
+  dat1 <-  wards |> 
+    left_join( ydat |> filter(party_code == pc)) 
+  dat2 <-  wards |> left_join( ydat22 |> filter(party_code == pc)) 
   
-  ggplot(wards) +
-    geom_sf(aes(fill = adj_turnout))
+  dat1$perc[which(is.na(dat1$perc))] <- 0
+  dat2$perc[which(is.na(dat2$perc))] <- 0
+  
+  mx <- max(c(dat1$perc, dat2$perc))*100
+  
+  tp <- (mx - (mx %% 10)+10)/100
   
   
-  # ---------------------------------------------------------------------------
-  # Party vote/value map
-  # ---------------------------------------------------------------------------
-  #
-  # Assumes `wards` contains a variable called `val`.
-  ggplot(wards) +
-    geom_sf(aes(fill = val))
-  
-  
-  # ---------------------------------------------------------------------------
-  # Reform UK map
-  # ---------------------------------------------------------------------------
-  #
-  # Join the ward-level data for RUK onto the ward geometry using the ward
-  # identifier.
-  #
-  # `perc` is then used to colour the wards according to Reform UK's share.
-  #
-  # White is used for wards where there is no matching RUK value.
-  # ---------------------------------------------------------------------------
-  
-  ggplot(
-    wards |>
-      left_join(
-        ydat |> filter(party_code == "RUK")
-      )
-  ) +
+  p1 <- ggplot(dat1) +
     geom_sf(aes(fill = perc)) +
-    scale_fill_gradientn(
-      colours = c("#FFFFFF", "blue"),
+    scale_fill_gradient(
+      high = "blue",
+      low = "white",
+      limits = c(0,tp),
+      # colours = c("#FFFFFF", "blue"),
       na.value = "#FFF"
     )
+  
+  p2 <- ggplot(dat2) +
+    geom_sf(aes(fill = perc)) +
+    scale_fill_gradient(
+      high = "blue",
+      low = "white",
+      limits = c(0,tp),
+      # colours = c("#FFFFFF", "blue"),
+      na.value = "#FFF"
+    )
+  
+  grid.arrange(p1, p2, ncol = 1)
 }

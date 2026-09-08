@@ -18,6 +18,7 @@ create_database <- function() {
   ingest_election_stats_table()
   ingest_geo()
   ingest_party_lkp()
+  create_candidates_view()
 }
 
 # Read and standardize every candidate-results workbook in the completed-forms
@@ -40,6 +41,12 @@ ingest_candidates_table <- function() {
 # Extract ward-level election statistics from every file in the global `fls`
 # vector and write the combined data to the SQLite election_stats table.
 ingest_election_stats_table <- function() {
+  fls <- list.files(
+    "data/Completed Forms",
+    pattern = "\\.xlsx$",
+    full.names = TRUE,
+    ignore.case = TRUE
+  )
   stats <- map_df(fls, run_stats_for_file)
   cn <- RSQLite::dbConnect(SQLite(), "data/elections_2026.sqlite")
   dbWriteTable(cn, "election_stats", stats)
@@ -83,6 +90,8 @@ create_candidates_view <- function() {
   
   dbDisconnect(cn)
 }
+
+
 
 
 ##### -- UTILITY FUNCTIONS -- ####
@@ -165,6 +174,11 @@ run_election_stats <- function(sheet, fl) {
   )
   stats <- df[1:14, c(1:2,7)]
   names(stats) <- c("main", "second", "values")
+  
+  if(is.na(stats$values[5])) {
+    stats$values[5] <- as.character( as.numeric(stats$values[6]) + as.numeric(stats$values[7]))
+  }
+  
   data.frame(
     f = basename(fl),
     sheet = sheet,

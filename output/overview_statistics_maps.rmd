@@ -1,0 +1,312 @@
+---
+title: "Overview statistics and maps"
+output:
+  html_document:
+    df_print: paged
+date: "2026-09-10"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(gt)
+library(dplyr)
+
+load("../data/elected_table.RData")
+load("../data/share_votes_1.RData")
+load("../data/summary_table.RData")
+load("../data/share_votes_table.RData")
+load("../data/num_votes_table.RData")
+```
+
+## State of the political parties in the new councils
+
+```{r state_parties, echo=FALSE,message=FALSE}
+
+break_cols <- c("Bromley", "Greenwich", "Harrow", "Kingston on Thames", "Newham", "Tower Hamlets")
+gt(elected |>  select(Borough = LAD22NM, LAB:IND) , rowname_col = "Borough" ) |> 
+  tab_stubhead(label = "Borough") |> 
+  tab_options(
+    table.font.size = px(11), # Sets base font size for the whole table
+     data_row.padding = px(2)
+  ) |> 
+  fmt_integer(
+    columns = c(LAB, CON, LD, GRE, RUK, REA, IND, ASP),
+    use_seps = TRUE
+  )  |>  
+  summary_columns(
+    columns = c(LAB, CON, LD, GRE, RUK, REA, IND, ASP),
+    fns = ~ sum(.),
+    new_col_names = "Total"
+  ) |>
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b", "r"),
+        color = "#FFFFFF",
+        weight = px(1)
+      ),
+      cell_text(font = system_fonts("antique")[4])
+    ),
+    locations = list(cells_stub(), cells_body())
+  ) |> 
+    tab_style( 
+      style = list( cell_text(align = "center")), 
+      locations = list(cells_body()) 
+      ) |> 
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b", "t"),
+        color = "#000000",
+        weight = px(2)
+      ),
+      cell_text(font = system_fonts("antique")[4], weight = "bold")
+    ),
+    locations = list(cells_column_labels(), cells_stubhead())) |> 
+  grand_summary_rows(
+    columns = LAB:Total,
+    fns = list(label = "London", id = "london", fn = "sum")
+  ) |> 
+  tab_style(
+    style = list(
+      cell_borders( sides = c("b"), color = "#000000", weight = px(2) ),
+      cell_text(font = system_fonts("antique")[4], align = "center", weight = "bold")
+    ),
+    locations = list(cells_grand_summary(columns = c(LAB:Total)))
+  ) |> 
+  tab_style(
+    style = list(
+      cell_borders( sides = c("t"), color = "#FFFFFF", weight = px(2) ),
+      cell_text(font = system_fonts("antique")[4], align = "center", weight = "bold")
+    ),
+    locations = list(cells_grand_summary(columns = c(LAB:Total)))
+  ) |> 
+  tab_style(
+    style = list(
+      cell_borders( sides = c("b"), color = "#000000", weight = px(2) ),
+      cell_borders( sides = c("t", "r", "l"), color = "#FFFFFF", weight = px(2) ),
+      cell_text(font = system_fonts("antique")[4], align = "left", weight = "bold")
+    ),
+    locations = list(cells_stub_grand_summary())
+  ) |> 
+  tab_style(
+    style = css(
+    `padding-top` = "10px;",
+    `padding-bottom` = "0px;"),
+    locations = list(
+      cells_body( rows = Borough %in% break_cols ), 
+      cells_stub( rows = Borough %in% break_cols )
+    )
+  )
+```
+
+
+
+## Share of the vote for parties by borough
+
+```{r share_1, echo=FALSE,message=FALSE}
+
+break_cols <- c("Bromley", "Greenwich", "Harrow", "Kingston upon Thames", "Newham", "Tower Hamlets")
+gt(share_votes1 |>  select(Borough = borough, CON:OTH) , rowname_col = "Borough" ) |> 
+  tab_stubhead(label = "Borough") |> 
+  tab_options(
+    table.font.size = px(11), # Sets base font size for the whole table
+     data_row.padding = px(2)
+  ) |> 
+  fmt_integer(
+    columns = c(),
+    use_seps = TRUE
+  )  |>  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b", "r"),
+        color = "#FFFFFF",
+        weight = px(1)
+      ),
+      cell_text(font = system_fonts("antique")[4])
+    ),
+    locations = list(cells_stub(), cells_body())
+  ) |> 
+    tab_style( 
+      style = list( cell_text(align = "center")), 
+      locations = list(cells_body()) 
+      ) |> 
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b", "t"),
+        color = "#000000",
+        weight = px(2)
+      ),
+      cell_text(font = system_fonts("antique")[4], weight = "bold")
+    ),
+    locations = list(cells_column_labels(), cells_stubhead())) |> 
+
+  tab_style(
+    style = css(
+    `padding-top` = "10px;",
+    `padding-bottom` = "0px;"),
+    locations = list(
+      cells_body( rows = Borough %in% break_cols ), 
+      cells_stub( rows = Borough %in% break_cols )
+    )
+  )  |> 
+  sub_missing(missing_text = " ")
+```
+
+
+## Summary of election facts and figures
+
+
+```{r summ, echo=FALSE,message=FALSE}
+break_cols <- c("Total electorate", "Number at polling stations", "Lacking the official mark", "Total number of valid ballot papers")
+gt(summ,  rowname_col = "stat")  |> 
+  tab_options(
+    table.font.size = px(11), # Sets base font size for the whole table
+     data_row.padding = px(2)
+  ) |> 
+   tab_stubhead(label = "") |> 
+  fmt_integer(
+    rows = c(1:3, 5, 8:15),
+    use_seps = TRUE
+  ) |> 
+  fmt_number(
+    rows = c(4,6),
+    decimals = 1
+  ) |> 
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b", "r"),
+        color = "#FFFFFF",
+        weight = px(1)
+      ),
+      cell_text(font = system_fonts("antique")[4])
+    ),
+    locations = list(cells_stub(), cells_body())
+  ) |> 
+  tab_style( cell_text(weight = "bold"),
+    locations = list(cells_stub())
+  ) |> 
+   tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b", "t"),
+        color = "#000000",
+        weight = px(2)
+      ),
+      cell_text(font = system_fonts("antique")[4], weight = "bold")
+    ),
+    locations = list(cells_column_labels(), cells_stubhead())) |> 
+  tab_style(
+    style = css(
+    `padding-top` = "10px;",
+    `padding-bottom` = "0px;"),
+    locations = list(
+      cells_body( rows = stat %in% break_cols ), 
+      cells_stub( rows = stat %in% break_cols )
+    )
+  ) 
+
+```
+
+## Standardized Number of Votes table
+
+```{r num_votes, echo=FALSE,message=FALSE}
+
+gt(n_votes |> 
+     select(Borough = LAD22NM, CON:OTH) ) |> 
+  tab_options(
+    table.font.size = px(11), # Sets base font size for the whole table
+     data_row.padding = px(2)
+  ) |> 
+  fmt_integer(
+    columns = c(LAB, CON, LD, GRE, RUK, OTH),
+    use_seps = TRUE
+  )  |>  
+  tab_style(
+    style = list(
+      # cell_fill(color = "lightcyan"),
+      cell_borders(
+        sides = c("b"),
+        color = "#FFFFFF",
+        weight = px(1)
+      ),
+      cell_text(font = system_fonts("antique")[4], weight = "bold")
+    ),
+    locations = cells_body(columns = Borough)
+  ) |> 
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b"),
+        color = "#FFFFFF",
+        weight = px(1)
+      ),
+      cell_text(font = system_fonts("antique")[4])
+    ),
+    locations = cells_body(columns = c(CON:OTH)) 
+  ) |>  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b", "t"),
+        color = "#000000",
+        weight = px(1.1)
+      ),
+      cell_text(font = system_fonts("antique")[4], weight = "bold")
+    ),
+    locations = cells_column_labels())
+```
+
+## Share Votes table
+
+```{r share_votes, echo=FALSE,message=FALSE}
+
+gt(share_votes |> 
+     select(Borough = LAD22NM, LAB:OTH) ) |> 
+  tab_options(
+    table.font.size = px(11) # Sets base font size for the whole table
+  ) |> 
+  fmt_percent(
+    columns = c(LAB, CON, LD, GRE, RUK, OTH),
+    decimals = 0
+  )  |>  
+  tab_style(
+    style = list(
+      # cell_fill(color = "lightcyan"),
+      cell_borders(
+        sides = c("b"),
+        color = "#FFFFFF",
+        weight = px(1)
+      ),
+      cell_text(font = system_fonts("antique")[4], weight = "bold")
+    ),
+    locations = cells_body(columns = Borough)
+  ) |> 
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b"),
+        color = "#FFFFFF",
+        weight = px(1)
+      ),
+      cell_text(font = system_fonts("antique")[4])
+    ),
+    locations = cells_body(columns = c(LAB:OTH)) 
+  ) |>  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = c("b", "t"),
+        color = "#000000",
+        weight = px(2)
+      ),
+      cell_text(font = system_fonts("antique")[4], weight = "bold")
+    ),
+    locations = cells_column_labels())
+```
+
+
+

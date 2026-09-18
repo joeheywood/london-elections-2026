@@ -454,7 +454,7 @@ calculate_to_ward <- function() {
   #
   # NOTE: As with `save_postal_to_csv()`, `database_path` is currently assumed
   #       to exist outside the function.
-  con <- dbConnect(SQLite(), database_path)
+  con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
   
   # Retrieve all candidate results.
   candidates_all <- dbGetQuery(

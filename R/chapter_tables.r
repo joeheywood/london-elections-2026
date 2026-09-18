@@ -86,7 +86,7 @@ create_table_2 <- function() {
 
 
 add_col_to_table_3 <- function() {
-  con <- dbConnect(SQLite(), database_path)
+  con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
   
   # Retrieve all candidate results.
   candidates_all <- dbGetQuery(
@@ -131,6 +131,18 @@ add_col_to_table_3 <- function() {
   
   valid_ballots <- num_voting - rejected
   
+  # ## task for Jamie ##
+  # wdf <- election_stats |> 
+  #   select(LAD22NM, ward, electors = entitled_electors_nm, polls = ballots_polling_nm, postal = ballots_postal_nm, total_voting = number_voting)
+  # bdf <- wdf |> 
+  #   summarise(.by = "LAD22NM", electors = sum(electors), 
+  #             total_voting = sum(total_voting), 
+  #             polls = sum(polls), 
+  #             postal = sum(postal)) |> 
+  #   arrange(LAD22NM)
+  # 
+  # write_csv(wdf, "output/electors_summary.csv")
+  # write_csv(bdf, "output/electors_summary_borough.csv")
   
   
   
@@ -192,7 +204,6 @@ add_number_councillors_row <- function() {
   lab <- length(which(candidates_all$party_code == "LAB"))
   ld <- length(which(candidates_all$party_code == "LD"))
   oth <- length(which(!candidates_all$party_code %in% c("CON", "LAB", "LD")))
-  data.frame(con, lab, ld, oth)
   tot <- con + lab + ld + oth
   
   
@@ -216,6 +227,7 @@ add_number_councillors_row <- function() {
     "1968", 1438, 350,  10,   65,     1863,
     "1964", 668,  1112, 13,   66,     1859
   )
+  save(num_councillors, file = "data/num_councillors_ts.RData")
   
 }
 
@@ -224,7 +236,7 @@ add_number_councillors_row <- function() {
 add_percentage_councillors_row <- function() {
   norm <- calculate_to_ward()
   
-  con <- dbConnect(SQLite(), database_path)
+  con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
   
   election_stats <- dbGetQuery(
     con,
@@ -252,25 +264,26 @@ add_percentage_councillors_row <- function() {
   data.frame(lab_perc, con_perc, ld_perc, oth_perc)
   tnt26 <- (num_voting / total_electorate) * 100
   
-  tribble(
+  share_vote_time_series <- tribble(
   ~year, ~`% poll`, ~CON, ~LAB, ~LD, ~Other,
   "2026", tnt26, con_perc, lab_perc, ld_perc, oth_perc,
-  "2022",35.5,26.2,42.2,14.1,17.5,
-  "2018",38.8,29.0,44.1,12.7,14.2,
-  "2014",38.9,26.1,37.4,10.2,26.3,
-  "2010",62.0,32.0,32.6,22.0,13.4,
-  "2006",37.9,35.1,27.6,20.3,17.0,
-  "2002",31.8,34.4,33.8,20.3,11.6,
-  "1998",34.7,32.3,40.5,20.6,6.6,
-  "1994",46.1,31.3,41.5,21.8,5.4,
-  "1990",48.1,37.8,38.3,14.1,9.7,
-  "1986",45.4,35.8,37.4,23.8,3.1,
-  "1982",43.8,43.0,30.4,24.6,2.0,
-  "1978",42.9,49.6,39.6,6.4,4.4,
-  "1974",36.3,41.7,42.9,12.3,3.1,
-  "1971",38.7,39.4,53.1,4.2,3.3,
-  "1968",35.8,60.1,28.3,7.2,4.4
+  "2022", 35.5,  26.2,     42.2,     14.1,    17.5,
+  "2018", 38.8,  29.0,     44.1,     12.7,    14.2,
+  "2014", 38.9,  26.1,     37.4,     10.2,    26.3,
+  "2010", 62.0,  32.0,     32.6,     22.0,    13.4,
+  "2006", 37.9,  35.1,     27.6,     20.3,    17.0,
+  "2002", 31.8,  34.4,     33.8,     20.3,    11.6,
+  "1998", 34.7,  32.3,     40.5,     20.6,    6.6,
+  "1994", 46.1,  31.3,     41.5,     21.8,    5.4,
+  "1990", 48.1,  37.8,     38.3,     14.1,    9.7,
+  "1986", 45.4,  35.8,     37.4,     23.8,    3.1,
+  "1982", 43.8,  43.0,     30.4,     24.6,    2.0,
+  "1978", 42.9,  49.6,     39.6,     6.4,     4.4,
+  "1974", 36.3,  41.7,     42.9,     12.3,    3.1,
+  "1971", 38.7,  39.4,     53.1,     4.2,     3.3,
+  "1968", 35.8,  60.1,     28.3,     7.2,     4.4
   ) 
+  save(share_vote_time_series, file = "data/share_vote_time_series.RData")
   
 }
 

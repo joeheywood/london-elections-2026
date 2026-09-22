@@ -1,0 +1,308 @@
+---
+date: "`r Sys.Date()`"
+author: "Your Name"
+title: "officedown template"
+output: 
+  officedown::rdocx_document:
+    mapstyles:
+      Normal: ['First Paragraph']
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.cap = TRUE)
+library(officedown)
+library(officer)
+library(gt)
+library(dplyr)
+library(flextable)
+
+fp <- fp_par(
+  text.align = "center", 
+  padding.bottom = 20, padding.top = 120, 
+  border.bottom = fp_border())
+
+ft <- fp_text(shading.color='#EFEFEF', bold = TRUE)
+
+
+load("../data/elected_table.RData")
+load("../data/share_votes_1.RData")
+load("../data/summary_table.RData")
+load("../data/num_councillors_ts.RData")
+load("../data/share_vote_time_series.RData")
+load("../data/share_votes_table.RData")
+load("../data/num_votes_table.RData")
+
+
+```
+
+
+\newpage
+
+This document presents most of the features of the package `r ftext("officedown", ft)`. 
+`r fp`
+
+## Table of content
+
+<!---BLOCK_TOC--->
+
+## List of figures
+
+<!---BLOCK_TOC{seq_id: 'fig'}--->
+
+## List of tables
+
+<!---BLOCK_TOC{seq_id: 'tab'}--->
+
+
+\newpage
+
+## State of the political parties in the new councils
+
+```{r state_parties, echo=FALSE,message=FALSE}
+
+break_cols <- c("Bromley", "Greenwich", "Harrow", "Kingston on Thames", "Newham", "Tower Hamlets")
+
+ft <- flextable(elected |>  select(Borough = LAD22NM, LAB:IND))
+
+summary <- elected |>
+  summarise(
+    Borough = "Total",
+    LAB = sum(LAB),
+    CON = sum(CON),
+    LD = sum(LD),
+    GRE = sum(GRE),
+    RUK = sum(RUK),
+    ASP = sum(ASP),
+    REA = sum(REA),
+    IND = sum(IND)
+  )
+
+ft <- ft |>
+  font(
+    fontname = "Arial",
+    part = "header"
+  ) |>
+  fontsize(
+    size = 10,
+    part = "body"
+  ) |> 
+  padding(
+    padding.top = 0,
+    padding.bottom = 0,
+    part = "body"
+  ) |> 
+  # padding(
+  #   i = ~ Borough %in% break_cols,
+  #   padding.top = 10
+  # )  |>
+  add_footer_row(
+    values = summary,
+    colwidths = rep(1, ncol(elected))
+  ) |> 
+  align(j = -1,
+    
+    align = "right",
+    part = "footer"
+  ) |> 
+  width(j = 1, width = 1.5) |>
+  width(j = 2:4, width = 0.6)
+
+# gt(elected |>  select(Borough = LAD22NM, LAB:IND) , rowname_col = "Borough" ) |> 
+#   tab_stubhead(label = "Borough") |> 
+#   tab_options(
+#     table.font.size = px(11), # Sets base font size for the whole table
+#      data_row.padding = px(2)
+#   ) |> 
+#   fmt_integer(
+#     columns = c(LAB, CON, LD, GRE, RUK, REA, IND, ASP),
+#     use_seps = TRUE
+#   )  |>  
+#   summary_columns(
+#     columns = c(LAB, CON, LD, GRE, RUK, REA, IND, ASP),
+#     fns = ~ sum(.),
+#     new_col_names = "Total"
+#   ) |>
+#   tab_style(
+#     style = list(
+#       cell_borders(
+#         sides = c("b", "r"),
+#         color = "#FFFFFF",
+#         weight = px(1)
+#       ),
+#       cell_text(font = system_fonts("antique")[4])
+#     ),
+#     locations = list(cells_stub(), cells_body())
+#   ) |> 
+#     tab_style( 
+#       style = list( cell_text(align = "center")), 
+#       locations = list(cells_body()) 
+#       ) |> 
+#   tab_style(
+#     style = list(
+#       cell_borders(
+#         sides = c("b", "t"),
+#         color = "#000000",
+#         weight = px(2)
+#       ),
+#       cell_text(font = system_fonts("antique")[4], weight = "bold")
+#     ),
+#     locations = list(cells_column_labels(), cells_stubhead())) |> 
+#   grand_summary_rows(
+#     columns = LAB:Total,
+#     fns = list(label = "London", id = "london", fn = "sum")
+#   ) |> 
+#   tab_style(
+#     style = list(
+#       cell_borders( sides = c("b"), color = "#000000", weight = px(2) ),
+#       cell_text(font = system_fonts("antique")[4], align = "center", weight = "bold")
+#     ),
+#     locations = list(cells_grand_summary(columns = c(LAB:Total)))
+#   ) |> 
+#   tab_style(
+#     style = list(
+#       cell_borders( sides = c("t"), color = "#FFFFFF", weight = px(2) ),
+#       cell_text(font = system_fonts("antique")[4], align = "center", weight = "bold")
+#     ),
+#     locations = list(cells_grand_summary(columns = c(LAB:Total)))
+#   ) |> 
+#   tab_style(
+#     style = list(
+#       cell_borders( sides = c("b"), color = "#000000", weight = px(2) ),
+#       cell_borders( sides = c("t", "r", "l"), color = "#FFFFFF", weight = px(2) ),
+#       cell_text(font = system_fonts("antique")[4], align = "left", weight = "bold")
+#     ),
+#     locations = list(cells_stub_grand_summary())
+#   ) |> 
+#   tab_style(
+#     style = css(
+#     `padding-top` = "10px;",
+#     `padding-bottom` = "0px;"),
+#     locations = list(
+#       cells_body( rows = Borough %in% break_cols ), 
+#       cells_stub( rows = Borough %in% break_cols )
+#     )
+#   ) |> as_word()
+ft
+```
+
+\newpage
+
+## Sections
+
+### A two columns section
+
+<!---BLOCK_MULTICOL_START--->
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. Sed facilisis dapibus diam nec volutpat. Maecenas facilisis dapibus egestas. Curabitur dignissim pharetra pulvinar. Nunc bibendum elit sed cursus congue. 
+
+`r run_columnbreak()`Curabitur ligula quam, iaculis faucibus orci quis, vestibulum lobortis lectus. Suspendisse fringilla nisl pulvinar, laoreet tellus sed, sollicitudin tortor. Donec consequat congue erat in iaculis. Curabitur luctus tellus ut turpis iaculis, nec laoreet ligula scelerisque.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. Sed facilisis dapibus diam nec volutpat. Maecenas facilisis dapibus egestas. Curabitur dignissim pharetra pulvinar. Nunc bibendum elit sed cursus congue. Curabitur ligula quam, iaculis faucibus orci quis, vestibulum lobortis lectus. Suspendisse fringilla nisl pulvinar, laoreet tellus sed, sollicitudin tortor. Donec consequat congue erat in iaculis. Curabitur luctus tellus ut turpis iaculis, nec laoreet ligula scelerisque.
+
+<!---BLOCK_MULTICOL_STOP{widths: [3,3], space: 0.2, sep: true}--->
+
+### End of two columns section
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. Sed facilisis dapibus diam nec volutpat. Maecenas facilisis dapibus egestas. Curabitur dignissim pharetra pulvinar. Nunc bibendum elit sed cursus congue. Curabitur ligula quam, iaculis faucibus orci quis, vestibulum lobortis lectus. Suspendisse fringilla nisl pulvinar, laoreet tellus sed, sollicitudin tortor. Donec consequat congue erat in iaculis. Curabitur luctus tellus ut turpis iaculis, nec laoreet ligula scelerisque.
+
+<!---BLOCK_LANDSCAPE_START--->
+
+### Landscape section
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. Sed facilisis dapibus diam nec volutpat. 
+
+```{r, echo=FALSE}
+barplot(1:5, col=1:5)
+```
+
+<!---BLOCK_LANDSCAPE_STOP--->
+
+### Normal section
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. Sed facilisis dapibus diam nec volutpat. Maecenas facilisis dapibus egestas. Curabitur dignissim pharetra pulvinar. Nunc bibendum elit sed cursus congue. Curabitur ligula quam, iaculis faucibus orci quis, vestibulum lobortis lectus. Suspendisse fringilla nisl pulvinar, laoreet tellus sed, sollicitudin tortor. Donec consequat congue erat in iaculis. Curabitur luctus tellus ut turpis iaculis, nec laoreet ligula scelerisque.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. Sed facilisis dapibus diam nec volutpat. Maecenas facilisis dapibus egestas. Curabitur dignissim pharetra pulvinar. Nunc bibendum elit sed cursus congue. Curabitur ligula quam, iaculis faucibus orci quis, vestibulum lobortis lectus. Suspendisse fringilla nisl pulvinar, laoreet tellus sed, sollicitudin tortor. Donec consequat congue erat in iaculis. Curabitur luctus tellus ut turpis iaculis, nec laoreet ligula scelerisque.
+
+
+## Tables
+
+### Table 1
+
+
+```{r tab.cap="caption 1", tab.id="mtcars"}
+head(mtcars)
+```
+
+### Table 2
+
+```{r tab.cap="iris"}
+head(iris)
+```
+
+### Table 3
+
+```{r tab.cap="cars", tab.id="cars"}
+head(cars)
+```
+
+
+## figures 
+
+
+### A boxplot
+
+```{r fig.cap="A boxplot", fig.id = "boxplot"}
+boxplot(1:8)
+```
+
+### A barplot
+
+```{r fig.cap="What a barplot", fig.id = "barplot"}
+barplot(1:8)
+```
+
+## Lists
+
+Amet nunc eros curabitur tellus massa, eros maximus porttitor sociosqu, pellentesque.
+
+* Erat mauris egestas finibus tincidunt sed in rhoncus a tellus etiam. 
+    - A adipiscing per ultricies justo tellus lorem. 
+        - Imperdiet ut dui primis, sed gravida, at sed nulla. 
+        - Sem posuere lacus consequat inceptos dapibus duis malesuada finibus. 
+    - Urna sed dui, ornare, eu turpis mus pellentesque amet amet bibendum. 
+* Himenaeos tincidunt, auctor dapibus scelerisque, montes nunc faucibus 
+sodales malesuada ridiculus sed cubilia ligula.
+
+
+1. Erat mauris egestas finibus tincidunt sed in rhoncus a tellus etiam. 
+    1. A adipiscing per ultricies justo tellus lorem. 
+        1. Imperdiet ut dui primis, sed gravida, at sed nulla. 
+        2. Sem posuere lacus consequat inceptos dapibus duis malesuada finibus. 
+    2. Urna sed dui, ornare, eu turpis mus pellentesque amet amet bibendum. 
+2. Himenaeos tincidunt, auctor dapibus scelerisque, montes nunc faucibus 
+sodales malesuada ridiculus sed cubilia ligula.
+
+
+Lorem dolor interdum orci eros pellentesque semper tristique, sodales, et sed
+ut! Porta mattis natoque et. Ac facilisi ipsum viverra elementum vestibulum
+ligula amet enim magnis luctus ullamcorper. Rhoncus rhoncus elit in at nisl.
+Tincidunt habitant sit.
+
+
+* Aptent conubia quam montes id sagittis.
+    - Mattis nisi nascetur, aliquam duis ex, tristique.
+        - Imperdiet ut dui primis, sed gravida, at sed nulla. 
+        - Donec ligula nulla ac. Nisl ac at accumsan sagittis eros felis lobortis amet 
+        nec phasellus urna bibendum sapien.
+    - Eu dui ac id, dictum proin consectetur convallis.
+* Facilisi eu lectus mauris lorem. Et sed sapien pellentesque sed etiam vehicula. 
+* In porttitor id lorem eu efficitur, nisl dis!
+
+
+## Reference
+
+see figure \@ref(fig:boxplot) and table \@ref(tab:mtcars)!
+

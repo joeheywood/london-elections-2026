@@ -26,7 +26,7 @@ load("../data/num_votes_table.RData")
 ```{r state_parties, echo=FALSE,message=FALSE}
 
 break_cols <- c("Bromley", "Greenwich", "Harrow", "Kingston on Thames", "Newham", "Tower Hamlets")
-gt(elected |>  select(Borough = LAD22NM, LAB:IND) , rowname_col = "Borough" ) |> 
+tb1 <- gt(elected |>  select(Borough = LAD22NM, LAB:IND) , rowname_col = "Borough" ) |> 
   tab_stubhead(label = "Borough") |> 
   tab_options(
     table.font.size = px(11), # Sets base font size for the whole table
@@ -100,7 +100,10 @@ gt(elected |>  select(Borough = LAD22NM, LAB:IND) , rowname_col = "Borough" ) |>
       cells_body( rows = Borough %in% break_cols ), 
       cells_stub( rows = Borough %in% break_cols )
     )
-  ) |> as_word()
+  ) 
+gtsave(as_word(tb1), filename = "tb1.xml")
+
+tbl
 ```
 
 

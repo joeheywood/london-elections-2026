@@ -10,6 +10,16 @@ library(glue)
 
 source("R/create_gis_data.R")
 
+
+inner_boros <- data.frame(
+  LAD22NM = c("Camden", "Hackney", "Hammersmith & F.", "Haringey", "Islington", 
+                 "Kensington & C.", "Lambeth", "Lewisham", "Newham", "Southwark", 
+                 "Tower Hamlets",  "Wandsworth", "Westminster"),
+  LAD22CD = c("E09000007", "E09000012", "E09000013", "E09000014", "E09000019",
+              "E09000020", "E09000022", "E09000023", "E09000025", "E09000028",
+              "E09000030", "E09000032", "E09000033")
+) 
+
 create_table_1 <- function() {
   con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
   on.exit(dbDisconnect(con), add = TRUE)
@@ -24,7 +34,6 @@ create_table_1 <- function() {
     select(LAD22NM, LAB, CON, LD, GRE, RUK, ASP, REA, IND) 
   
   save(elected, file = "data/elected_table.RData")
-  
 }
 
 
@@ -42,6 +51,7 @@ create_table_2 <- function() {
     con,
     "SELECT * FROM candidates_all"
   )
+  dbDisconnect(con)
   
   # Calculate the mean number of votes for each party in each ward.
   #
@@ -56,6 +66,7 @@ create_table_2 <- function() {
         wd22cd,
         ward,
         LAD22NM,
+        LAD22CD,
         official_party_name,
         party_code
       ),
@@ -65,9 +76,17 @@ create_table_2 <- function() {
     ungroup() |> 
     rename(borough = LAD22NM)
   
+  inner <- dat |>
+    filter(LAD22CD %in% inner_boros$LAD22CD) %>% 
+    summarise(
+      .by = c(official_party_name, party_code), 
+      val = sum(val, na.rm = TRUE)
+    )
+  
   
   codes <- c("LAB", "CON", "LD", "GRE", "REA", "IND", "RUK")
   dat$party_code[which(!dat$party_code %in% codes)] <- "OTH"
+  inner$party_code[which(!inner$party_code %in% codes)] <- "OTH"
   
   br_dat <- summarise(dat, .by = c(borough), x = sum(val)) 
   
@@ -81,6 +100,18 @@ create_table_2 <- function() {
     pivot_wider(names_from = party_code, values_from = p) |> 
     select(borough, CON, LAB, LD, GRE,RUK, REA, IND, OTH) |> 
     arrange(borough)
+  
+  inner_ttl <- sum(inner$val )
+  
+  inner |>
+    summarise(.by = party_code, v = sum(val)) |>
+    mutate(p = ((v / inner_ttl)*100))|>
+    select(party_code, p) |>
+    pivot_wider(names_from = party_code, values_from = p)
+    
+    
+    
+ # INNER... 
   save(share_votes1, file = "data/share_votes_1.RData")
 }
 

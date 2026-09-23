@@ -60,9 +60,49 @@ This document presents most of the features of the package `r ftext("officedown"
 
 ```{r state_parties, echo=FALSE,message=FALSE}
 
-break_cols <- c("Bromley", "Greenwich", "Harrow", "Kingston on Thames", "Newham", "Tower Hamlets")
+break_cols <- c("Bromley", "Greenwich", "Harrow", "Kingston upon T.", "Newham", "Tower Hamlets", "Inner London")
+elected <- elected |>
+  mutate(Total = LAB + CON + LD + GRE + RUK + ASP + REA + IND)
 
-ft <- flextable(elected |>  select(Borough = LAD22NM, LAB:IND))
+elected$LAD22NM[which(elected$LAD22NM == "Barking and Dagenham")] <- "Barking & D."
+elected$LAD22NM[which(elected$LAD22NM == "Hammersmith and Fulham")] <- "Hammersmith & F."
+elected$LAD22NM[which(elected$LAD22NM == "Kensington and Chelsea")] <- "Kensington & C."
+elected$LAD22NM[which(elected$LAD22NM == "Kingston upon Thames")] <- "Kingston upon T."
+elected$LAD22NM[which(elected$LAD22NM == "Richmond upon Thames")] <- "Richmond upon T."
+
+inner_boros <- c("Camden", "Hackney", "Hammersmith & F.", "Haringey", "Islington", 
+                 "Kensington & C.", "Lambeth", "Lewisham", "Newham", "Southwark", 
+                 "Tower Hamlets",  "Wandsworth", "Westminster")
+
+inner <- elected |> filter(LAD22NM %in% inner_boros)
+outer <- elected |> filter(!LAD22NM %in% inner_boros)
+inner_summary <- inner |>
+  summarise(
+    LAD22NM = "Inner London",
+    LAB = sum(LAB),
+    CON = sum(CON),
+    LD = sum(LD),
+    GRE = sum(GRE),
+    RUK = sum(RUK),
+    ASP = sum(ASP),
+    REA = sum(REA),
+    IND = sum(IND),
+    Total = sum(Total)
+  )
+
+outer_summary <- outer |>
+  summarise(
+    LAD22NM = "Outer London",
+    LAB = sum(LAB),
+    CON = sum(CON),
+    LD = sum(LD),
+    GRE = sum(GRE),
+    RUK = sum(RUK),
+    ASP = sum(ASP),
+    REA = sum(REA),
+    IND = sum(IND),
+    Total = sum(Total)
+  )
 
 summary <- elected |>
   summarise(
@@ -74,8 +114,15 @@ summary <- elected |>
     RUK = sum(RUK),
     ASP = sum(ASP),
     REA = sum(REA),
-    IND = sum(IND)
+    IND = sum(IND),
+    Total = sum(Total)
   )
+
+elected <- bind_rows(elected, inner_summary, outer_summary)
+
+
+ft <- flextable(elected |>  select(Borough = LAD22NM, LAB:Total))
+
 
 ft <- ft |>
   font(
@@ -91,37 +138,75 @@ ft <- ft |>
     padding.bottom = 0,
     part = "body"
   ) |> 
-  # padding(
-  #   i = ~ Borough %in% break_cols,
-  #   padding.top = 10
-  # )  |>
+  padding(
+    i = ~ Borough %in% break_cols,
+    padding.top = 10
+  )  |>
   add_footer_row(
     values = summary,
     colwidths = rep(1, ncol(elected))
   ) |> 
   align(j = -1,
-    
     align = "right",
     part = "footer"
   ) |> 
   width(j = 1, width = 1.5) |>
-  width(j = 2:4, width = 0.6)
+  width(j = 2:10, width = 0.48)
 
-# gt(elected |>  select(Borough = LAD22NM, LAB:IND) , rowname_col = "Borough" ) |> 
+ft
+```
+
+\newpage
+
+Share of the vote for parties by borough
+
+```{r share_vote_parties, echo=FALSE,message=FALSE}
+
+break_cols <- c("Bromley", "Greenwich", "Harrow", "Kingston upon T.", "Newham", "Tower Hamlets", "Inner London")
+
+sft <- flextable(share_votes1 |>  select(Borough = borough, CON:OTH))
+
+sft <- sft |>
+  font(
+    fontname = "Arial",
+    part = "header"
+  ) |>
+  fontsize(
+    size = 10,
+    part = "body"
+  ) |> 
+  padding(
+    padding.top = 0,
+    padding.bottom = 0,
+    part = "body"
+  ) |> 
+  padding(
+    i = ~ Borough %in% break_cols,
+    padding.top = 10
+  )  |>
+  # add_footer_row(
+  #   values = summary,
+  #   colwidths = rep(1, ncol(share_votes1))
+  # ) |> 
+  # align(j = -1,
+  #   align = "right",
+  #   part = "footer"
+  # ) |> 
+  width(j = 1, width = 1.5) |>
+  width(j = 2:9, width = 0.48)
+
+sft
+
+# gt(share_votes1 |>  select(Borough = borough, CON:OTH) , rowname_col = "Borough" ) |> 
 #   tab_stubhead(label = "Borough") |> 
 #   tab_options(
 #     table.font.size = px(11), # Sets base font size for the whole table
 #      data_row.padding = px(2)
 #   ) |> 
 #   fmt_integer(
-#     columns = c(LAB, CON, LD, GRE, RUK, REA, IND, ASP),
+#     columns = c(),
 #     use_seps = TRUE
 #   )  |>  
-#   summary_columns(
-#     columns = c(LAB, CON, LD, GRE, RUK, REA, IND, ASP),
-#     fns = ~ sum(.),
-#     new_col_names = "Total"
-#   ) |>
 #   tab_style(
 #     style = list(
 #       cell_borders(
@@ -147,32 +232,7 @@ ft <- ft |>
 #       cell_text(font = system_fonts("antique")[4], weight = "bold")
 #     ),
 #     locations = list(cells_column_labels(), cells_stubhead())) |> 
-#   grand_summary_rows(
-#     columns = LAB:Total,
-#     fns = list(label = "London", id = "london", fn = "sum")
-#   ) |> 
-#   tab_style(
-#     style = list(
-#       cell_borders( sides = c("b"), color = "#000000", weight = px(2) ),
-#       cell_text(font = system_fonts("antique")[4], align = "center", weight = "bold")
-#     ),
-#     locations = list(cells_grand_summary(columns = c(LAB:Total)))
-#   ) |> 
-#   tab_style(
-#     style = list(
-#       cell_borders( sides = c("t"), color = "#FFFFFF", weight = px(2) ),
-#       cell_text(font = system_fonts("antique")[4], align = "center", weight = "bold")
-#     ),
-#     locations = list(cells_grand_summary(columns = c(LAB:Total)))
-#   ) |> 
-#   tab_style(
-#     style = list(
-#       cell_borders( sides = c("b"), color = "#000000", weight = px(2) ),
-#       cell_borders( sides = c("t", "r", "l"), color = "#FFFFFF", weight = px(2) ),
-#       cell_text(font = system_fonts("antique")[4], align = "left", weight = "bold")
-#     ),
-#     locations = list(cells_stub_grand_summary())
-#   ) |> 
+# 
 #   tab_style(
 #     style = css(
 #     `padding-top` = "10px;",
@@ -181,8 +241,9 @@ ft <- ft |>
 #       cells_body( rows = Borough %in% break_cols ), 
 #       cells_stub( rows = Borough %in% break_cols )
 #     )
-#   ) |> as_word()
-ft
+#   )  |> 
+#   sub_missing(missing_text = " ")
+
 ```
 
 \newpage

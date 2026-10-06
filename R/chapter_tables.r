@@ -82,11 +82,18 @@ create_table_2 <- function() {
       .by = c(official_party_name, party_code), 
       val = sum(val, na.rm = TRUE)
     )
+  outer <- dat |>
+    filter(!LAD22CD %in% inner_boros$LAD22CD) %>% 
+    summarise(
+      .by = c(official_party_name, party_code), 
+      val = sum(val, na.rm = TRUE)
+    )
   
   
   codes <- c("LAB", "CON", "LD", "GRE", "REA", "IND", "RUK")
   dat$party_code[which(!dat$party_code %in% codes)] <- "OTH"
   inner$party_code[which(!inner$party_code %in% codes)] <- "OTH"
+  outer$party_code[which(!outer$party_code %in% codes)] <- "OTH"
   
   br_dat <- summarise(dat, .by = c(borough), x = sum(val)) 
   
@@ -102,13 +109,32 @@ create_table_2 <- function() {
     arrange(borough)
   
   inner_ttl <- sum(inner$val )
+  outer_ttl <- sum(outer$val )
+  all_ttl <- sum(dat$val)
   
-  inner |>
+  inner_row <- inner |>
     summarise(.by = party_code, v = sum(val)) |>
-    mutate(p = ((v / inner_ttl)*100))|>
-    select(party_code, p) |>
-    pivot_wider(names_from = party_code, values_from = p)
+    mutate(p = ((v / inner_ttl)*100), borough = "Inner London")|>
+    select(borough, party_code, p) |>
+    pivot_wider(names_from = party_code, values_from = p) |> 
+    mutate(REA = 0) |> 
+    select(borough, CON, LAB, LD, GRE, RUK, REA, IND, OTH)
     
+  outer_row <- outer |>
+    summarise(.by = party_code, v = sum(val)) |>
+    mutate(p = ((v / outer_ttl)*100), borough = "Outer London")|>
+    select(borough, party_code, p) |>
+    pivot_wider(names_from = party_code, values_from = p) |> 
+    select(borough, CON, LAB, LD, GRE, RUK, REA, IND, OTH)
+  
+  total_row <- dat |>
+    summarise(.by = party_code, v = sum(val)) |>
+    mutate(p = ((v / all_ttl)*100), borough = "London")|>
+    select(borough, party_code, p) |>
+    pivot_wider(names_from = party_code, values_from = p) |> 
+    select(borough, CON, LAB, LD, GRE, RUK, REA, IND, OTH)
+  
+  share_votes1 <- bind_rows(share_votes1, inner_row, outer_row, total_row)
     
     
  # INNER... 
@@ -339,10 +365,12 @@ number_candidates_votes_table <- function() {
     pivot_wider(names_from = party_code, values_from = candidates, names_prefix = "n_") |> 
     arrange(LAD22NM)
   
-  left_join(votes, num_cands) |> 
+  nm_cands_vts <- left_join(votes, num_cands) |> 
     mutate(total_cands = n_CON + n_LAB + n_LD + n_OTH,
            total_votes = v_CON + v_LAB + v_LD + v_OTH) |> 
-    select(n_CON, n_LAB, n_LD, n_OTH, total_cands, v_CON, v_LAB, v_LD, v_OTH, total_votes) 
+    select(Borough = LAD22NM, n_CON, n_LAB, n_LD, n_OTH, n_Total = total_cands, 
+           v_CON, v_LAB, v_LD, v_OTH, v_Total = total_votes) 
+  save(nm_cands_vts, file = "data/nm_cands_vts.RData")
   
 }
 
@@ -356,21 +384,86 @@ num_votes_table <- function() {
     arrange(LAD22NM) |> 
     select(LAD22NM, CON, LAB, LD, GRE, RUK, OTH)
   save(n_votes, file = "data/num_votes_table.RData")
+  n_votes
 }
 
 
 share_votes_table <- function(n_votes) {
-  n_votes$total <- n_votes$CON + n_votes$LAB + n_votes$LD + n_votes$GRE + n_votes$RUK + n_votes$OTH
-  share_votes <- n_votes |> select(LAD22NM, total)
-  share_votes$LAB <- n_votes$LAB / n_votes$total
-  share_votes$CON <- n_votes$CON / n_votes$total
-  share_votes$LD <- n_votes$LD / n_votes$total
-  share_votes$GRE <- n_votes$GRE / n_votes$total
-  share_votes$RUK <- n_votes$RUK / n_votes$total
-  share_votes$OTH <- n_votes$OTH / n_votes$total
+  # n_votes$total <- n_votes$CON + n_votes$LAB + n_votes$LD + n_votes$GRE + n_votes$RUK + n_votes$OTH
+  # share_votes <- n_votes |> select(LAD22NM, total)
+  # share_votes$LAB <- n_votes$LAB / n_votes$total
+  # share_votes$CON <- n_votes$CON / n_votes$total
+  # share_votes$LD <- n_votes$LD / n_votes$total
+  # share_votes$GRE <- n_votes$GRE / n_votes$total
+  # share_votes$RUK <- n_votes$RUK / n_votes$total
+  # share_votes$OTH <- n_votes$OTH / n_votes$total
   
-  save(share_votes, file = "data/share_votes_table.RData")
+  norm <- calculate_to_ward()
+  norm$party_code[which(!norm$party_code %in% c("LAB", "CON", "LD", "GRE", "RUK"))] <- "OTH"
+  sums <- norm |> summarise(.by = LAD22NM, s = sum(val))
+  sv <- norm |> 
+    summarise(.by = c(party_code, LAD22NM), v = sum(val) ) |> 
+    left_join(sums) |> 
+    mutate(p = v / s) 
+  
+  stand <- sv |> 
+    select(LAD22NM, party_code, v) |> 
+    pivot_wider(names_from = party_code, values_from = v, names_prefix = "v_")
+  
+  prcs <- sv |> 
+    select(LAD22NM, party_code, p) |> 
+    pivot_wider(names_from = party_code, values_from = p, names_prefix = "p_")
+  
+  
+  con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
+  
+  election_stats <- dbGetQuery(
+    con,
+    paste0(
+      "SELECT LAD22NM, entitled_electors, ballots_polling, ballots_postal ",
+      "FROM election_stats e ",
+      "INNER JOIN geo_lkp g ON e.wd22cd = g.WD22CD;"
+    )
+  )
+  dbDisconnect(con)
+  
+  election_stats$ee <- convert_to_numeric_integer(election_stats$entitled_electors)
+  election_stats$post <- convert_to_numeric_integer(election_stats$ballots_postal)
+  election_stats$poll <- convert_to_numeric_integer(election_stats$ballots_polling)
+  
+  turnout <- election_stats |> 
+    mutate(votes = post + poll) |> 
+    summarise(.by = LAD22NM, votes = sum(votes), el = sum(ee)) |> 
+    mutate(Turnout = round(((votes / el)*100), 1)) |> 
+    select(LAD22NM, Turnout)
+  
+  stand_prc <- stand |> 
+    left_join(prcs, by = "LAD22NM") |> 
+    left_join(turnout, by = "LAD22NM")
+  
+    
+  
+  save(stand_prc, file = "data/stand_prc.RData")
+  
 
+}
+
+parties_table <- function() {
+  con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
+  party_data <- dbGetQuery(
+    con,  
+    paste0("SELECT votes, party, official_party_name, party_code, elected FROM candidates c ",
+           "INNER JOIN party_lookup pl ON c.party = pl.ward_party_name") 
+    ) 
+  dbDisconnect(con)
+  head(party_data)
+  
+  parties_table <- party_data |> 
+    summarise(.by = c(party_code, official_party_name), v = sum(votes), n = n(), 
+              el = sum(elected)  ) |> 
+    mutate(vpc = round(v / n)) |> 
+    arrange(desc(v))
+  save(parties_table, file = "data/parties_table.RData")
 }
 
 

@@ -412,6 +412,7 @@ share_votes_table <- function(n_votes) {
   
   prcs <- sv |> 
     select(LAD22NM, party_code, p) |> 
+    mutate(p = round(p*100, 1)) |> 
     pivot_wider(names_from = party_code, values_from = p, names_prefix = "p_")
   
   
@@ -464,6 +465,64 @@ parties_table <- function() {
     mutate(vpc = round(v / n)) |> 
     arrange(desc(v))
   save(parties_table, file = "data/parties_table.RData")
+}
+
+get_turnout_table <- function() {
+  con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
+  
+  # Retrieve all c
+  
+  # if there isn't a matching row in `geo_lkp`.
+  election_stats <- dbGetQuery(
+    con,
+    paste0(
+      "SELECT e.wd22cd, ward, LAD22NM, entitled_electors, ballots_polling, turnout, ",
+      "ballots_postal ",
+      "FROM election_stats e ",
+      "LEFT JOIN geo_lkp g ON e.wd22cd = g.wd22cd;"
+    )
+  )
+  dbDisconnect(con)
+  
+  xx <- str_replace_all(
+    election_stats$turnout,
+    "\\%",
+    ""
+  )
+  
+  # Convert the cleaned values to numeric.
+  xy <- as.numeric(xx)
+  
+  # Standardise values greater than 1.
+  #
+  # Values such as 45 represent 45%, whereas the desired representation is
+  # 0.45. Values already expressed as decimals (e.g. 0.45) are left alone.
+  xy[which(xy > 1)] <- xy[which(xy > 1)] / 100
+  
+  election_stats$adj_turnout <- round((xy*100), 1)
+  
+  
+  
+  es <- election_stats |> 
+    mutate(ee = convert_to_numeric_integer(entitled_electors),
+           poll = convert_to_numeric_integer(ballots_polling),
+           pst = convert_to_numeric_integer(ballots_postal),
+           ) |> 
+    mutate(total_votes = poll + pst) |> 
+    mutate(tnt = total_votes / ee) |> 
+    mutate(tnt = round(tnt * 100, 1)) |> 
+    mutate(diff = abs(tnt - adj_turnout)) |> 
+    arrange(desc(diff))
+  
+  ### Corrections
+  # Lewisham, Catford - should be 3779 ballots_polling
+  # Croydon, Thornton Heath, turnout should be .357
+  # Hillingdon, Yeading, think entitled electors should be 2387
+  # Waltham Forest, Valley . think entitled elections should be 2467
+  # Waltham Forest, Chingford Green. think entitled elections should be 3817
+  
+  
+  
 }
 
 

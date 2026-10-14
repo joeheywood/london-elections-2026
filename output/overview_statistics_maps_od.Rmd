@@ -33,6 +33,8 @@ load("../data/share_vote_time_series.RData")
 load("../data/share_votes_table.RData")
 load("../data/num_votes_table.RData")
 load("../data/nm_cands_vts.RData")
+load("../data/stand_prc.RData")
+load("../data/parties_table.RData")
 
 
 ```
@@ -350,8 +352,79 @@ ncvft
 #### Share of votes by borough
 
 ```{r shr_borough, echo=FALSE,message=FALSE}
+break_cols <- c("Bromley", "Greenwich", "Harrow", "Kingston upon T.", "Newham", "Tower Hamlets", "Inner London")
+stand_prc$LAD22NM[which(stand_prc$LAD22NM == "Barking and Dagenham")] <- "Barking & D."
+stand_prc$LAD22NM[which(stand_prc$LAD22NM == "Hammersmith and Fulham")] <- "Hammersmith & F."
+stand_prc$LAD22NM[which(stand_prc$LAD22NM == "Kensington and Chelsea")] <- "Kensington & C."
+stand_prc$LAD22NM[which(stand_prc$LAD22NM == "Kingston upon Thames")] <- "Kingston upon T."
+stand_prc$LAD22NM[which(stand_prc$LAD22NM == "Richmond upon Thames")] <- "Richmond upon T."
+spft <- flextable(stand_prc)
+spft <-spft |> 
+  colformat_double(j  = 2:7, big.mark = ",", digits = 0) |> 
+  add_header_row(
+    values = c("Borough", 
+               "Votes standardised by number of candidates per ward", 
+               "Share of poll", 
+               "% Turnout"), 
+    colwidths = c(1,6,6,1)
+  ) |> 
+  merge_at(i = 1:2, j = 1, part = "header") |> 
+  merge_at(i = 1:2, j = 14, part = "header") |> 
+  align(i = 1, align = "center", part = "header") |> 
+ set_header_labels(
+   values = c(
+     v_CON = "CON",
+     v_LAB = "LAB",
+     v_LD = "LD",
+     v_GRE = "GRE",
+     v_RUK = "RUK",
+     v_OTH = "OTH",
+     p_CON = "CON",
+     p_LAB = "LAB",
+     p_LD = "LD",
+     p_GRE = "GRE",
+     p_RUK = "RUK",
+     p_OTH = "OTH"
+     )
+   ) 
+spft
+```
+
+
+```{r parties, echo=FALSE,message=FALSE}
+
+ptft <- flextable(parties_table |> 
+                    select(
+                      Party = official_party_name,
+                      Code = party_code,
+                      Votes = v,
+                      Candidates = n,
+                      Elected = el,
+                      `Votes per candidate` = vpc))
+
+
+
+ptft
+
+
 
 ```
+
+
+# Turnout and Party Vote
+
+
+### Turnout
+
+The turnout of voters across the 32 boroughs as a whole was 35.5 per cent, lower than that seen in 2018 (38.8 per cent).
+
+Highest borough turnout: Richmond upon Thames, 47.7%
+Lowest borough turnout: Barking and Dagenham, 24.5%
+Five highest wards:
+
+
+
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. Sed facilisis dapibus diam nec volutpat. Maecenas facilisis dapibus egestas. Curabitur dignissim pharetra pulvinar. Nunc bibendum elit sed cursus congue. Curabitur ligula quam, iaculis faucibus orci quis, vestibulum lobortis lectus. Suspendisse fringilla nisl pulvinar, laoreet tellus sed, sollicitudin tortor. Donec consequat congue erat in iaculis. Curabitur luctus tellus ut turpis iaculis, nec laoreet ligula scelerisque.

@@ -520,7 +520,23 @@ get_turnout_table <- function() {
   # Hillingdon, Yeading, think entitled electors should be 2387
   # Waltham Forest, Valley . think entitled elections should be 2467
   # Waltham Forest, Chingford Green. think entitled elections should be 3817
+  # Enfield, Upper Edmonton. think entitled elections should be 3817
   
+  con <- dbConnect(SQLite(), "data/elections_2026.sqlite")
+  
+  dbSendQuery(con, "UPDATE election_stats SET entitled_electors = '12011' WHERE wd22cd = 'E05013717' ") # Catford (turnout doesn't match, out by 40%)
+  dbSendQuery(con, "UPDATE election_stats SET ballots_polling = '3779' WHERE wd22cd = 'E05013717' ") # Catford (turnout doesn't match, out by 40%)
+  dbSendQuery(con, "UPDATE election_stats SET turnout = '0.357' WHERE wd22cd = 'E05011486' ") # Thornton Heath - looks like a typo
+  dbSendQuery(con, "UPDATE election_stats SET entitled_electors = '8500' WHERE wd22cd = 'E05013583' ") # Yeading in Hillingdon (out by .7)
+  dbSendQuery(con, "UPDATE election_stats SET ballots_polling = '2387' WHERE wd22cd = 'E05013583' ") # Yeading in Hillingdon (out by .7)
+  dbSendQuery(con, "UPDATE election_stats SET entitled_electors = '10088' WHERE wd22cd = 'E05013901' ") # Valley in Waltham Forest
+  dbSendQuery(con, "UPDATE election_stats SET ballots_polling = '2467' WHERE wd22cd = 'E05013901' ") # Valley in Waltham Forest
+  dbSendQuery(con, "UPDATE election_stats SET entitled_electors = '8688' WHERE wd22cd = 'E05013885' ") # Chingford Green in Waltham Forest
+  dbSendQuery(con, "UPDATE election_stats SET ballots_polling = '3817' WHERE wd22cd = 'E05013885' ") # Chingford Green in Waltham Forest
+  dbSendQuery(con, "UPDATE election_stats SET entitled_electors = '9939' WHERE wd22cd = 'E05013694' ") # Upper Edmonton in Enfield
+  dbSendQuery(con, "UPDATE election_stats SET ballots_polling = '2043' WHERE wd22cd = 'E05013694' ") # Upper Edmonton in Enfield
+  
+  dbDisconnect(con)
   
   
 }

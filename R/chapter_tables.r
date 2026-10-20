@@ -1,7 +1,9 @@
 library(DBI)
 library(RSQLite)
 
+library(readxl)
 library(readr)
+
 library(dplyr)
 library(tidyr)
 library(stringr)
@@ -512,7 +514,20 @@ get_turnout_table <- function() {
     mutate(tnt = total_votes / ee) |> 
     mutate(tnt = round(tnt * 100, 1)) |> 
     mutate(diff = abs(tnt - adj_turnout)) |> 
-    arrange(desc(diff))
+    arrange(desc(tnt))  
+  
+  high_tnt <- head(es, n = 5)
+  low_tnt <- tail(es, n = 5)
+  
+  boros <- es |> 
+    summarise(.by = (LAD22NM), tv = sum(total_votes), ee = sum(ee) ) |> 
+    mutate(tnt = tv / ee) |> 
+    arrange(desc(tnt))
+  boros <- boros[c(1,32),]
+  
+  tnt_figure <- sum(es$total_votes) / sum(es$ee)
+  
+  save(high_tnt, low_tnt, boros, tnt_figure, file = "data/turnout_page.RData")
   
   ### Corrections
   # Lewisham, Catford - should be 3779 ballots_polling
@@ -535,10 +550,83 @@ get_turnout_table <- function() {
   dbSendQuery(con, "UPDATE election_stats SET ballots_polling = '3817' WHERE wd22cd = 'E05013885' ") # Chingford Green in Waltham Forest
   dbSendQuery(con, "UPDATE election_stats SET entitled_electors = '9939' WHERE wd22cd = 'E05013694' ") # Upper Edmonton in Enfield
   dbSendQuery(con, "UPDATE election_stats SET ballots_polling = '2043' WHERE wd22cd = 'E05013694' ") # Upper Edmonton in Enfield
+  dbSendQuery(con, "UPDATE election_stats SET ballots_polling = '3210' WHERE wd22cd = 'E05011116' ") # South Bermondsey, Southwark
+  
+  
   
   dbDisconnect(con)
   
   
+}
+
+get_party_page_stats <- function(party) {
+  fl <- "data/London 2022 Wards.xlsx"
+  prev_data <- read_excel(fl, "Candidates")
+  ward_stand <- prev_data |> 
+    summarise(.by = c(WD22CD, LAD22CD, Borough, `Party code`), v = sum(Votes), n = n()) |> 
+    mutate(stand = v / n) 
+  
+  boro_tots <- ward_stand |> 
+    summarise(.by = c(LAD22CD, Borough), tot = sum(stand))
+  
+  tbl_22 <- ward_stand |> 
+    filter(`Party code` == party) |> 
+    summarise(.by = LAD22CD, st = sum(stand) ) |> 
+    left_join(boro_tots) |> 
+    mutate(pp = st / tot) |> 
+    select(LAD22CD, Borough, pp22 = pp, st, tot ) |> 
+    arrange(LAD22CD)
+  
+  tbl_22$Borough[which(tbl_22$LAD22CD == "E09000020")] <- "Kensington and Chelsea"
+  
+  
+  norm <- calculate_to_ward() 
+  
+  sums <- norm |> summarise(.by = LAD22NM, s = sum(val))
+  
+  sv <- norm |> 
+    filter(party_code == party) |> 
+    summarise(.by = c( LAD22NM), v = sum(val) ) |> 
+    left_join(sums) |> 
+    mutate(p = v / s) 
+  
+  tbl <- tbl_22 |> 
+    left_join(sv |> select(Borough = LAD22NM, pp26 = p)) |> 
+    select(LAD22CD, Borough, pp26, pp22) |> 
+    arrange(LAD22CD)
+  
+  ov26 <- sum(sv$v) / sum(sv$s)
+  ov22 <- sum(tbl_22$st) / sum(tbl_22$tot)
+  
+  ## overall %: this year and last
+  # overall_perc26
+  # overall_perc22
+  ## gain/loss in boroughs - high/low 
+  # boro_tbl
+  ## highest/lowest wards
+  # high_wards
+  # low_wards
+  
+  hw <- head(norm |> filter(party_code == party) |> arrange(desc(perc)), n = 5)
+  lw <- head(norm |> filter(party_code == party) |> arrange(perc), n = 5)
+  
+  
+  list(overall_perc26 = ov26, overall_perc22 = ov22,
+       boro_tbl = tbl, high_wards = hw, low_wards = lw)
+  
+  
+  
+  
+  
+}
+
+run_party_page_statistics <- function() {
+  con <- get_party_page_stats("CON")
+  lab <- get_party_page_stats("LAB")
+  ld <- get_party_page_stats("LD")
+  gre <- get_party_page_stats("GRE")
+  ruk <- get_party_page_stats("RUK")
+  save(con, lab, ld, gre, ruk, file = "data/party_pages_stats.RData")
 }
 
 

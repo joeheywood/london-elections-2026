@@ -580,7 +580,8 @@ get_party_page_stats <- function(party) {
   tbl_22$Borough[which(tbl_22$LAD22CD == "E09000020")] <- "Kensington and Chelsea"
   
   
-  norm <- calculate_to_ward() 
+  norm <- calculate_to_ward() |> 
+    mutate(perc = round(perc*100, 2))
   
   sums <- norm |> summarise(.by = LAD22NM, s = sum(val))
   
@@ -593,10 +594,13 @@ get_party_page_stats <- function(party) {
   tbl <- tbl_22 |> 
     left_join(sv |> select(Borough = LAD22NM, pp26 = p)) |> 
     select(LAD22CD, Borough, pp26, pp22) |> 
+    mutate(diff = round((pp26 - pp22)*100, 2), gain = pp26 > pp22) |>
+    mutate(pp26 = round(pp26*100, 2),
+           pp22 = round(pp22*100, 2)) |> 
     arrange(LAD22CD)
   
-  ov26 <- sum(sv$v) / sum(sv$s)
-  ov22 <- sum(tbl_22$st) / sum(tbl_22$tot)
+  ov26 <- round((sum(sv$v) / sum(sv$s))*100, 2)
+  ov22 <- round((sum(tbl_22$st) / sum(tbl_22$tot))*100, 2)
   
   ## overall %: this year and last
   # overall_perc26
@@ -621,12 +625,12 @@ get_party_page_stats <- function(party) {
 }
 
 run_party_page_statistics <- function() {
-  con <- get_party_page_stats("CON")
+  con_stats <- get_party_page_stats("CON")
   lab <- get_party_page_stats("LAB")
   ld <- get_party_page_stats("LD")
   gre <- get_party_page_stats("GRE")
   ruk <- get_party_page_stats("RUK")
-  save(con, lab, ld, gre, ruk, file = "data/party_pages_stats.RData")
+  save(con_stats, lab, ld, gre, ruk, file = "data/party_pages_stats.RData")
 }
 
 

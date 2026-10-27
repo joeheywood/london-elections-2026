@@ -34,7 +34,9 @@ load("../data/share_votes_table.RData")
 load("../data/num_votes_table.RData")
 load("../data/nm_cands_vts.RData")
 load("../data/stand_prc.RData")
+load("../data/turnout_page.RData")
 load("../data/parties_table.RData")
+load("../data/party_pages_stats.RData")
 
 
 ```
@@ -416,13 +418,109 @@ ptft
 
 ### Turnout
 
-The turnout of voters across the 32 boroughs as a whole was 35.5 per cent, lower than that seen in 2018 (38.8 per cent).
+The turnout of voters across the 32 boroughs as a whole was `r tnt_figure` 35.5 per cent, lower than that seen in 2022 (35.5 per cent).
 
-Highest borough turnout: Richmond upon Thames, 47.7%
-Lowest borough turnout: Barking and Dagenham, 24.5%
+Highest borough turnout: `r boros$LAD22NM[1]`, `r round(boros$tnt[1]*100, 1)`%
+Lowest borough turnout: `r boros$LAD22NM[2]`, `r round(boros$tnt[2]*100, 1)`%
+
 Five highest wards:
 
+```{r high_wards, echo=FALSE,message=FALSE}
+htft <- flextable(high_tnt |> select(Borough = LAD22NM, Ward = ward, `%` = tnt))
+htft
 
+```
+
+Five lowest wards:
+
+```{r low_wards, echo=FALSE,message=FALSE}
+ltft <- flextable(low_tnt |> select(Borough = LAD22NM, Ward = ward, `%` = tnt))
+## how to arrange this??
+ltft
+```
+
+
+
+### The Conservative Party Vote
+
+The overall percentage vote for the Conservative Party was `r con_stats$overall_perc26` per cent, down from `r con_stats$overall_perc22` per cent in 2022. The party only gained vote share in one of the 32 boroughs: up `r con_stats$boro_tbl$diff[which.max(con_stats$boro_tbl$diff)]` points in `r con_stats$boro_tbl$Borough[which.max(con_stats$boro_tbl$diff)]`. The largest fall in vote share was seen in `r con_stats$boro_tbl$Borough[which.min(con_stats$boro_tbl$diff)]`, which fell by `r abs(con_stats$boro_tbl$diff[which.min(con_stats$boro_tbl$diff)])` percentage points to `r con_stats$boro_tbl$pp26[which.min(con_stats$boro_tbl$diff)]` per cent.
+
+Highest borough Conservative vote: `r con_stats$boro_tbl$Borough[which.max(con_stats$boro_tbl$pp26)]`, `r con_stats$boro_tbl$pp26[which.max(con_stats$boro_tbl$pp26)]`%
+
+Lowest borough Conservative vote: `r con_stats$boro_tbl$Borough[which.min(con_stats$boro_tbl$pp26)]`, `r con_stats$boro_tbl$pp26[which.min(con_stats$boro_tbl$pp26)]`%
+
+Five highest wards:
+
+```{r high_con_wards, echo=FALSE,message=FALSE}
+hcft <- flextable(con_stats$high_wards |> select(Borough = LAD22NM, Ward = ward, `%` = perc))
+hcft
+
+```
+
+Five lowest wards:
+
+```{r low_con_wards, echo=FALSE,message=FALSE}
+lcft <- flextable(
+  con_stats$low_wards |> 
+    arrange(desc(perc)) |>  
+    select(Borough = LAD22NM, Ward = ward, `%` = perc))
+lcft
+
+```
+
+
+### The Labour Party Vote
+
+The overall percentage vote for the Labour Party was `r lab$overall_perc26` per cent, down from `r lab$overall_perc22` per cent in 2022. The party did not gain vote share in any of the 32 boroughs. The largest fall in vote share was seen in `r lab$boro_tbl$Borough[which.min(lab$boro_tbl$diff)]`, which fell by `r abs(lab$boro_tbl$diff[which.min(lab$boro_tbl$diff)])` percentage points to `r lab$boro_tbl$pp26[which.min(lab$boro_tbl$diff)]` per cent.
+
+Highest borough Labour vote: `r lab$boro_tbl$Borough[which.max(lab$boro_tbl$pp26)]`, `r lab$boro_tbl$pp26[which.max(lab$boro_tbl$pp26)]`%
+
+Lowest borough Labour vote: `r lab$boro_tbl$Borough[which.min(lab$boro_tbl$pp26)]`, `r lab$boro_tbl$pp26[which.min(lab$boro_tbl$pp26)]`%
+
+Five highest wards:
+
+```{r high_lab_wards, echo=FALSE,message=FALSE}
+hlft <- flextable(lab$high_wards |> select(Borough = LAD22NM, Ward = ward, `%` = perc))
+hlft
+
+```
+
+Five lowest wards:
+
+```{r low_lab_wards, echo=FALSE,message=FALSE}
+llft <- flextable(
+  lab$low_wards |> 
+    arrange(desc(perc)) |>  
+    select(Borough = LAD22NM, Ward = ward, `%` = perc))
+llft
+
+```
+
+### The Liberal Democrat Party Vote
+
+The overall percentage vote for the Liberal Democrat Party was `r ld$overall_perc26` per cent, down from `r ld$overall_perc22` per cent in 2022. The party gained vote share in `r sum(ld$boro_tbl$gain)` of the 32 boroughs. The largest increase was in `r ld$boro_tbl$Borough[which.max(ld$boro_tbl$diff)]`, where the vote increased by `r ld$boro_tbl$diff[which.max(ld$boro_tbl$diff)]` percentage points to `r ld$boro_tbl$pp26[which.max(ld$boro_tbl$pp26)]` per cent. The largest fall in vote share was seen in `r ld$boro_tbl$Borough[which.min(ld$boro_tbl$diff)]`, which fell by `r abs(ld$boro_tbl$diff[which.min(ld$boro_tbl$diff)])` percentage points to `r ld$boro_tbl$pp26[which.min(ld$boro_tbl$diff)]` per cent.
+
+Highest borough Liberal Democrat vote: `r ld$boro_tbl$Borough[which.max(ld$boro_tbl$pp26)]`, `r ld$boro_tbl$pp26[which.max(ld$boro_tbl$pp26)]`%
+
+Lowest borough Liberal Democrat vote: `r ld$boro_tbl$Borough[which.min(ld$boro_tbl$pp26)]`, `r ld$boro_tbl$pp26[which.min(ld$boro_tbl$pp26)]`%
+
+Five highest wards:
+
+```{r high_ld_wards, echo=FALSE,message=FALSE}
+hlft <- flextable(ld$high_wards |> select(Borough = LAD22NM, Ward = ward, `%` = perc))
+hlft
+
+```
+
+Five lowest wards:
+
+```{r low_ld_wards, echo=FALSE,message=FALSE}
+llft <- flextable(
+  ld$low_wards |> 
+    arrange(desc(perc)) |>  
+    select(Borough = LAD22NM, Ward = ward, `%` = perc))
+llft
+```
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pulvinar arcu, quis aliquam dui. In at cursus ante. Vestibulum non sagittis lacus. Duis vitae iaculis dui. Vivamus tempor, nibh ut pretium tempus, enim lorem dignissim quam, at euismod massa magna at magna. 

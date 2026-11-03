@@ -92,6 +92,16 @@ create_candidates_view <- function() {
 }
 
 
+check_parties <- function() {
+  cn <- RSQLite::dbConnect(SQLite(), "data/elections_2026.sqlite")
+  # dbListTables(cn)
+  # dbListFields(cn, "party_lookup")
+  df <- dbGetQuery(cn, "select * from party_lookup ") |> 
+    arrange(party_code)
+  
+}
+
+
 
 
 ##### -- UTILITY FUNCTIONS -- ####

@@ -525,7 +525,16 @@ hcft <- flextable(con_stats$high_wards |> select(Borough = LAD22NM, Ward = ward,
 hcft |>
    delete_part(part = "header") |>
     width(j = 1:2, width = 6, unit = "cm") |>
-    width(j = 3, width = 1.8, unit = "cm") 
+    width(j = 3, width = 1.8, unit = "cm") |>
+  fontsize( size = 9, part = "header" ) |> 
+  fontsize( size = 9, part = "body" ) |> 
+  border_remove() |>
+  padding(
+    padding.top = 0,
+    padding.bottom = 0,
+    part = "body"
+  ) 
+
 
 ```
 
@@ -549,6 +558,16 @@ lcft |>
     part = "body"
   ) 
 
+```
+
+
+
+
+
+
+```{r con_map, fig.width = 6.67, fig.height = 3.11, echo=FALSE}
+# ![Some sort of caption](images/conservative_party.png){width=300} !
+knitr::include_graphics("images/conservative_party.png")
 ```
 
 
@@ -579,8 +598,9 @@ hlft |>
     part = "body"
   ) 
 
-
 ```
+
+
 
 Five lowest wards:
 
@@ -603,6 +623,14 @@ llft |>
   ) 
 
 
+```
+
+`r officer::fpar(officer::run_linebreak())`
+
+
+```{r lab_map, fig.width = 6.67, fig.height = 3.11, echo=FALSE}
+# ![Some sort of caption](images/conservative_party.png){width=300} !
+knitr::include_graphics("images/labour_party.png")
 ```
 
 \newpage
@@ -659,6 +687,14 @@ llft |>
 ```
 
 
+`r officer::fpar(officer::run_linebreak())`
+
+
+```{r ld_map, fig.width = 6.67, fig.height = 3.11, echo=FALSE}
+# ![Some sort of caption](images/conservative_party.png){width=300} !
+knitr::include_graphics("images/libdem_party.png")
+```
+
 \newpage
 
 ### The Green Party Vote
@@ -711,4 +747,11 @@ llft |>
   ) 
 
 
+```
+
+`r officer::fpar(officer::run_linebreak())`
+
+
+```{r gre_map, fig.width = 6.67, fig.height = 3.11, echo=FALSE}
+knitr::include_graphics("images/green_party.png")
 ```

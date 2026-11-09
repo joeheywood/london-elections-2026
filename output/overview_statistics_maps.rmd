@@ -101,7 +101,6 @@ tb1 <- gt(elected |>  select(Borough = LAD22NM, LAB:IND) , rowname_col = "Boroug
       cells_stub( rows = Borough %in% break_cols )
     )
   ) 
-gtsave(as_word(tb1), filename = "tb1.xml")
 
 tbl
 ```

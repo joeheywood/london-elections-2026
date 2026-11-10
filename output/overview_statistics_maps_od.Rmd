@@ -1,7 +1,7 @@
 ---
 date: "`r Sys.Date()`"
 author: "Your Name"
-title: "officedown template"
+title: "London Borough Elections - May 2026"
 output: 
   officedown::rdocx_document:
     reference_docx: "Elections Report_ref.docx"
@@ -59,6 +59,11 @@ This document presents most of the features of the package `r ftext("officedown"
 
 <!---BLOCK_TOC{seq_id: 'tab'}--->
 
+\newpage
+
+# Overview statistics and maps
+
+This section provides an overview of the election results, which includes the state of political parties in each borough, the share of the vote by party, and the number of elected candidates for each ward. It also presents maps comparing the 2026 results with results from previous elections, as well as overview statistics on turnout, number of voters, and the total number of candidates, broken down by party.
 
 \newpage
 
@@ -204,6 +209,34 @@ sft
 
 \newpage
 
+## Elected Candidates by Ward, 2026
+
+```{r el_cand_map, fig.width=6.59, fig.height=8.89, echo=FALSE}
+knitr::include_graphics("images/elected candidates result_portrait.png")
+```
+
+\newpage
+
+## Elected Candidates by Ward, 2022
+
+\newpage
+
+## Borough political control
+
+```{r boro_control_map, fig.width = 6.3, fig.height = 4.44, echo=FALSE}
+knitr::include_graphics("images/borough_political_control.png")
+```
+
+\newpage
+
+### Borough party political control in previous years
+
+```{r boro_control_map_prev, echo=FALSE}
+knitr::include_graphics("images/borough_political_control_prev.png")
+```
+
+\newpage
+
 ## Summary of election facts and figures
 
 ```{r facts_figs, echo=FALSE,message=FALSE}
@@ -273,6 +306,7 @@ ncft
 ```
 
 `r run_columnbreak()`
+
 #### Percent share of the poll in London, 1964-2026
 
 ```{r shr_vt_ts, echo=FALSE,message=FALSE}
@@ -465,9 +499,10 @@ ptft |>
 
 \newpage
 
-## Turnout and Party Vote
+# Turnout and Party Vote
 
 
+## Turnout
 
 The turnout of voters across the 32 boroughs as a whole was `r tnt_figure` 35.5 per cent, lower than that seen in 2022 (35.5 per cent).
 
@@ -516,6 +551,11 @@ ltft |>
   ) 
 ```
 
+
+```{r trn_map, echo=FALSE}
+# ![Some sort of caption](images/conservative_party.png){width=300} !
+knitr::include_graphics("images/turnout.png")
+```
 
 \newpage
 
@@ -578,9 +618,9 @@ lcft |>
 
 
 
-```{r con_map, fig.width = 3.34, fig.height = 3.11, echo=FALSE}
+```{r con_map, echo=FALSE}
 # ![Some sort of caption](images/conservative_party.png){width=300} !
-knitr::include_graphics("images/turnout.png")
+knitr::include_graphics("images/conservative_party.png")
 ```
 
 
@@ -652,7 +692,7 @@ knitr::include_graphics("images/labour_party.png")
 
 \newpage
 
-### The Liberal Democrat Party Vote
+## The Liberal Democrat Party Vote
 
 The overall percentage vote for the Liberal Democrat Party was `r ld$overall_perc26` per cent, down from `r ld$overall_perc22` per cent in 2022. The party gained vote share in `r sum(ld$boro_tbl$gain)` of the 32 boroughs. The largest increase was in `r ld$boro_tbl$Borough[which.max(ld$boro_tbl$diff)]`, where the vote increased by `r ld$boro_tbl$diff[which.max(ld$boro_tbl$diff)]` percentage points to `r ld$boro_tbl$pp26[which.max(ld$boro_tbl$pp26)]` per cent. The largest fall in vote share was seen in `r ld$boro_tbl$Borough[which.min(ld$boro_tbl$diff)]`, which fell by `r abs(ld$boro_tbl$diff[which.min(ld$boro_tbl$diff)])` percentage points to `r ld$boro_tbl$pp26[which.min(ld$boro_tbl$diff)]` per cent.
 
@@ -718,7 +758,7 @@ knitr::include_graphics("images/libdem_party.png")
 
 \newpage
 
-### The Green Party Vote
+## The Green Party Vote
 
 The overall percentage vote for the Green Party was `r gre$overall_perc26` per cent, almost doubling their `r gre$overall_perc22` per cent in 2022. The party gained vote share in every single borough. The largest increase was in `r gre$boro_tbl$Borough[which.max(gre$boro_tbl$diff)]`, where the vote increased by `r gre$boro_tbl$diff[which.max(gre$boro_tbl$diff)]` percentage points to `r gre$boro_tbl$pp26[which.max(gre$boro_tbl$pp26)]` per cent. 
 

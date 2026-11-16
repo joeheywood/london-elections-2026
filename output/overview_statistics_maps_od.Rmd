@@ -218,6 +218,9 @@ knitr::include_graphics("images/elected candidates result_portrait.png")
 \newpage
 
 ## Elected Candidates by Ward, 2022
+```{r el_cand_map_prev, fig.width=6.59, fig.height=8.89, echo=FALSE}
+knitr::include_graphics("images/elected candidates result_prev.png")
+```
 
 \newpage
 

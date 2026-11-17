@@ -145,6 +145,7 @@ ft <- ft |>
     padding.bottom = 0,
     part = "body"
   ) |> 
+  padding( padding.top = 0, padding.bottom = 0, part = "header" ) |> 
   padding(
     i = ~ Borough %in% break_cols,
     padding.top = 10
@@ -153,6 +154,8 @@ ft <- ft |>
     values = summary,
     colwidths = rep(1, ncol(elected))
   ) |> 
+  padding( padding.top = 0, padding.bottom = 0, part = "footer" ) |> 
+  fontsize( size = 9, part = "footer" ) |> 
   align(j = -1,
     align = "right",
     part = "footer"
@@ -185,11 +188,7 @@ sft <- sft |>
   font( fontname = "Arial", part = "body" ) |>
   fontsize( size = 9, part = "header" ) |> 
   fontsize( size = 9, part = "body" ) |> 
-  padding(
-    padding.top = 0,
-    padding.bottom = 0,
-    part = "body"
-  ) |> 
+  padding( padding.top = 0, padding.bottom = 0, part = "body" ) |> 
   padding(
     i = ~ Borough %in% break_cols,
     padding.top = 10
@@ -555,7 +554,7 @@ ltft |>
 ```
 
 
-```{r trn_map, echo=FALSE}
+```{r trn_map, fig.width = 6.67, fig.height = 3.11, echo=FALSE}
 # ![Some sort of caption](images/conservative_party.png){width=300} !
 knitr::include_graphics("images/turnout.png")
 ```
@@ -621,7 +620,7 @@ lcft |>
 
 
 
-```{r con_map, echo=FALSE}
+```{r con_map, fig.width = 6.67, fig.height = 3.11, echo=FALSE}
 # ![Some sort of caption](images/conservative_party.png){width=300} !
 knitr::include_graphics("images/conservative_party.png")
 ```
